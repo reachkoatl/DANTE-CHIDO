@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
-import pruebas.PruebaXML.*;
+//import /*pruebas*/.PruebaXML.*;
 import xml.analizador.dom.*;
 import xml.analizador.dom.modelo.Tag;
 import xml.analizador.dom.modelo.Atributo;

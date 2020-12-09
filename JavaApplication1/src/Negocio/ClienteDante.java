@@ -14,6 +14,7 @@ import Datos.Logs;
 import Interfaz.Networks;
 import Interfaz.PanelAjustes;
 import Interfaz.PanelLogs;
+import Interfaz.newPanelMixer;
 import sun.security.util.PendingException;
 /**
  *
@@ -28,12 +29,14 @@ public class ClienteDante {
    static ThreadStart start;
    static Networks N;
    static PanelLogs PA;
+  
     public static void main(String[] args) {
         // TODO code application logic here
         
         try{
            Logs.Write("Iniciando aplicacion clente");
        P=new Panel();
+  
        PA=new PanelLogs();
        start=new ThreadStart(P);
        start.start();

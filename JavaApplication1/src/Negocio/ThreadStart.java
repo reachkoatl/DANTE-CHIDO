@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import Datos.ThreadPing;
+import Interfaz.newPanelMixer;
 
 /**
  *
@@ -44,12 +45,12 @@ public class ThreadStart extends Thread {
     private ArrayList<Thread> procesos;
     
     private Panel P;
-    
+ 
     
     
     public ThreadStart(Panel P){
        this.P=P;
-         
+     
     }
     
     @Override
