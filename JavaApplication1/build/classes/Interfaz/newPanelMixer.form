@@ -731,6 +731,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I17">
       <Properties>
@@ -794,6 +797,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S9ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I3">
       <Properties>

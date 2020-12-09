@@ -2969,65 +2969,9 @@ public class newPanelMixer extends javax.swing.JPanel {
     
     
     
-    private void S1ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-        var[2]=true;
-        if(S1.isSelected()&&!var[1]){
-            DisableVolumeExcept(V1,S1,2,0);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[0]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),0,V1,C1,socket);
-             audio[0].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               var[2]=false;
-         }     
-        }
-        if(S1.isSelected()&&var[1])
-        {
-            DisableVolumeExcept(V1,S1,2,0);
-        }
-        if(!S1.isSelected()){
-            EnableVolume();
-            var[2]=false;
-            audio[0].detener();
-            audio[0].stop();
-        }
-    }                                  
+                        
 
-    private void S9ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-        var[18]=true;
-        if(S9.isSelected()&&!var[17]){
-            DisableVolumeExcept(V9,S9,18,8);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[8]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(8),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),1,V9,C9,socket);
-             audio[8].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               var[18]=false;
-         }     
-        }
-        if(S9.isSelected()&&var[17])
-        {
-            DisableVolumeExcept(V9,S9,18,8);
-        }
-        if(!S9.isSelected()){
-            EnableVolume();
-            var[18]=false;
-            audio[8].detener();
-            audio[8].stop();
-        }
-    }                                  
+                                   
 
     private void S17ActionPerformed(java.awt.event.ActionEvent evt) {                                    
 
@@ -4158,6 +4102,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         V9.setMaximum(10);
 
         S1.setText("SOLO");
+        S1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S1ActionPerformed(evt);
+            }
+        });
 
         I17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4190,6 +4139,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         S25.setText("SOLO");
 
         S9.setText("SOLO");
+        S9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S9ActionPerformed(evt);
+            }
+        });
 
         I3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -5292,6 +5246,68 @@ public class newPanelMixer extends javax.swing.JPanel {
     }   
     }
     }//GEN-LAST:event_C27ActionPerformed
+
+    private void S1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S1ActionPerformed
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+        var[2]=true;
+        if(S1.isSelected()&&!var[1]){
+            DisableVolumeExcept(V1,S1,2,0);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             audio[0]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),0,V1,C1,socket);
+             audio[0].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               var[2]=false;
+         }     
+        }
+        if(S1.isSelected()&&var[1])
+        {
+            DisableVolumeExcept(V1,S1,2,0);
+        }
+        if(!S1.isSelected()){
+            EnableVolume();
+            var[2]=false;
+            audio[0].detener();
+            audio[0].stop();
+        }
+    }//GEN-LAST:event_S1ActionPerformed
+
+    private void S9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S9ActionPerformed
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+        var[18]=true;
+        if(S9.isSelected()&&!var[17]){
+            DisableVolumeExcept(V9,S9,18,8);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             audio[8]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(8),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),1,V9,C9,socket);
+             audio[8].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               var[18]=false;
+         }     
+        }
+        if(S9.isSelected()&&var[17])
+        {
+            DisableVolumeExcept(V9,S9,18,8);
+        }
+        if(!S9.isSelected()){
+            EnableVolume();
+            var[18]=false;
+            audio[8].detener();
+            audio[8].stop();
+        }
+    }//GEN-LAST:event_S9ActionPerformed
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
