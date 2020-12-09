@@ -334,7 +334,7 @@
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="I65" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
+                                          <Component id="I22" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
                                           <Component id="V22" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
                                           <Component id="C22" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
@@ -580,7 +580,7 @@
                       <Component id="S14" min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="I65" min="-2" pref="157" max="-2" attributes="0"/>
+                      <Component id="I22" min="-2" pref="157" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="C22" min="-2" pref="38" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
@@ -1073,7 +1073,7 @@
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="I65">
+    <Component class="javax.swing.JLabel" name="I22">
     </Component>
     <Component class="javax.swing.JButton" name="C22">
       <Properties>

@@ -4,20 +4,1684 @@
  * and open the template in the editor.
  */
 package Interfaz;
-
+import Negocio.ThreadAudio;
+import Negocio.ThreadSocket;
+import Datos.Configuracion;
+import Datos.XmlRead;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Image;
+import java.util.ArrayList;
+import javafx.scene.control.RadioButton;
+import javax.swing.JButton;
+import javax.swing.JSlider;
+import javax.swing.ImageIcon;
+import javax.swing.JRadioButton;
+import javax.swing.JToggleButton;
+/**
 /**
  *
  * @author campos
  */
 public class newPanelMixer extends javax.swing.JPanel {
 
+  private ArrayList<Integer> ganancias;
+    private ArrayList<String> canales;
+    private int Frecuencia;
+    private int Muestra;
+  
+    private int alternarSOLO = 0;
+    
+    private  int alternar0=0;
+    private  int alternar1=0;
+    private  int alternar2=0;
+    private  int alternar3=0;
+    private  int alternar4=0;
+    private  int alternar5=0;
+    private  int alternar6=0;
+    private  int alternar7=0;
+    private  int alternar8=0;
+    private  int alternar9=0;
+    private  int alternar10=0;
+    private  int alternar11=0;
+    private  int alternar12=0;
+    private  int alternar13=0;
+    private  int alternar14=0;
+    private  int alternar15=0;
+    private  int alternar16=0;
+    private  int alternar17=0;
+    private  int alternar18=0;
+    private  int alternar19=0;
+    private  int alternar20=0;
+    private  int alternar21=0;
+    private  int alternar22=0;
+    private  int alternar23=0;
+    private  int alternar24=0;
+    private  int alternar25=0;
+    private  int alternar26=0;
+    private  int alternar27=0;
+    private  int alternar28=0;
+    private  int alternar29=0;
+    private  int alternar30=0;
+    private  int alternar31=0;
+    private  int alternar32=0;
+    
+    
+    private ThreadAudio audio0;
+    private ThreadAudio audio1;
+    private ThreadAudio audio2;       
+    private ThreadAudio audio3;
+    private ThreadAudio audio4;
+    private ThreadAudio audio5;
+    private ThreadAudio audio6;
+    private ThreadAudio audio7;
+    private ThreadAudio audio8;
+    private ThreadAudio audio9;
+    private ThreadAudio audio10;
+    private ThreadAudio audio11;
+    private ThreadAudio audio12;
+    private ThreadAudio audio13;
+    private ThreadAudio audio14;
+    private ThreadAudio audio15;
+    private ThreadAudio audio16;
+    private ThreadAudio audio17;
+    private ThreadAudio audio18;
+    private ThreadAudio audio19;
+    private ThreadAudio audio20;
+    private ThreadAudio audio21;
+    private ThreadAudio audio22;
+    private ThreadAudio audio23;
+    private ThreadAudio audio24;
+    private ThreadAudio audio25;
+    private ThreadAudio audio26;
+    private ThreadAudio audio27;
+    private ThreadAudio audio28;
+    private ThreadAudio audio29;
+    private ThreadAudio audio30;
+    private ThreadAudio audio31;
+    private ThreadAudio audio32;
+    
+    private ThreadAudio[] audio = new ThreadAudio[32];
+    
+    private boolean LastAtivate0=false;
+    private boolean LastAtivate1=false;
+    private boolean LastAtivate2=false;
+    private boolean LastAtivate3=false;
+    private boolean LastAtivate4=false;
+    private boolean LastAtivate5=false;
+    private boolean LastAtivate6=false;
+    private boolean LastAtivate7=false;
+    private boolean LastAtivate8=false;
+    private boolean LastAtivate9=false;
+    private boolean LastAtivate10=false;
+    private boolean LastAtivate11=false;
+    private boolean LastAtivate12=false;
+    private boolean LastAtivate13=false;
+    private boolean LastAtivate14=false;
+    private boolean LastAtivate15=false;
+    private boolean LastAtivate16=false;
+    private boolean LastAtivate17=false;
+    private boolean LastAtivate18=false;
+    private boolean LastAtivate19=false;
+    private boolean LastAtivate20=false;
+    private boolean LastAtivate21=false;
+    private boolean LastAtivate22=false;
+    private boolean LastAtivate23=false;
+    private boolean LastAtivate24=false;
+    private boolean LastAtivate25=false;
+    private boolean LastAtivate26=false;
+    private boolean LastAtivate27=false;
+    private boolean LastAtivate28=false;
+    private boolean LastAtivate29=false;
+    private boolean LastAtivate30=false;
+    private boolean LastAtivate31=false;
+    
+    private boolean audioforceddown0 = false;
+    private boolean audioforceddown1 = false;
+    private boolean audioforceddown2 = false;
+    private boolean audioforceddown3 = false;
+    private boolean audioforceddown4 = false;
+    private boolean audioforceddown5 = false;
+    private boolean audioforceddown6 = false;
+    private boolean audioforceddown7 = false;
+    private boolean audioforceddown8 = false;
+    private boolean audioforceddown9 = false;
+    private boolean audioforceddown10 = false;
+    private boolean audioforceddown11 = false;
+    private boolean audioforceddown12 = false;
+    private boolean audioforceddown13 = false;
+    private boolean audioforceddown14 = false;
+    private boolean audioforceddown15 = false;
+    private boolean audioforceddown16 = false;
+    private boolean audioforceddown17 = false;
+    private boolean audioforceddown18 = false;
+    private boolean audioforceddown19 = false;
+    private boolean audioforceddown20 = false;
+    private boolean audioforceddown21 = false;
+    private boolean audioforceddown22 = false;
+    private boolean audioforceddown23 = false;
+    private boolean audioforceddown24 = false;
+    private boolean audioforceddown25 = false;
+    private boolean audioforceddown26 = false;
+    private boolean audioforceddown27 = false;
+    private boolean audioforceddown28 = false;
+    private boolean audioforceddown29 = false;
+    private boolean audioforceddown30 = false;
+    private boolean audioforceddown31 = false;
+    
+    
+    public Boolean[] var = new Boolean[65];
+   
+    
+   
+    
+    private Configuracion Conf;
+    private XmlRead X;
+    private Panel P;
+    
+    private ThreadSocket socket;
     /**
-     * Creates new form newPanelMixer
+     * Creates new form NewJPanel
      */
-    public newPanelMixer() {
+    public newPanelMixer(Panel P) {
+        this.P=P;
         initComponents();
+        X=new XmlRead();
+       
+        Conf= X.Read("config.xml");
+        canales=new ArrayList<String>();
+        ganancias=new ArrayList<Integer>();
+        for(int x=0;x<65;x++)
+            var[x]=false;
+        
+        for(int i=0;i<32;i++){
+            canales.add("OFF");
+            ganancias.add(1);
+            
+           }
+        
+        ///init
+        V1.setValue(10);
+        V2.setValue(10);
+        V3.setValue(10);
+        V4.setValue(10);
+        V5.setValue(10);
+        V6.setValue(10);
+        V7.setValue(10);
+        V8.setValue(10);
+        V9.setValue(10);
+        V10.setValue(10);
+        V11.setValue(10);
+        V12.setValue(10);
+        V13.setValue(10);
+        V14.setValue(10);
+        V15.setValue(10);
+        V16.setValue(10);
+        V17.setValue(10);
+        V18.setValue(10);
+        V19.setValue(10);
+        V20.setValue(10);
+        V21.setValue(10);
+        V22.setValue(10);
+        V23.setValue(10);
+        V24.setValue(10);
+        V25.setValue(10);
+        V26.setValue(10);
+        V27.setValue(10);
+        V28.setValue(10);
+        V29.setValue(10);
+        V30.setValue(10);
+        V31.setValue(10);
+        V32.setValue(10);
+        
+        
+        
+        
+        LoadImages(Conf);
+        LoadAlias(Conf);
+        
+        
+        ////instanciar hilosocket
+         
+         //socket.start();
     }
 
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    
+    
+    
+    public void SetGanancias(ArrayList<Integer> ganancias){
+       this.ganancias=ganancias;
+    }
+    
+    public ArrayList<Integer> GetGanacias(){
+      return ganancias;
+    }
+    
+     public void SetCanales(ArrayList<String> canales){
+       this.canales=canales;
+    }
+    
+    public ArrayList<String> GetCanales(){
+      return canales;
+    }
+ 
+    public void SetAlias(ArrayList<String> Nombres){
+       
+       this.C1.setText(Nombres.get(0));
+       this.C2.setText(Nombres.get(1));
+       this.C3.setText(Nombres.get(2));
+       this.C4.setText(Nombres.get(3));
+       this.C5.setText(Nombres.get(4));
+       this.C6.setText(Nombres.get(28));
+       this.C7.setText(Nombres.get(6));
+       this.C8.setText(Nombres.get(7));
+      
+       this.C9.setText(Nombres.get(8));
+       this.C10.setText(Nombres.get(9));
+       this.C11.setText(Nombres.get(10));
+       this.C12.setText(Nombres.get(11));
+       this.C13.setText(Nombres.get(12));
+       this.C14.setText(Nombres.get(13));
+       this.C15.setText(Nombres.get(14));
+       this.C16.setText(Nombres.get(15));
+       
+       this.C17.setText(Nombres.get(16));
+       this.C18.setText(Nombres.get(17));
+       this.C19.setText(Nombres.get(18));
+       this.C20.setText(Nombres.get(19));
+       this.C21.setText(Nombres.get(20));
+       this.C22.setText(Nombres.get(21));
+       this.C23.setText(Nombres.get(22));
+       this.C24.setText(Nombres.get(23));
+       
+       this.C25.setText(Nombres.get(24));
+       this.C26.setText(Nombres.get(25));
+       this.C27.setText(Nombres.get(26));
+       this.C28.setText(Nombres.get(27));
+       this.C29.setText(Nombres.get(5));
+       this.C30.setText(Nombres.get(29));
+       this.C31.setText(Nombres.get(30));
+       this.C32.setText(Nombres.get(31));
+       
+       this.repaint();
+             
+    }
+    
+    
+    
+    public void SetImages(ArrayList<String> Images){
+             
+       if(!Images.get(0).equals("0")){
+            try{
+                I1.setIcon(new javax.swing.ImageIcon(Images.get(0)));
+                this.repaint();
+            }
+                catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+       else
+       {
+           try{
+                I1.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!Images.get(1).equals("0")){
+                try{
+                    I2.setIcon(new javax.swing.ImageIcon(Images.get(1)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I2.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!Images.get(2).equals("0")){
+                try{
+                    I3.setIcon(new javax.swing.ImageIcon(Images.get(2)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I3.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!Images.get(3).equals("0")){
+                try{
+                    I4.setIcon(new javax.swing.ImageIcon(Images.get(3)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I4.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!Images.get(4).equals("0")){
+                try{
+                    I5.setIcon(new javax.swing.ImageIcon(Images.get(4)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I5.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       } 
+       
+       
+       if(!Images.get(5).equals("0")){
+                try{
+                    I6.setIcon(new javax.swing.ImageIcon(Images.get(5)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I6.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+      if(!Images.get(6).equals("0")){
+                try{
+                    I7.setIcon(new javax.swing.ImageIcon(Images.get(6)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+      
+       else{
+           try{
+                I7.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       if(!Images.get(7).equals("0")){
+                try{
+                    I8.setIcon(new javax.swing.ImageIcon(Images.get(7)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I8.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!Images.get(8).equals("0")){
+                try{
+                    I9.setIcon(new javax.swing.ImageIcon(Images.get(8)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I9.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+      
+       if(!Images.get(9).equals("0")){
+                try{
+                    I10.setIcon(new javax.swing.ImageIcon(Images.get(9)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I10.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!Images.get(10).equals("0")){
+                try{
+                    I11.setIcon(new javax.swing.ImageIcon(Images.get(10)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I11.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!Images.get(11).equals("0")){
+                try{
+                    I12.setIcon(new javax.swing.ImageIcon(Images.get(11)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I12.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!Images.get(12).equals("0")){
+                try{
+                    I13.setIcon(new javax.swing.ImageIcon(Images.get(12)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I13.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!Images.get(13).equals("0")){
+                try{
+                    I14.setIcon(new javax.swing.ImageIcon(Images.get(13)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I14.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!Images.get(14).equals("0")){
+            try{
+                I15.setIcon(new javax.swing.ImageIcon(Images.get(14)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I15.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!Images.get(15).equals("0")){
+            try{
+                I16.setIcon(new javax.swing.ImageIcon(Images.get(15)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I16.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+        if(!Images.get(16).equals("0")){
+            try{
+                I17.setIcon(new javax.swing.ImageIcon(Images.get(16)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I17.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(17).equals("0")){
+            try{
+                I18.setIcon(new javax.swing.ImageIcon(Images.get(17)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I18.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(18).equals("0")){
+            try{
+                I19.setIcon(new javax.swing.ImageIcon(Images.get(18)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I19.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(19).equals("0")){
+            try{
+                I20.setIcon(new javax.swing.ImageIcon(Images.get(19)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I20.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(20).equals("0")){
+            try{
+                I21.setIcon(new javax.swing.ImageIcon(Images.get(20)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I21.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(21).equals("0")){
+            try{
+                I22.setIcon(new javax.swing.ImageIcon(Images.get(21)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I22.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        if(!Images.get(22).equals("0")){
+            try{
+                I23.setIcon(new javax.swing.ImageIcon(Images.get(22)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I23.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        if(!Images.get(23).equals("0")){
+            try{
+                I24.setIcon(new javax.swing.ImageIcon(Images.get(23)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I24.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(24).equals("0")){
+            try{
+                I25.setIcon(new javax.swing.ImageIcon(Images.get(24)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I25.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(25).equals("0")){
+            try{
+                I26.setIcon(new javax.swing.ImageIcon(Images.get(25)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I26.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(26).equals("0")){
+            try{
+                I27.setIcon(new javax.swing.ImageIcon(Images.get(26)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I27.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(27).equals("0")){
+            try{
+                I28.setIcon(new javax.swing.ImageIcon(Images.get(27)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I28.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(28).equals("0")){
+            try{
+                I29.setIcon(new javax.swing.ImageIcon(Images.get(28)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I29.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!Images.get(29).equals("0")){
+            try{
+                I30.setIcon(new javax.swing.ImageIcon(Images.get(29)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I30.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        if(!Images.get(30).equals("0")){
+            try{
+                I31.setIcon(new javax.swing.ImageIcon(Images.get(30)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I31.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        if(!Images.get(31).equals("0")){
+            try{
+                I32.setIcon(new javax.swing.ImageIcon(Images.get(31)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I32.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        
+       
+       
+    }
+    
+    public void LoadAlias(Configuracion C){
+       this.C1.setText(C.GetAlias().get(0));
+       this.C2.setText(C.GetAlias().get(1));
+       this.C3.setText(C.GetAlias().get(2));
+       this.C4.setText(C.GetAlias().get(3));
+       this.C5.setText(C.GetAlias().get(4));
+       this.C6.setText(C.GetAlias().get(28));
+       this.C7.setText(C.GetAlias().get(6));
+       this.C8.setText(C.GetAlias().get(7));
+       this.C9.setText(C.GetAlias().get(8));
+       this.C10.setText(C.GetAlias().get(9));
+       this.C11.setText(C.GetAlias().get(10));
+       this.C12.setText(C.GetAlias().get(11));
+       this.C13.setText(C.GetAlias().get(12));
+       this.C14.setText(C.GetAlias().get(13));
+       this.C15.setText(C.GetAlias().get(14));
+       this.C16.setText(C.GetAlias().get(15));
+       this.C17.setText(C.GetAlias().get(16));
+       this.C18.setText(C.GetAlias().get(17));
+       this.C19.setText(C.GetAlias().get(18));
+       this.C20.setText(C.GetAlias().get(19));
+       this.C21.setText(C.GetAlias().get(20));
+       this.C22.setText(C.GetAlias().get(21));
+       this.C23.setText(C.GetAlias().get(22));
+       this.C24.setText(C.GetAlias().get(23));
+       this.C25.setText(C.GetAlias().get(24));
+       this.C26.setText(C.GetAlias().get(25));
+       this.C27.setText(C.GetAlias().get(26));
+       this.C28.setText(C.GetAlias().get(27));
+       this.C29.setText(C.GetAlias().get(5));
+       this.C30.setText(C.GetAlias().get(29));
+       this.C31.setText(C.GetAlias().get(30));
+       this.C32.setText(C.GetAlias().get(31));
+       this.repaint();
+    } 
+ 
+    private void LoadImages(Configuracion C){
+             
+       if(!C.GetListaImages().get(0).equals("0")){
+                try{
+                    I1.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(0)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I1.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       
+       if(!C.GetListaImages().get(1).equals("0")){
+                try{
+                    I2.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(1)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I2.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!C.GetListaImages().get(2).equals("0")){
+                try{
+                    I3.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(2)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I3.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       
+       if(!C.GetListaImages().get(3).equals("0")){
+                try{
+                    I4.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(3)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I4.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!C.GetListaImages().get(4).equals("0")){
+                try{
+                    I5.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(4)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I5.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!C.GetListaImages().get(5).equals("0")){
+                try{
+                    I6.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(5)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I6.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+         if(!C.GetListaImages().get(6).equals("0")){
+                try{
+                    I7.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(6)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I7.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+         if(!C.GetListaImages().get(7).equals("0")){
+                try{
+                    I8.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(7)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I8.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       if(!C.GetListaImages().get(8).equals("0")){
+                try{
+                    I9.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(8)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I9.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!C.GetListaImages().get(9).equals("0")){
+                try{
+                    I10.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(9)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I10.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!C.GetListaImages().get(10).equals("0")){
+                try{
+                    I11.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(10)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I11.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!C.GetListaImages().get(11).equals("0")){
+                try{
+                    I12.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(11)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I12.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!C.GetListaImages().get(12).equals("0")){
+                try{
+                    I13.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(12)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I13.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       if(!C.GetListaImages().get(13).equals("0")){
+                try{
+                    I14.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(13)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I14.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+         if(!C.GetListaImages().get(14).equals("0")){
+                try{
+                    I15.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(14)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I15.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+         if(!C.GetListaImages().get(15).equals("0")){
+                try{
+                    I16.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(15)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I16.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+       
+       
+       
+        if(!C.GetListaImages().get(16).equals("0")){
+            try{
+                I17.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(16)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I17.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!C.GetListaImages().get(17).equals("0")){
+            try{
+                I18.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(17)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I18.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!C.GetListaImages().get(18).equals("0")){
+            try{
+                I19.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(18)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I19.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!C.GetListaImages().get(19).equals("0")){
+            try{
+                I20.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(19)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I20.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!C.GetListaImages().get(20).equals("0")){
+            try{
+                I21.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(20)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I21.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!C.GetListaImages().get(21).equals("0")){
+            try{
+                I22.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(21)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I22.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+         if(!C.GetListaImages().get(22).equals("0")){
+                try{
+                    I23.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(22)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I23.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+          if(!C.GetListaImages().get(23).equals("0")){
+                try{
+                    I24.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(23)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I24.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+        
+        if(!C.GetListaImages().get(24).equals("0")){
+            try{
+                I25.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(24)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I25.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        
+        if(!C.GetListaImages().get(25).equals("0")){
+            try{
+                I26.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(25)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I26.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        if(!C.GetListaImages().get(26).equals("0")){
+            try{
+                I27.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(26)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I27.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        if(!C.GetListaImages().get(27).equals("0")){
+            try{
+                I28.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(27)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I28.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        if(!C.GetListaImages().get(28).equals("0")){
+            try{
+                I29.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(28)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I29.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+        if(!C.GetListaImages().get(29).equals("0")){
+            try{
+                I30.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(29)));
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+                I30.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+        
+         if(!C.GetListaImages().get(30).equals("0")){
+                try{
+                    I31.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(30)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I31.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+       
+         if(!C.GetListaImages().get(31).equals("0")){
+                try{
+                    I32.setIcon(new javax.swing.ImageIcon(C.GetListaImages().get(31)));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                I32.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+      
+       
+       
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -119,7 +1783,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         C14 = new javax.swing.JButton();
         V14 = new javax.swing.JSlider();
         S14 = new javax.swing.JToggleButton();
-        I65 = new javax.swing.JLabel();
+        I22 = new javax.swing.JLabel();
         C22 = new javax.swing.JButton();
         V22 = new javax.swing.JSlider();
         S22 = new javax.swing.JToggleButton();
@@ -610,7 +2274,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                                                 .addComponent(S14)))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(I65, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(I22, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(V22, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(C22, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(layout.createSequentialGroup()
@@ -815,7 +2479,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                         .addGap(7, 7, 7)
                         .addComponent(S14, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(I65, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(I22, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(C22, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(7, 7, 7)
@@ -952,6 +2616,7 @@ public class newPanelMixer extends javax.swing.JPanel {
     private javax.swing.JLabel I2;
     private javax.swing.JLabel I20;
     private javax.swing.JLabel I21;
+    private javax.swing.JLabel I22;
     private javax.swing.JLabel I23;
     private javax.swing.JLabel I24;
     private javax.swing.JLabel I25;
@@ -966,7 +2631,6 @@ public class newPanelMixer extends javax.swing.JPanel {
     private javax.swing.JLabel I4;
     private javax.swing.JLabel I5;
     private javax.swing.JLabel I6;
-    private javax.swing.JLabel I65;
     private javax.swing.JLabel I7;
     private javax.swing.JLabel I8;
     private javax.swing.JLabel I9;
