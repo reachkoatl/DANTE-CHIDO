@@ -36,7 +36,8 @@ public class Panel extends javax.swing.JFrame {
      * Creates new form Panel
      */
    private PanelAjustes ajustes;
-   private PanelMixer mixer;
+   //private PanelMixer mixer;
+   private newPanelMixer mixer;
    private PanelLogs logs;
    private Coordinador C;
    private Settings set;
@@ -58,7 +59,8 @@ public class Panel extends javax.swing.JFrame {
        this.setLocationRelativeTo(null);
        C=new Coordinador(this);
        C.SetPanel(this);
-       mixer= new PanelMixer(this);
+       //mixer= new PanelMixer(this);
+       mixer= new newPanelMixer(this);
        //ajustes = new PanelAjustes(C,this,mixer);
        set=new Settings(C,this,mixer);
        this.setBackground(Color.yellow);
@@ -106,7 +108,7 @@ public class Panel extends javax.swing.JFrame {
       scrollPane1.add(NT);
     }
     
-    public void setpanel(PanelMixer mixer){
+    public void setpanel(newPanelMixer mixer){
        
        scrollPane1.add(mixer);
     }

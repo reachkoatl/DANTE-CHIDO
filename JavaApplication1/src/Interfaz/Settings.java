@@ -34,9 +34,10 @@ public class Settings extends javax.swing.JPanel {
     private String PuertoUDP;
     private XmlRead X;
     private Panel P;
-    private PanelMixer Mixer;
+    //private PanelMixer Mixer;
+    private newPanelMixer Mixer;
     private String Inteface;
-    public Settings(Coordinador cor,Panel P,PanelMixer Mixer) {
+    public Settings(Coordinador cor,Panel P,newPanelMixer Mixer) {
         puertos=new ArrayList<>();
         Images=new ArrayList<>();
         Alias=new ArrayList<>();
