@@ -38,6 +38,9 @@ public class Panel extends javax.swing.JFrame {
    private PanelAjustes ajustes;
    //private PanelMixer mixer;
    private newPanelMixer mixer;
+    private Mixer2 mixer2;
+    private Mixer3 mixer3;
+    private Mixer4 mixer4;
    private PanelLogs logs;
    private Coordinador C;
    private Settings set;
@@ -61,6 +64,10 @@ public class Panel extends javax.swing.JFrame {
        C.SetPanel(this);
        //mixer= new PanelMixer(this);
        mixer= new newPanelMixer(this);
+       mixer2 = new Mixer2();
+       mixer3 = new Mixer3();
+       mixer4 = new Mixer4();
+       
        //ajustes = new PanelAjustes(C,this,mixer);
        set=new Settings(C,this,mixer);
        this.setBackground(Color.yellow);
@@ -87,6 +94,11 @@ public class Panel extends javax.swing.JFrame {
            }
            
        }
+        jTabbedPane1.add("1-16",mixer);
+        jTabbedPane1.add("17-32",mixer2);
+        jTabbedPane1.add("33-48",mixer3);
+        jTabbedPane1.add("49-64",mixer4);
+
     
        jScrollPane2.getVerticalScrollBar().addAdjustmentListener(new AdjustmentListener() {  
         public void adjustmentValueChanged(AdjustmentEvent e) {  
@@ -105,27 +117,10 @@ public class Panel extends javax.swing.JFrame {
     
     
     public void setpanel(Networks NT){
-      scrollPane1.add(NT);
+      jTabbedPane1.add(NT);
     }
     
-    public void setpanel(newPanelMixer mixer){
-       
-       scrollPane1.add(mixer);
-    }
-    
-    public void setpanel(PanelAjustes ajustes){
-       
-        scrollPane1.add(ajustes);
-        
-    }
-    
-    public void setpanel(PanelLogs logs){
-      scrollPane1.add(logs);
-    }
-    
-    public void setpanelAdj(Settings set){
-        scrollPane1.add(set);
-    }
+   
     
     public void setEtiquetaStatus(String estado){
       this.EtiquetaStatus.setText(estado);
@@ -258,7 +253,7 @@ public class Panel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        scrollPane1 = new java.awt.ScrollPane();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
         Bsettings = new javax.swing.JButton();
         Bmixer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -278,11 +273,8 @@ public class Panel extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 51, 102));
         setForeground(new java.awt.Color(0, 51, 102));
         getContentPane().setLayout(null);
-
-        scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
-        scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(40, 100, 1270, 580);
+        getContentPane().add(jTabbedPane1);
+        jTabbedPane1.setBounds(40, 90, 1270, 580);
 
         Bsettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Bsettings.setText("SETTINGS");
@@ -376,14 +368,14 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(vPrincipal);
         vPrincipal.setBounds(1110, 40, 210, 30);
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 1890, 740);
+        jLabel4.setBounds(0, 0, 1350, 740);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void BsettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BsettingsActionPerformed
         // TODO add your handling code here:
-        this.setpanelAdj(set);
+        
       //  this.Bconnect.setEnabled(false);
       //  this.Bstop.setEnabled(false);
  
@@ -391,7 +383,7 @@ public class Panel extends javax.swing.JFrame {
 
     private void BmixerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BmixerActionPerformed
         // TODO add your handling code here:
-        this.setpanel(mixer);
+       
         //this.Bconnect.setEnabled(rootPaneCheckingEnabled);
         //this.Bstop.setEnabled(true);
         
@@ -447,9 +439,9 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JComboBox<String> networks;
-    private java.awt.ScrollPane scrollPane1;
     private javax.swing.JSlider vPrincipal;
     // End of variables declaration//GEN-END:variables
 }
