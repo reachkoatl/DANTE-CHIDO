@@ -358,7 +358,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -673,7 +673,7 @@
                       <Component id="S32" min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="27" max="32767" attributes="0"/>
+              <EmptySpace pref="29" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -698,9 +698,6 @@
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -733,8 +730,6 @@
     <Component class="javax.swing.JToggleButton" name="S1">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S1ActionPerformed"/>
@@ -767,12 +762,7 @@
     <Component class="javax.swing.JToggleButton" name="S17">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S17ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I25">
       <Properties>
@@ -801,18 +791,11 @@
     <Component class="javax.swing.JToggleButton" name="S25">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S25ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S9">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S9ActionPerformed"/>
@@ -845,12 +828,7 @@
     <Component class="javax.swing.JToggleButton" name="S3">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S3ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I11">
       <Properties>
@@ -879,12 +857,7 @@
     <Component class="javax.swing.JToggleButton" name="S11">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S11ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I19">
       <Properties>
@@ -913,12 +886,7 @@
     <Component class="javax.swing.JToggleButton" name="S19">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S19ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I27">
       <Properties>
@@ -947,22 +915,12 @@
     <Component class="javax.swing.JToggleButton" name="S27">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S27ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S2">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V2">
       <Properties>
@@ -979,9 +937,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I2">
       <Properties>
@@ -991,12 +946,7 @@
     <Component class="javax.swing.JToggleButton" name="S10">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S10ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V10">
       <Properties>
@@ -1013,9 +963,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C10ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I10">
       <Properties>
@@ -1025,12 +972,7 @@
     <Component class="javax.swing.JToggleButton" name="S18">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S18ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V18">
       <Properties>
@@ -1047,9 +989,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C18ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I18">
       <Properties>
@@ -1059,12 +998,7 @@
     <Component class="javax.swing.JToggleButton" name="S26">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S26ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V26">
       <Properties>
@@ -1081,9 +1015,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C26ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I26">
       <Properties>
@@ -1105,9 +1036,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C4ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V4">
       <Properties>
@@ -1117,12 +1045,7 @@
     <Component class="javax.swing.JToggleButton" name="S4">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S4ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I12">
       <Properties>
@@ -1139,9 +1062,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C12ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V12">
       <Properties>
@@ -1151,12 +1071,7 @@
     <Component class="javax.swing.JToggleButton" name="S12">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S12ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I20">
       <Properties>
@@ -1173,9 +1088,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C20ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V20">
       <Properties>
@@ -1185,12 +1097,7 @@
     <Component class="javax.swing.JToggleButton" name="S20">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S20ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I28">
       <Properties>
@@ -1207,9 +1114,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C28ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V28">
       <Properties>
@@ -1219,12 +1123,7 @@
     <Component class="javax.swing.JToggleButton" name="S28">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S28ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I5">
       <Properties>
@@ -1241,9 +1140,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C5ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V5">
       <Properties>
@@ -1253,12 +1149,7 @@
     <Component class="javax.swing.JToggleButton" name="S5">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S5ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I7">
       <Properties>
@@ -1275,9 +1166,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C7ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V7">
       <Properties>
@@ -1287,12 +1175,7 @@
     <Component class="javax.swing.JToggleButton" name="S7">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S7ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I13">
       <Properties>
@@ -1309,9 +1192,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C13ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V13">
       <Properties>
@@ -1321,12 +1201,7 @@
     <Component class="javax.swing.JToggleButton" name="S13">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S13ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I21">
       <Properties>
@@ -1343,9 +1218,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C21ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V21">
       <Properties>
@@ -1355,12 +1227,7 @@
     <Component class="javax.swing.JToggleButton" name="S21">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S21ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I29">
       <Properties>
@@ -1377,9 +1244,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C6ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V6">
       <Properties>
@@ -1389,12 +1253,7 @@
     <Component class="javax.swing.JToggleButton" name="S6">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S6ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I6">
       <Properties>
@@ -1411,9 +1270,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C29ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V29">
       <Properties>
@@ -1423,12 +1279,7 @@
     <Component class="javax.swing.JToggleButton" name="S29">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S29ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I14">
       <Properties>
@@ -1445,9 +1296,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C14ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V14">
       <Properties>
@@ -1457,12 +1305,7 @@
     <Component class="javax.swing.JToggleButton" name="S14">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S14ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I22">
       <Properties>
@@ -1479,9 +1322,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C22ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V22">
       <Properties>
@@ -1491,12 +1331,7 @@
     <Component class="javax.swing.JToggleButton" name="S22">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S22ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I30">
       <Properties>
@@ -1513,9 +1348,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C30ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V30">
       <Properties>
@@ -1525,12 +1357,7 @@
     <Component class="javax.swing.JToggleButton" name="S30">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S30ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I8">
       <Properties>
@@ -1547,9 +1374,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C8ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V8">
       <Properties>
@@ -1559,12 +1383,7 @@
     <Component class="javax.swing.JToggleButton" name="S8">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S8ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I15">
       <Properties>
@@ -1581,9 +1400,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C15ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V15">
       <Properties>
@@ -1593,12 +1409,7 @@
     <Component class="javax.swing.JToggleButton" name="S15">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S15ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I16">
       <Properties>
@@ -1615,9 +1426,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C16ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V16">
       <Properties>
@@ -1627,12 +1435,7 @@
     <Component class="javax.swing.JToggleButton" name="S16">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S16ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I23">
       <Properties>
@@ -1649,9 +1452,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C23ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V23">
       <Properties>
@@ -1661,12 +1461,7 @@
     <Component class="javax.swing.JToggleButton" name="S23">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S23ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I24">
       <Properties>
@@ -1683,9 +1478,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C24ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V24">
       <Properties>
@@ -1695,12 +1487,7 @@
     <Component class="javax.swing.JToggleButton" name="S24">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S24ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I31">
       <Properties>
@@ -1717,9 +1504,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C31ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V31">
       <Properties>
@@ -1729,12 +1513,7 @@
     <Component class="javax.swing.JToggleButton" name="S31">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S31ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I32">
       <Properties>
@@ -1751,9 +1530,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C32ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V32">
       <Properties>
@@ -1763,12 +1539,7 @@
     <Component class="javax.swing.JToggleButton" name="S32">
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S32ActionPerformed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>
