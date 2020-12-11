@@ -8,7 +8,7 @@
 </SERVIDOR>
 <ASIO>
 <CANAL id="canal 1">5001</CANAL>
-<CANAL id="canal 9">5001</CANAL>
+<CANAL id="rodi">5001</CANAL>
 <CANAL id="canal 5">5001</CANAL>
 <CANAL id="canal 13">5001</CANAL>
 <CANAL id="canal 17">5001</CANAL>

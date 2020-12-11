@@ -95,7 +95,7 @@ public class Panel extends javax.swing.JFrame {
     });   
       vol = new volumen(vPrincipal); 
       
-      jLabel4.setIcon(new javax.swing.ImageIcon("Fondo1366.png"));
+      jLabel4.setIcon(new javax.swing.ImageIcon("fondobueno.png"));
          
       EtiquetaConect.setVisible(false);
       EtiquetaStatus.setVisible(false);
@@ -269,8 +269,8 @@ public class Panel extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         MSG = new javax.swing.JTextField();
         alarma = new javax.swing.JLabel();
-        networks = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
+        networks = new javax.swing.JComboBox<>();
         vPrincipal = new javax.swing.JSlider();
         jLabel4 = new javax.swing.JLabel();
 
@@ -282,7 +282,7 @@ public class Panel extends javax.swing.JFrame {
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(40, 100, 1270, 580);
+        scrollPane1.setBounds(60, 90, 1250, 570);
 
         Bsettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Bsettings.setText("SETTINGS");
@@ -349,10 +349,15 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(MSG);
         MSG.setBounds(580, 60, 290, 33);
 
-        alarma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gray.png"))); // NOI18N
-        alarma.setText("jLabel2");
+        alarma.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        alarma.setEnabled(false);
         getContentPane().add(alarma);
         alarma.setBounds(310, 20, 52, 54);
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(1030, 690, 127, 20);
 
         networks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -362,19 +367,13 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(networks);
         networks.setBounds(880, 690, 130, 20);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("SELECT NETWORK");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(1030, 690, 127, 20);
-
         vPrincipal.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 vPrincipalStateChanged(evt);
             }
         });
         getContentPane().add(vPrincipal);
-        vPrincipal.setBounds(1110, 40, 210, 30);
+        vPrincipal.setBounds(1110, 50, 210, 30);
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1890, 740);
 
