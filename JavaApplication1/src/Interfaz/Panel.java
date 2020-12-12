@@ -366,7 +366,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(vPrincipal);
-        vPrincipal.setBounds(1110, 40, 210, 30);
+        vPrincipal.setBounds(1110, 60, 210, 30);
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1350, 740);
 

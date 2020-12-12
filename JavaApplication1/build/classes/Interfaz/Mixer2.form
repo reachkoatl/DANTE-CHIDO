@@ -428,6 +428,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I3">
       <Properties>
@@ -462,6 +465,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S3ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I4">
       <Properties>
@@ -496,6 +502,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S4ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I5">
       <Properties>
@@ -530,6 +539,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S5ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I6">
       <Properties>
@@ -564,6 +576,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S6ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I7">
       <Properties>
@@ -598,6 +613,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S7ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I8">
       <Properties>
@@ -632,6 +650,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I9">
       <Properties>
@@ -666,6 +687,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S9ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I10">
       <Properties>
@@ -700,6 +724,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S10ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I11">
       <Properties>
@@ -734,6 +761,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S11ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I12">
       <Properties>
@@ -768,6 +798,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S12ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I13">
       <Properties>
@@ -802,6 +835,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S13ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I14">
       <Properties>
@@ -836,6 +872,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S14ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V15">
       <Properties>
@@ -870,6 +909,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S15ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V16">
       <Properties>
@@ -904,6 +946,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S16ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
