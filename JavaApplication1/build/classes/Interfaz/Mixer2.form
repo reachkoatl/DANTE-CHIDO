@@ -377,6 +377,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V1">
       <Properties>
@@ -388,6 +391,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I2">
       <Properties>
@@ -408,6 +414,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V2">
       <Properties>
@@ -439,6 +448,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C3ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V3">
       <Properties>
@@ -470,6 +482,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C4ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V4">
       <Properties>
@@ -501,6 +516,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C5ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V5">
       <Properties>
@@ -532,6 +550,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C6ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V6">
       <Properties>
@@ -563,6 +584,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C7ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V7">
       <Properties>
@@ -594,6 +618,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V8">
       <Properties>
@@ -625,6 +652,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C9ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V9">
       <Properties>
@@ -656,6 +686,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C10ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V10">
       <Properties>
@@ -687,6 +720,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C11ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V11">
       <Properties>
@@ -718,6 +754,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C12ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V12">
       <Properties>
@@ -749,6 +788,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C13ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V13">
       <Properties>
@@ -780,6 +822,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C14ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V14">
       <Properties>
@@ -817,6 +862,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C15ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S15">
       <Properties>
@@ -848,6 +896,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="CANAL 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C16ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S16">
       <Properties>

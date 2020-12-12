@@ -64,7 +64,7 @@ public class Panel extends javax.swing.JFrame {
        C.SetPanel(this);
        //mixer= new PanelMixer(this);
        mixer= new newPanelMixer(this);
-       mixer2 = new Mixer2();
+       mixer2 = new Mixer2(this);
        mixer3 = new Mixer3();
        mixer4 = new Mixer4();
        
@@ -107,7 +107,7 @@ public class Panel extends javax.swing.JFrame {
     });   
       vol = new volumen(vPrincipal); 
       
-      jLabel4.setIcon(new javax.swing.ImageIcon("Fondo1366.png"));
+      jLabel4.setIcon(new javax.swing.ImageIcon("fondobueno.png"));
          
       EtiquetaConect.setVisible(false);
       EtiquetaStatus.setVisible(false);
@@ -274,7 +274,7 @@ public class Panel extends javax.swing.JFrame {
         setForeground(new java.awt.Color(0, 51, 102));
         getContentPane().setLayout(null);
         getContentPane().add(jTabbedPane1);
-        jTabbedPane1.setBounds(40, 90, 1270, 580);
+        jTabbedPane1.setBounds(60, 90, 1240, 580);
 
         Bsettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Bsettings.setText("SETTINGS");

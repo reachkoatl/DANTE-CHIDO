@@ -1016,116 +1016,7 @@ public class newPanelMixer extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     
-                  
-
-    private void C2ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-        //leer configuracion
-          // AlternarAudio(alternar1, audio1, 2, Conf, C2,V2);
-    var[3]=true;
-    if(!var[4])
-    {
-       alternar1++;   
-    if(alternar1==1){
-         Conf=X.Read("config.xml");        
-         
-         try{
-             audio1=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(1),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),8,V2,C2,socket);
-             audio1.start();
-              C2.setBackground(Color.GREEN);
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C2.setBackground(Color.RED);
-               S2.setEnabled(false);
-               S2.setSelected(false);
-               var[3]=false;
-         }
-                   
-      
-    }   
-
-    if(alternar1==2){
-         audio1.detener();
-         audio1.stop();
-         alternar1=0;
-         C2.setBackground(Color.BLUE);
-        var[3]=false;
-         
-    }    
-    }   
-        /*
-       alternar1++;
-        
-        if(alternar1==1){
-         canales.set(1,"ON");
-         ganancias.set(1,V2.getValue());
-         C2.setBackground(Color.BLUE.darker());
-        }
-        else if(alternar1==2){
-            alternar1=0;
-              canales.set(1,"OFF");
-         ganancias.set(1,V2.getValue());
-           C2.setBackground(Color.GRAY.darker());
-        
-        }*/
-    
-    
-    }                                  
-
-                              
-
-    private void C4ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-      //     AlternarAudio(alternar3, audio3, 4, Conf, C4,V4);
-      var[7]=true;
-      if(!var[8])
-      {
-    alternar3++;   
-    if(alternar3==1){
-         Conf=X.Read("config.xml");                
-         try{
-             audio3=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(3),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),12,V4,C4,socket);
-             audio3.start();
-              C4.setBackground(Color.GREEN);
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C4.setBackground(Color.RED);
-               var[7]=false;
-         }     
-    }   
-    if(alternar3==2){
-         audio3.detener();
-         audio3.stop();
-         alternar3=0;
-         C4.setBackground(Color.BLUE);
-         var[7]=false;
-         
-    }
-      }
-      
-      
-        /*
-        alternar3++;
-        
-        if(alternar3==1){
-         canales.set(3,"ON");
-         ganancias.set(3,V4.getValue());
-         C4.setBackground(Color.BLUE.darker());
-        }
-        else if(alternar3==2){
-            alternar3=0;
-              canales.set(3,"OFF");
-         ganancias.set(3,V4.getValue());
-           C4.setBackground(Color.GRAY.darker());
-        
-        }*/
-        
-    }                                  
-
+  
                              
 
     private void V9StateChanged(javax.swing.event.ChangeEvent evt) {                                
@@ -1192,304 +1083,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         ganancias.set(27,V28.getValue());
     }                                
 
-                                          
-
-    private void C10ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-        var[19]=true;
-        if(!var[20])
-        {
-          //   AlternarAudio(alternar9, audio9,10,Conf,C10,V10);
-       alternar9++;   
-    if(alternar9==1){
-         Conf=X.Read("config.xml");                
-         try{
-             audio9=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(9),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),9,V10,C10,socket);
-             audio9.start();
-              C10.setBackground(Color.GREEN);
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C10.setBackground(Color.RED);
-              var[19]=false;
-         }     
-    }   
-    if(alternar9==2){
-         audio9.detener();
-         audio9.stop();
-         alternar9=0;
-         C10.setBackground(Color.BLUE);
-         var[19]=false;
-        
-    }
-        }
-        /*
-                  alternar9++;
-               if(alternar9==1){
-              canales.set(9,"ON");
-            ganancias.set(9,V10.getValue());
-                         C10.setBackground(Color.BLUE.darker());
-            System.out.println(V10.getValue());
-        }
-          else if(alternar9==2){
-                  alternar9=0;
-              canales.set(9,"OFF");
-            ganancias.set(9,V10.getValue());
-                         C10.setBackground(Color.GRAY.darker());
-        
-        }*/
-    }                                   
-
-              
-
-    private void C12ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-         //  AlternarAudio(alternar11, audio11,12,Conf,C12,V12);
-         var[23]=true;
-         if(!var[24])
-         {
-                alternar11++;   
-    if(alternar11==1){
-         Conf=X.Read("config.xml");                
-         try{
-             audio11=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(11),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),13,V12,C12,socket);
-             audio11.start();
-              C12.setBackground(Color.GREEN);
-             
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C12.setBackground(Color.RED);
-                var[23]=false;
-               
-         }     
-    }   
-    if(alternar11==2){
-         audio11.detener();
-         audio11.stop();
-         alternar11=0;
-         C12.setBackground(Color.BLUE);
-         var[23]=false;
-         
-    }
-         }
-           /*
-                  alternar11++;
-               if(alternar11==1){
-              canales.set(11,"ON");
-            ganancias.set(11,V12.getValue());
-                         C12.setBackground(Color.BLUE.darker());
-            System.out.println(V12.getValue());
-        }
-          else if(alternar11==2){
-                  alternar11=0;
-              canales.set(11,"OFF");
-            ganancias.set(11,V12.getValue());
-                         C12.setBackground(Color.GRAY.darker());
-        
-        }*/
-    }                                   
-
-    
-                                
-
-    private void C18ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-      //  AlternarAudio(alternar17,audio17,18,Conf,C18,V18); 
-        var[35]=true;
-        if(!var[36])
-        {
-         alternar17++;   
-    if(alternar17==1){
-         Conf=X.Read("config.xml");                
-         try{
-             audio17=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(17),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),10,V18,C18,socket);
-             audio17.start();
-              C18.setBackground(Color.GREEN);
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C18.setBackground(Color.RED);
-               var[35]=false;
-         }     
-    }   
-    if(alternar17==2){
-         audio17.detener();
-         audio17.stop();
-         alternar17=0;
-         C18.setBackground(Color.BLUE);
-         var[35]=false;
-    }
-    }
-      
-      
-        /*
-                  alternar17++;
-               if(alternar17==1){
-              canales.set(17,"ON");
-            ganancias.set(17,V18.getValue());
-                         C18.setBackground(Color.BLUE.darker());
-            System.out.println(V18.getValue());
-        }
-          else if(alternar17==2){
-                  alternar17=0;
-              canales.set(17,"OFF");
-            ganancias.set(17,V18.getValue());
-                         C18.setBackground(Color.GRAY.darker());
-        
-        }*/
-    }                                   
-
-                  
-
-    private void C20ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-          // AlternarAudio(alternar19,audio19,20,Conf,C20,V20); 
-          var[39]=true;
-          if(!var[40])
-          {
-       alternar19++;   
-    if(alternar19==1){
-         Conf=X.Read("config.xml");                
-         try{
-             audio19=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(19),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),14,V20,C20,socket);
-             audio19.start();
-              C20.setBackground(Color.GREEN);
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C20.setBackground(Color.RED);
-               var[39]=false;
-               
-         }     
-    }   
-    if(alternar19==2){
-         audio19.detener();
-         audio19.stop();
-         alternar19=0;
-         C20.setBackground(Color.BLUE);
-         var[39]=false;
-    } 
-    }
-          
-               /*          
-                  alternar19++;
-               if(alternar19==1){
-              canales.set(19,"ON");
-            ganancias.set(19,V20.getValue());
-                         C20.setBackground(Color.BLUE.darker());
-            System.out.println(V20.getValue());
-        }
-          else if(alternar19==2){
-                  alternar19=0;
-              canales.set(19,"OFF");
-            ganancias.set(19,V20.getValue());
-                         C20.setBackground(Color.GRAY.darker());
-        
-        }*/
-    }                                   
-
-        
-
-    private void C26ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-      //  AlternarAudio(alternar25,audio25,26,Conf,C26,V26);
-      var[51]=true;
-      if(!var[52])
-      {
-       alternar25++;   
-    if(alternar25==1){
-         Conf=X.Read("config.xml");                
-         try{
-             audio25=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(25),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),11,V26,C26,socket);
-             audio25.start();
-              C26.setBackground(Color.GREEN);
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C26.setBackground(Color.RED);
-               var[51]=false;
-         }     
-    }   
-    if(alternar25==2){
-         audio25.detener();
-         audio25.stop();
-         alternar25=0;
-         C26.setBackground(Color.BLUE);
-         var[51]=false;
-    }
-    }
-      
-        /*
-                  alternar25++;
-               if(alternar25==1){
-              canales.set(25,"ON");
-            ganancias.set(25,V26.getValue());
-                         C26.setBackground(Color.BLUE.darker());
-            System.out.println(V26.getValue());
-        }
-          else if(alternar25==2){
-                  alternar25=0;
-              canales.set(25,"OFF");
-            ganancias.set(25,V26.getValue());
-                         C26.setBackground(Color.GRAY.darker());
-        
-        }*/
-    }                                   
-                            
-
-    private void C28ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-       //  AlternarAudio(alternar27,audio27,28,Conf,C28,V28);
-       var[55]=true;
-       if(!var[56])
-       {
-             alternar27++;   
-    if(alternar27==1){
-         Conf=X.Read("config.xml");                
-         try{
-             audio27=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(27),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),15,V28,C28,socket);
-             audio27.start();
-              C28.setBackground(Color.GREEN);
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C28.setBackground(Color.RED);
-               var[55]=false;
-         }     
-    }   
-    if(alternar27==2){
-         audio27.detener();
-         audio27.stop();
-         alternar27=0;
-         C28.setBackground(Color.BLUE);
-         var[55]=false;
-    }
-    }
-       
-        /*
-                  alternar27++;
-               if(alternar27==1){
-              canales.set(27,"ON");
-            ganancias.set(27,V28.getValue());
-                         C28.setBackground(Color.BLUE.darker());
-            System.out.println(V28.getValue());
-        }
-          else if(alternar27==2){
-                  alternar27=0;
-              canales.set(27,"OFF");
-            ganancias.set(27,V28.getValue());
-                         C28.setBackground(Color.GRAY.darker());
-        
-        }*/
-    }                                   
-
-                            
+           
 
     private void V1StateChanged(javax.swing.event.ChangeEvent evt) {                                
         // TODO add your handling code here:
@@ -1588,8 +1182,10 @@ public class newPanelMixer extends javax.swing.JPanel {
                 if(component.equals(r))
                     r.setSelected(true);
                 
-                else
+                else{
                     ((JToggleButton)component).setSelected(false);
+                    ((JToggleButton)component).setBackground(Color.white);
+                }
             }
           }
         for (int x=0;x<65;x++)
@@ -1633,456 +1229,8 @@ public class newPanelMixer extends javax.swing.JPanel {
     
     void test(){
     }
-    
-    
-    
-                        
+ 
 
-                                   
-
-    private void S17ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-
-        // TODO add your handling code here:
-        var[34]=true;
-        if(S17.isSelected()&&!var[33]){
-            DisableVolumeExcept(V17,S17,34,16);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[16]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(16),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),2,V17,C17,socket);
-             audio[16].start();
-            
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[34]=false;
-         }
-        }
-        if(S17.isSelected()&&var[33])
-        {
-            DisableVolumeExcept(V17,S17,34,16);
-        }
-        if(!S17.isSelected()){
-            EnableVolume();
-            var[34]=false;
-            audio[16].detener();
-            audio[16].stop();
-        }
-    }                                   
-
-    private void S25ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-         var[50]=true;
-        if(S25.isSelected()&&!var[49]){
-            DisableVolumeExcept(V25,S25,50,24);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[24]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(24),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),3,V25,C25,socket);
-             audio[24].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[50]=false;
-         }     
-        }
-        if(S25.isSelected()&&var[49])
-        {
-            DisableVolumeExcept(V25,S25,50,24);
-        }
-        if(!S25.isSelected()){
-            EnableVolume();
-            var[50]=false;
-            audio[24].detener();
-            audio[24].stop();
-        }
-    }                                   
-
-    private void S3ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-        var[6]=true;
-        
-        if(S3.isSelected()&&!var[5]){
-            DisableVolumeExcept(V3,S3,6,2);
-            System.out.println("activado");
-             Conf=X.Read("config.xml");        
-         
-         try{
-             audio[2]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(2),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),4,V3,C3,socket);
-             audio[2].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[6]=false;
-         }
-        }
-        if(S3.isSelected()&&var[5]){
-            DisableVolumeExcept(V3,S3,6,2);
-            
-        }
-        if(!S3.isSelected()){
-            EnableVolume();
-            var[6]=false;
-            audio[2].detener();
-            audio[2].stop();
-        }
-    }                                  
-
-    private void S11ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-        var[22]=true;
-        if(S11.isSelected()&&!var[21]){
-            DisableVolumeExcept(V11,S11,22,10);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[10]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(10),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),5,V11,C11,socket);
-             audio[10].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[22]=false;
-         }     
-        }
-        if(S11.isSelected()&&var[21])
-        {
-            DisableVolumeExcept(V11,S11,22,10);
-        }
-        if(!S11.isSelected()){
-            EnableVolume();
-            var[22]=false;
-            audio[10].detener();
-            audio[10].stop();
-        }
-    }                                   
-
-    private void S19ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-         var[38]=true;
-        if(S19.isSelected()&&!var[37]){
-            DisableVolumeExcept(V19,S19,38,18);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[18]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(18),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),6,V19,C19,socket);
-             audio[18].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[38]=false;
-         }     
-        }
-        if(S19.isSelected()&&var[37])
-        {
-            DisableVolumeExcept(V19,S19,38,18);
-        }
-        if(!S19.isSelected()){
-            EnableVolume();
-            var[38]=false;
-            audio[18].detener();
-            audio[18].stop();
-        }
-    }                                   
-
-    private void S27ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-        var[54]=true;
-        if(S27.isSelected()&&!var[53]){
-            DisableVolumeExcept(V27,S27,54,26);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[26]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(26),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),7,V27,C27,socket);
-             audio[26].start();
-              
-             
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-            var[54]=false;
-         }     
-        }
-        if(S27.isSelected()&&var[53])
-        {
-            DisableVolumeExcept(V27,S27,54,26);
-        }
-        if(!S27.isSelected()){
-            EnableVolume();
-            var[54]=false;
-            audio[26].detener();
-            audio[26].stop();
-        }
-    }                                   
-
-    private void S2ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-        var[4]=true;
-        if(S2.isSelected()&&!var[3]){
-            DisableVolumeExcept(V2,S2,4,1);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");        
-         
-         try{
-             audio[1]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(1),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),8,V2,C2,socket);
-             audio[1].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[4]=false;
-         }
-        }
-        if(S2.isSelected()&&var[3]){
-            DisableVolumeExcept(V2,S2,4,1);
-        }
-        if(!S2.isSelected()){
-            EnableVolume();
-            var[4]=false;
-            audio[1].detener();
-            audio[1].stop();
-        }
-    }                                  
-
-    private void S10ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-        var[20]=true;
-        if(S10.isSelected()&&!var[19]){
-            DisableVolumeExcept(V10,S10,20,9);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[9]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(9),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),9,V10,C10,socket);
-             audio[9].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-              var[20]=false;
-         }     
-        }
-        if(S10.isSelected()&&var[19])
-        {
-            DisableVolumeExcept(V10,S10,20,9);
-        }
-        if(!S10.isSelected()){
-            EnableVolume();
-            var[20]=false;
-            audio[9].detener();
-            audio[9].stop();
-            
-        }
-    }                                   
-
-    private void S18ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-         var[36]=true;
-        if(S18.isSelected()&&!var[35]){
-            DisableVolumeExcept(V18,S18,36,17);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[17]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(17),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),10,V18,C18,socket);
-             audio[17].start();
-             
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-              
-               var[36]=false;
-         }     
-        }
-        if(S18.isSelected()&&var[35])
-        {
-            DisableVolumeExcept(V18,S18,36,17);
-        }
-        if(!S18.isSelected()){
-            EnableVolume();
-            var[36]=false;
-            audio[17].detener();
-            audio[17].stop();
-        }
-    }                                   
-
-    private void S26ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-         var[52]=true;
-        if(S26.isSelected()&&!var[51]){
-            DisableVolumeExcept(V26,S26,52,25);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[25]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(25),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),11,V26,C26,socket);
-             audio[25].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[52]=false;
-         }     
-        }
-        if(S26.isSelected()&&var[51])
-        {
-            DisableVolumeExcept(V26,S26,52,25);
-        }
-        if(!S26.isSelected()){
-            EnableVolume();
-            var[52]=false;
-            audio[25].detener();
-            audio[25].stop();
-        }
-    }                                   
-
-    private void S4ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-        var[8]=true;
-        if(S4.isSelected()&&!var[7]){
-            DisableVolumeExcept(V4,S4,8,3);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[3]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(3),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),12,V4,C4,socket);
-             audio[3].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[8]=false;
-         }     
-        }
-        if(S4.isSelected()&&var[7]){
-            DisableVolumeExcept(V4,S4,8,3);
-        }
-        if(!S4.isSelected()){
-            EnableVolume();
-            var[8]=false;
-            audio[3].detener();
-            audio[3].stop();
-        }
-    }                                  
-
-    private void S12ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-        var[24]=true;
-        if(S12.isSelected()&&!var[23]){
-            DisableVolumeExcept(V12,S12,24,11);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[11]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(11),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),13,V12,C12,socket);
-             audio[11].start();
-              
-             
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-                var[24]=false;
-               
-         }     
-        }
-        if(S12.isSelected()&&var[23])
-        {
-            DisableVolumeExcept(V12,S12,24,11);
-        }
-        if(!S12.isSelected()){
-            EnableVolume();
-            var[24]=false;
-            audio[11].detener();
-            audio[11].stop();
-        }
-    }                                   
-
-    private void S20ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-         var[40]=true;
-        if(S20.isSelected()&&!var[39]){
-            DisableVolumeExcept(V20,S20,40,19);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[19]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(19),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),14,V20,C20,socket);
-             audio[19].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-              
-               var[40]=false;
-               
-         }     
-        }
-        if(S20.isSelected()&&var[39])
-        {
-            DisableVolumeExcept(V20,S20,40,19);
-        }
-        if(!S20.isSelected()){
-            EnableVolume();
-            var[40]=false;
-            audio[19].detener();
-            audio[19].stop();
-        }
-    }                                   
-
-    private void S28ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-        var[56]=true;
-        if(S28.isSelected()&&!var[55]){
-            DisableVolumeExcept(V28,S28,56,27);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[27]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(27),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),15,V28,C28,socket);
-             audio[27].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[56]=false;
-         }     
-        }
-        if(S28.isSelected()&&var[55])
-        {
-            DisableVolumeExcept(V28,S28,56,27);
-        }
-        if(!S28.isSelected()){
-            EnableVolume();
-            var[56]=false;
-            audio[27].detener();
-            audio[27].stop();
-        }
-    }                                   
-
-    
-    
-    
-    
     private  void AlternarAudio(int alternar,ThreadAudio audio,int numerocanal,Configuracion C,JButton J,JSlider V){
           
           alternar++;   
@@ -2201,6 +1349,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V9.setMaximum(10);
 
         S1.setText("SOLO");
+        S1.setContentAreaFilled(false);
+        S1.setOpaque(true);
         S1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 S1ActionPerformed(evt);
@@ -2222,6 +1372,13 @@ public class newPanelMixer extends javax.swing.JPanel {
         V17.setMaximum(10);
 
         S17.setText("SOLO");
+        S17.setContentAreaFilled(false);
+        S17.setOpaque(true);
+        S17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S17ActionPerformed(evt);
+            }
+        });
 
         I25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -2238,8 +1395,17 @@ public class newPanelMixer extends javax.swing.JPanel {
         V25.setMaximum(10);
 
         S25.setText("SOLO");
+        S25.setContentAreaFilled(false);
+        S25.setOpaque(true);
+        S25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S25ActionPerformed(evt);
+            }
+        });
 
         S9.setText("SOLO");
+        S9.setContentAreaFilled(false);
+        S9.setOpaque(true);
         S9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 S9ActionPerformed(evt);
@@ -2261,6 +1427,13 @@ public class newPanelMixer extends javax.swing.JPanel {
         V3.setMaximum(10);
 
         S3.setText("SOLO");
+        S3.setContentAreaFilled(false);
+        S3.setOpaque(true);
+        S3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S3ActionPerformed(evt);
+            }
+        });
 
         I11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -2277,6 +1450,13 @@ public class newPanelMixer extends javax.swing.JPanel {
         V11.setMaximum(10);
 
         S11.setText("SOLO");
+        S11.setContentAreaFilled(false);
+        S11.setOpaque(true);
+        S11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S11ActionPerformed(evt);
+            }
+        });
 
         I19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -2293,6 +1473,13 @@ public class newPanelMixer extends javax.swing.JPanel {
         V19.setMaximum(10);
 
         S19.setText("SOLO");
+        S19.setContentAreaFilled(false);
+        S19.setOpaque(true);
+        S19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S19ActionPerformed(evt);
+            }
+        });
 
         I27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -2309,8 +1496,22 @@ public class newPanelMixer extends javax.swing.JPanel {
         V27.setMaximum(10);
 
         S27.setText("SOLO");
+        S27.setContentAreaFilled(false);
+        S27.setOpaque(true);
+        S27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S27ActionPerformed(evt);
+            }
+        });
 
         S2.setText("SOLO");
+        S2.setContentAreaFilled(false);
+        S2.setOpaque(true);
+        S2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S2ActionPerformed(evt);
+            }
+        });
 
         V2.setMaximum(10);
 
@@ -2318,10 +1519,22 @@ public class newPanelMixer extends javax.swing.JPanel {
         C2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         C2.setForeground(new java.awt.Color(255, 255, 255));
         C2.setText("jButton1");
+        C2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C2ActionPerformed(evt);
+            }
+        });
 
         I2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S10.setText("SOLO");
+        S10.setContentAreaFilled(false);
+        S10.setOpaque(true);
+        S10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S10ActionPerformed(evt);
+            }
+        });
 
         V10.setMaximum(10);
 
@@ -2329,10 +1542,22 @@ public class newPanelMixer extends javax.swing.JPanel {
         C10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         C10.setForeground(new java.awt.Color(255, 255, 255));
         C10.setText("jButton1");
+        C10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C10ActionPerformed(evt);
+            }
+        });
 
         I10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S18.setText("SOLO");
+        S18.setContentAreaFilled(false);
+        S18.setOpaque(true);
+        S18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S18ActionPerformed(evt);
+            }
+        });
 
         V18.setMaximum(10);
 
@@ -2340,10 +1565,22 @@ public class newPanelMixer extends javax.swing.JPanel {
         C18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         C18.setForeground(new java.awt.Color(255, 255, 255));
         C18.setText("jButton1");
+        C18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C18ActionPerformed(evt);
+            }
+        });
 
         I18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S26.setText("SOLO");
+        S26.setContentAreaFilled(false);
+        S26.setOpaque(true);
+        S26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S26ActionPerformed(evt);
+            }
+        });
 
         V26.setMaximum(10);
 
@@ -2351,6 +1588,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         C26.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         C26.setForeground(new java.awt.Color(255, 255, 255));
         C26.setText("jButton1");
+        C26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C26ActionPerformed(evt);
+            }
+        });
 
         I26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -2360,10 +1602,22 @@ public class newPanelMixer extends javax.swing.JPanel {
         C4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         C4.setForeground(new java.awt.Color(255, 255, 255));
         C4.setText("jButton1");
+        C4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C4ActionPerformed(evt);
+            }
+        });
 
         V4.setMaximum(10);
 
         S4.setText("SOLO");
+        S4.setContentAreaFilled(false);
+        S4.setOpaque(true);
+        S4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S4ActionPerformed(evt);
+            }
+        });
 
         I12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -2371,10 +1625,22 @@ public class newPanelMixer extends javax.swing.JPanel {
         C12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         C12.setForeground(new java.awt.Color(255, 255, 255));
         C12.setText("jButton1");
+        C12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C12ActionPerformed(evt);
+            }
+        });
 
         V12.setMaximum(10);
 
         S12.setText("SOLO");
+        S12.setContentAreaFilled(false);
+        S12.setOpaque(true);
+        S12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S12ActionPerformed(evt);
+            }
+        });
 
         I20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -2382,10 +1648,22 @@ public class newPanelMixer extends javax.swing.JPanel {
         C20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         C20.setForeground(new java.awt.Color(255, 255, 255));
         C20.setText("jButton1");
+        C20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C20ActionPerformed(evt);
+            }
+        });
 
         V20.setMaximum(10);
 
         S20.setText("SOLO");
+        S20.setContentAreaFilled(false);
+        S20.setOpaque(true);
+        S20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S20ActionPerformed(evt);
+            }
+        });
 
         I28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -2393,10 +1671,22 @@ public class newPanelMixer extends javax.swing.JPanel {
         C28.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         C28.setForeground(new java.awt.Color(255, 255, 255));
         C28.setText("jButton1");
+        C28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C28ActionPerformed(evt);
+            }
+        });
 
         V28.setMaximum(10);
 
         S28.setText("SOLO");
+        S28.setContentAreaFilled(false);
+        S28.setOpaque(true);
+        S28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S28ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -2715,39 +2005,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
     private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
         // TODO add your handling code here:
-        var[1]=true;
-      if(!var[2])
-      {// TODO add your handling code here:     
-    alternar0++;   
-    if(alternar0==1){
-                     
-         try{
-            Conf=X.Read("config.xml"); 
-            audio0=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),0,V1,C1,socket);
-            audio0.start();
-            C1.setBackground(Color.GREEN);
-            
-         }
-         catch(Exception e){
-            System.out.println("Error de hilo ");
-            C1.setBackground(Color.RED);
-            S1.setEnabled(false);
-            var[1]=false;
-         }
-         
-                     
-    }   
-
-    if(alternar0==2){
-         audio0.detener();
-         audio0.stop();
-         alternar0=0;
-         C1.setBackground(Color.BLUE);
-         var[1]=false;
-         
-         
-    }
-      }
+       
     }//GEN-LAST:event_C1ActionPerformed
 
     private void C9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C9ActionPerformed
@@ -2950,6 +2208,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             System.out.println("activado");
             Conf=X.Read("config.xml");                
          try{
+             S1.setBackground(Color.red);
              audio[0]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),0,V1,C1,socket);
              audio[0].start();
               
@@ -2958,10 +2217,12 @@ public class newPanelMixer extends javax.swing.JPanel {
          catch(Exception e){
              System.out.println("Error de hilo ");
                var[2]=false;
+               S1.setBackground(Color.white);
          }     
         }
         if(S1.isSelected()&&var[1])
         {
+            S1.setBackground(Color.red);
             DisableVolumeExcept(V1,S1,2,0);
         }
         if(!S1.isSelected()){
@@ -2969,6 +2230,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             var[2]=false;
             audio[0].detener();
             audio[0].stop();
+            S1.setBackground(Color.white);
         }
     }//GEN-LAST:event_S1ActionPerformed
 
@@ -2981,6 +2243,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             System.out.println("activado");
             Conf=X.Read("config.xml");                
          try{
+             S9.setBackground(Color.red);
              audio[8]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(8),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),1,V9,C9,socket);
              audio[8].start();
               
@@ -2989,10 +2252,12 @@ public class newPanelMixer extends javax.swing.JPanel {
          catch(Exception e){
              System.out.println("Error de hilo ");
                var[18]=false;
+                S9.setBackground(Color.white);
          }     
         }
         if(S9.isSelected()&&var[17])
         {
+             S9.setBackground(Color.red);
             DisableVolumeExcept(V9,S9,18,8);
         }
         if(!S9.isSelected()){
@@ -3000,8 +2265,739 @@ public class newPanelMixer extends javax.swing.JPanel {
             var[18]=false;
             audio[8].detener();
             audio[8].stop();
+             S9.setBackground(Color.white);
         }
     }//GEN-LAST:event_S9ActionPerformed
+
+    private void C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C2ActionPerformed
+        // TODO add your handling code here:
+        var[3]=true;
+    if(!var[4])
+    {
+       alternar1++;   
+    if(alternar1==1){
+         Conf=X.Read("config.xml");        
+         
+         try{
+             audio1=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(1),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),8,V2,C2,socket);
+             audio1.start();
+              C2.setBackground(Color.GREEN);
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               C2.setBackground(Color.RED);
+               S2.setEnabled(false);
+               S2.setSelected(false);
+               var[3]=false;
+         }
+                   
+      
+    }   
+
+    if(alternar1==2){
+         audio1.detener();
+         audio1.stop();
+         alternar1=0;
+         C2.setBackground(Color.BLUE);
+        var[3]=false;
+         
+    }    
+    }   
+    }//GEN-LAST:event_C2ActionPerformed
+
+    private void C10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C10ActionPerformed
+        // TODO add your handling code here:
+         var[19]=true;
+        if(!var[20])
+        {
+          //   AlternarAudio(alternar9, audio9,10,Conf,C10,V10);
+       alternar9++;   
+    if(alternar9==1){
+         Conf=X.Read("config.xml");                
+         try{
+             audio9=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(9),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),9,V10,C10,socket);
+             audio9.start();
+              C10.setBackground(Color.GREEN);
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               C10.setBackground(Color.RED);
+              var[19]=false;
+         }     
+    }   
+    if(alternar9==2){
+         audio9.detener();
+         audio9.stop();
+         alternar9=0;
+         C10.setBackground(Color.BLUE);
+         var[19]=false;
+        
+    }
+        }
+    }//GEN-LAST:event_C10ActionPerformed
+
+    private void C18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C18ActionPerformed
+        // TODO add your handling code here:
+        var[35]=true;
+        if(!var[36])
+        {
+         alternar17++;   
+    if(alternar17==1){
+         Conf=X.Read("config.xml");                
+         try{
+             audio17=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(17),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),10,V18,C18,socket);
+             audio17.start();
+              C18.setBackground(Color.GREEN);
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               C18.setBackground(Color.RED);
+               var[35]=false;
+         }     
+    }   
+    if(alternar17==2){
+         audio17.detener();
+         audio17.stop();
+         alternar17=0;
+         C18.setBackground(Color.BLUE);
+         var[35]=false;
+    }
+    }
+      
+    }//GEN-LAST:event_C18ActionPerformed
+
+    private void C26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C26ActionPerformed
+        // TODO add your handling code here:
+         var[51]=true;
+      if(!var[52])
+      {
+       alternar25++;   
+    if(alternar25==1){
+         Conf=X.Read("config.xml");                
+         try{
+             audio25=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(25),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),11,V26,C26,socket);
+             audio25.start();
+              C26.setBackground(Color.GREEN);
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               C26.setBackground(Color.RED);
+               var[51]=false;
+         }     
+    }   
+    if(alternar25==2){
+         audio25.detener();
+         audio25.stop();
+         alternar25=0;
+         C26.setBackground(Color.BLUE);
+         var[51]=false;
+    }
+    }
+    }//GEN-LAST:event_C26ActionPerformed
+
+    private void C4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C4ActionPerformed
+        // TODO add your handling code here:
+        var[7]=true;
+      if(!var[8])
+      {
+    alternar3++;   
+    if(alternar3==1){
+         Conf=X.Read("config.xml");                
+         try{
+             audio3=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(3),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),12,V4,C4,socket);
+             audio3.start();
+              C4.setBackground(Color.GREEN);
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               C4.setBackground(Color.RED);
+               var[7]=false;
+         }     
+    }   
+    if(alternar3==2){
+         audio3.detener();
+         audio3.stop();
+         alternar3=0;
+         C4.setBackground(Color.BLUE);
+         var[7]=false;
+         
+    }
+      }
+    }//GEN-LAST:event_C4ActionPerformed
+
+    private void C12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C12ActionPerformed
+        // TODO add your handling code here:
+         var[23]=true;
+         if(!var[24])
+         {
+                alternar11++;   
+    if(alternar11==1){
+         Conf=X.Read("config.xml");                
+         try{
+             audio11=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(11),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),13,V12,C12,socket);
+             audio11.start();
+              C12.setBackground(Color.GREEN);
+             
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               C12.setBackground(Color.RED);
+                var[23]=false;
+               
+         }     
+    }   
+    if(alternar11==2){
+         audio11.detener();
+         audio11.stop();
+         alternar11=0;
+         C12.setBackground(Color.BLUE);
+         var[23]=false;
+         
+    }
+         }
+    }//GEN-LAST:event_C12ActionPerformed
+
+    private void C20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C20ActionPerformed
+        // TODO add your handling code here:
+         var[39]=true;
+          if(!var[40])
+          {
+       alternar19++;   
+    if(alternar19==1){
+         Conf=X.Read("config.xml");                
+         try{
+             audio19=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(19),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),14,V20,C20,socket);
+             audio19.start();
+              C20.setBackground(Color.GREEN);
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               C20.setBackground(Color.RED);
+               var[39]=false;
+               
+         }     
+    }   
+    if(alternar19==2){
+         audio19.detener();
+         audio19.stop();
+         alternar19=0;
+         C20.setBackground(Color.BLUE);
+         var[39]=false;
+    } 
+    }
+    }//GEN-LAST:event_C20ActionPerformed
+
+    private void C28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C28ActionPerformed
+var[55]=true;
+       if(!var[56])
+       {
+             alternar27++;   
+    if(alternar27==1){
+         Conf=X.Read("config.xml");                
+         try{
+             audio27=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(27),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),15,V28,C28,socket);
+             audio27.start();
+              C28.setBackground(Color.GREEN);
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               C28.setBackground(Color.RED);
+               var[55]=false;
+         }     
+    }   
+    if(alternar27==2){
+         audio27.detener();
+         audio27.stop();
+         alternar27=0;
+         C28.setBackground(Color.BLUE);
+         var[55]=false;
+    }
+    }
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C28ActionPerformed
+
+    private void S17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S17ActionPerformed
+        // TODO add your handling code here:
+          var[34]=true;
+        if(S17.isSelected()&&!var[33]){
+            DisableVolumeExcept(V17,S17,34,16);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             S17.setBackground(Color.red);
+             audio[16]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(16),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),2,V17,C17,socket);
+             audio[16].start();
+            
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S17.setBackground(Color.white);
+               var[34]=false;
+         }
+        }
+        if(S17.isSelected()&&var[33])
+        {
+            S17.setBackground(Color.red);
+            DisableVolumeExcept(V17,S17,34,16);
+        }
+        if(!S17.isSelected()){
+            EnableVolume();
+            S17.setBackground(Color.white);
+            var[34]=false;
+            audio[16].detener();
+            audio[16].stop();
+        }
+    }//GEN-LAST:event_S17ActionPerformed
+
+    private void S25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S25ActionPerformed
+        // TODO add your handling code here:
+         var[50]=true;
+        if(S25.isSelected()&&!var[49]){
+            DisableVolumeExcept(V25,S25,50,24);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             S25.setBackground(Color.red);
+             audio[24]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(24),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),3,V25,C25,socket);
+             audio[24].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S25.setBackground(Color.white);
+               var[50]=false;
+         }     
+        }
+        if(S25.isSelected()&&var[49])
+        {
+            S25.setBackground(Color.red);
+            DisableVolumeExcept(V25,S25,50,24);
+        }
+        if(!S25.isSelected()){
+            EnableVolume();
+            var[50]=false;
+            audio[24].detener();
+            audio[24].stop();
+            S25.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S25ActionPerformed
+
+    private void S3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S3ActionPerformed
+        // TODO add your handling code here:
+         var[6]=true;
+        
+        if(S3.isSelected()&&!var[5]){
+            DisableVolumeExcept(V3,S3,6,2);
+            System.out.println("activado");
+             Conf=X.Read("config.xml");        
+         
+         try{
+             S3.setBackground(Color.red);
+             audio[2]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(2),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),4,V3,C3,socket);
+             audio[2].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S3.setBackground(Color.white); 
+               var[6]=false;
+         }
+        }
+        if(S3.isSelected()&&var[5]){
+            DisableVolumeExcept(V3,S3,6,2);
+             S3.setBackground(Color.red);
+        }
+        if(!S3.isSelected()){
+            EnableVolume();
+            var[6]=false;
+            audio[2].detener();
+            audio[2].stop();
+             S3.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S3ActionPerformed
+
+    private void S11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S11ActionPerformed
+        // TODO add your handling code here:
+         var[22]=true;
+        if(S11.isSelected()&&!var[21]){
+            DisableVolumeExcept(V11,S11,22,10);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+              S11.setBackground(Color.red);
+             audio[10]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(10),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),5,V11,C11,socket);
+             audio[10].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+                S11.setBackground(Color.white);
+               var[22]=false;
+         }     
+        }
+        if(S11.isSelected()&&var[21])
+        {
+            DisableVolumeExcept(V11,S11,22,10);
+             S11.setBackground(Color.red);
+        }
+        if(!S11.isSelected()){
+            EnableVolume();
+            var[22]=false;
+            audio[10].detener();
+            audio[10].stop();
+             S11.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S11ActionPerformed
+
+    private void S19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S19ActionPerformed
+        // TODO add your handling code here:
+         var[38]=true;
+        if(S19.isSelected()&&!var[37]){
+            DisableVolumeExcept(V19,S19,38,18);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+              S19.setBackground(Color.red);
+             audio[18]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(18),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),6,V19,C19,socket);
+             audio[18].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S19.setBackground(Color.white);
+               var[38]=false;
+         }     
+        }
+        if(S19.isSelected()&&var[37])
+        {
+            DisableVolumeExcept(V19,S19,38,18);
+            S19.setBackground(Color.red);
+        }
+        if(!S19.isSelected()){
+            EnableVolume();
+            var[38]=false;
+            audio[18].detener();
+            audio[18].stop();
+            S19.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S19ActionPerformed
+
+    private void S27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S27ActionPerformed
+        // TODO add your handling code here:
+         var[54]=true;
+        if(S27.isSelected()&&!var[53]){
+            DisableVolumeExcept(V27,S27,54,26);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             S27.setBackground(Color.red);
+             audio[26]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(26),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),7,V27,C27,socket);
+             audio[26].start();
+              
+             
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S27.setBackground(Color.white);
+            var[54]=false;
+         }     
+        }
+        if(S27.isSelected()&&var[53])
+        {
+            DisableVolumeExcept(V27,S27,54,26);
+            S27.setBackground(Color.red);
+        }
+        if(!S27.isSelected()){
+            EnableVolume();
+            var[54]=false;
+            audio[26].detener();
+            audio[26].stop();
+            S27.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S27ActionPerformed
+
+    private void S2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S2ActionPerformed
+        // TODO add your handling code here:
+         var[4]=true;
+        if(S2.isSelected()&&!var[3]){
+            DisableVolumeExcept(V2,S2,4,1);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");        
+         
+         try{
+             S2.setBackground(Color.red);
+             audio[1]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(1),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),8,V2,C2,socket);
+             audio[1].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S2.setBackground(Color.white);
+               var[4]=false;
+         }
+        }
+        if(S2.isSelected()&&var[3]){
+            DisableVolumeExcept(V2,S2,4,1);
+            S2.setBackground(Color.red);
+        }
+        if(!S2.isSelected()){
+            EnableVolume();
+            S2.setBackground(Color.white);
+            var[4]=false;
+            audio[1].detener();
+            audio[1].stop();
+        }
+    }//GEN-LAST:event_S2ActionPerformed
+
+    private void S10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S10ActionPerformed
+        // TODO add your handling code here:
+         var[20]=true;
+        if(S10.isSelected()&&!var[19]){
+            DisableVolumeExcept(V10,S10,20,9);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             S10.setBackground(Color.red);
+             audio[9]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(9),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),9,V10,C10,socket);
+             audio[9].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S10.setBackground(Color.white);
+              var[20]=false;
+         }     
+        }
+        if(S10.isSelected()&&var[19])
+        {
+            DisableVolumeExcept(V10,S10,20,9);
+            S10.setBackground(Color.red);
+        }
+        if(!S10.isSelected()){
+            EnableVolume();
+            var[20]=false;
+            audio[9].detener();
+            audio[9].stop();
+            S10.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S10ActionPerformed
+
+    private void S18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S18ActionPerformed
+        // TODO add your handling code here:
+         var[36]=true;
+        if(S18.isSelected()&&!var[35]){
+            DisableVolumeExcept(V18,S18,36,17);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             S18.setBackground(Color.red);
+             audio[17]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(17),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),10,V18,C18,socket);
+             audio[17].start();
+             
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+              S18.setBackground(Color.white);
+               var[36]=false;
+         }     
+        }
+        if(S18.isSelected()&&var[35])
+        {
+            DisableVolumeExcept(V18,S18,36,17);
+            S18.setBackground(Color.red);
+        }
+        if(!S18.isSelected()){
+            EnableVolume();
+            var[36]=false;
+            audio[17].detener();
+            audio[17].stop();
+            S18.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S18ActionPerformed
+
+    private void S26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S26ActionPerformed
+        // TODO add your handling code here:
+          var[52]=true;
+        if(S26.isSelected()&&!var[51]){
+            DisableVolumeExcept(V26,S26,52,25);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             S26.setBackground(Color.red);
+             audio[25]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(25),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),11,V26,C26,socket);
+             audio[25].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S26.setBackground(Color.white);
+               var[52]=false;
+         }     
+        }
+        if(S26.isSelected()&&var[51])
+        {
+            DisableVolumeExcept(V26,S26,52,25);
+            S26.setBackground(Color.red);
+        }
+        if(!S26.isSelected()){
+            EnableVolume();
+            var[52]=false;
+            audio[25].detener();
+            audio[25].stop();
+            S26.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S26ActionPerformed
+
+    private void S4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S4ActionPerformed
+        // TODO add your handling code here:
+            var[8]=true;
+        if(S4.isSelected()&&!var[7]){
+            DisableVolumeExcept(V4,S4,8,3);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             S4.setBackground(Color.red);
+             audio[3]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(3),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),12,V4,C4,socket);
+             audio[3].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S4.setBackground(Color.white);
+               var[8]=false;
+         }     
+        }
+        if(S4.isSelected()&&var[7]){
+            DisableVolumeExcept(V4,S4,8,3);
+            S4.setBackground(Color.red);
+        }
+        if(!S4.isSelected()){
+            EnableVolume();
+            var[8]=false;
+            audio[3].detener();
+            audio[3].stop();
+            S4.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S4ActionPerformed
+
+    private void S12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S12ActionPerformed
+        // TODO add your handling code here:
+         var[24]=true;
+        if(S12.isSelected()&&!var[23]){
+            DisableVolumeExcept(V12,S12,24,11);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             S12.setBackground(Color.red);
+             audio[11]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(11),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),13,V12,C12,socket);
+             audio[11].start();
+              
+             
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S12.setBackground(Color.white);
+                var[24]=false;
+               
+         }     
+        }
+        if(S12.isSelected()&&var[23])
+        {
+            DisableVolumeExcept(V12,S12,24,11);
+            S12.setBackground(Color.red);
+        }
+        if(!S12.isSelected()){
+            EnableVolume();
+            var[24]=false;
+            audio[11].detener();
+            audio[11].stop();
+            S12.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S12ActionPerformed
+
+    private void S20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S20ActionPerformed
+        // TODO add your handling code here:
+         var[40]=true;
+        if(S20.isSelected()&&!var[39]){
+            DisableVolumeExcept(V20,S20,40,19);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             audio[19]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(19),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),14,V20,C20,socket);
+             audio[19].start();
+              S20.setBackground(Color.red);
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+              S20.setBackground(Color.white);
+               var[40]=false;
+               
+         }     
+        }
+        if(S20.isSelected()&&var[39])
+        {
+            DisableVolumeExcept(V20,S20,40,19);
+            S20.setBackground(Color.red);
+        }
+        if(!S20.isSelected()){
+            EnableVolume();
+            var[40]=false;
+            audio[19].detener();
+            audio[19].stop();
+            S20.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S20ActionPerformed
+
+    private void S28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S28ActionPerformed
+        // TODO add your handling code here:
+         var[56]=true;
+        if(S28.isSelected()&&!var[55]){
+            DisableVolumeExcept(V28,S28,56,27);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             audio[27]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(27),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),15,V28,C28,socket);
+             audio[27].start();
+              
+              S28.setBackground(Color.red);
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               S28.setBackground(Color.white);
+               var[56]=false;
+         }     
+        }
+        if(S28.isSelected()&&var[55])
+        {
+            DisableVolumeExcept(V28,S28,56,27);
+            S28.setBackground(Color.red);
+        }
+        if(!S28.isSelected()){
+            EnableVolume();
+            var[56]=false;
+            audio[27].detener();
+            audio[27].stop();
+            S28.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_S28ActionPerformed
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
