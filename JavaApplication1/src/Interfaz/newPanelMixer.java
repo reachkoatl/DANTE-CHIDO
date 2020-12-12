@@ -4230,6 +4230,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V9.setMaximum(10);
 
         S1.setText("SOLO");
+        S1.setContentAreaFilled(false);
+        S1.setOpaque(true);
         S1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 S1ActionPerformed(evt);
@@ -4250,6 +4252,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V17.setMaximum(10);
 
         S17.setText("SOLO");
+        S17.setContentAreaFilled(false);
+        S17.setOpaque(true);
 
         I25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4265,8 +4269,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         V25.setMaximum(10);
 
         S25.setText("SOLO");
+        S25.setContentAreaFilled(false);
+        S25.setOpaque(true);
 
         S9.setText("SOLO");
+        S9.setContentAreaFilled(false);
+        S9.setOpaque(true);
         S9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 S9ActionPerformed(evt);
@@ -4287,6 +4295,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V3.setMaximum(10);
 
         S3.setText("SOLO");
+        S3.setContentAreaFilled(false);
+        S3.setOpaque(true);
 
         I11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4302,6 +4312,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V11.setMaximum(10);
 
         S11.setText("SOLO");
+        S11.setContentAreaFilled(false);
+        S11.setOpaque(true);
 
         I19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4317,6 +4329,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V19.setMaximum(10);
 
         S19.setText("SOLO");
+        S19.setContentAreaFilled(false);
+        S19.setOpaque(true);
 
         I27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4332,8 +4346,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         V27.setMaximum(10);
 
         S27.setText("SOLO");
+        S27.setContentAreaFilled(false);
+        S27.setOpaque(true);
 
         S2.setText("SOLO");
+        S2.setContentAreaFilled(false);
+        S2.setOpaque(true);
 
         V2.setMaximum(10);
 
@@ -4344,6 +4362,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         I2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S10.setText("SOLO");
+        S10.setContentAreaFilled(false);
+        S10.setOpaque(true);
 
         V10.setMaximum(10);
 
@@ -4354,6 +4374,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         I10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S18.setText("SOLO");
+        S18.setContentAreaFilled(false);
+        S18.setOpaque(true);
 
         V18.setMaximum(10);
 
@@ -4364,6 +4386,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         I18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S26.setText("SOLO");
+        S26.setContentAreaFilled(false);
+        S26.setOpaque(true);
 
         V26.setMaximum(10);
 
@@ -4382,6 +4406,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V4.setMaximum(10);
 
         S4.setText("SOLO");
+        S4.setContentAreaFilled(false);
+        S4.setOpaque(true);
 
         I12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4392,6 +4418,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V12.setMaximum(10);
 
         S12.setText("SOLO");
+        S12.setContentAreaFilled(false);
+        S12.setOpaque(true);
 
         I20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4402,6 +4430,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V20.setMaximum(10);
 
         S20.setText("SOLO");
+        S20.setContentAreaFilled(false);
+        S20.setOpaque(true);
 
         I28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4412,6 +4442,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V28.setMaximum(10);
 
         S28.setText("SOLO");
+        S28.setContentAreaFilled(false);
+        S28.setOpaque(true);
 
         I5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4422,6 +4454,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V5.setMaximum(10);
 
         S5.setText("SOLO");
+        S5.setContentAreaFilled(false);
+        S5.setOpaque(true);
 
         I7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4432,6 +4466,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V7.setMaximum(10);
 
         S7.setText("SOLO");
+        S7.setContentAreaFilled(false);
+        S7.setOpaque(true);
 
         I13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4442,6 +4478,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V13.setMaximum(10);
 
         S13.setText("SOLO");
+        S13.setContentAreaFilled(false);
+        S13.setOpaque(true);
 
         I21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4452,6 +4490,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V21.setMaximum(10);
 
         S21.setText("SOLO");
+        S21.setContentAreaFilled(false);
+        S21.setOpaque(true);
 
         I29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4462,6 +4502,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V6.setMaximum(10);
 
         S6.setText("SOLO");
+        S6.setContentAreaFilled(false);
+        S6.setOpaque(true);
 
         I6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4472,6 +4514,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V29.setMaximum(10);
 
         S29.setText("SOLO");
+        S29.setContentAreaFilled(false);
+        S29.setOpaque(true);
 
         I14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4482,6 +4526,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V14.setMaximum(10);
 
         S14.setText("SOLO");
+        S14.setContentAreaFilled(false);
+        S14.setOpaque(true);
 
         I22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4492,6 +4538,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V22.setMaximum(10);
 
         S22.setText("SOLO");
+        S22.setContentAreaFilled(false);
+        S22.setOpaque(true);
 
         I30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4502,6 +4550,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V30.setMaximum(10);
 
         S30.setText("SOLO");
+        S30.setContentAreaFilled(false);
+        S30.setOpaque(true);
 
         I8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4512,6 +4562,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V8.setMaximum(10);
 
         S8.setText("SOLO");
+        S8.setContentAreaFilled(false);
+        S8.setOpaque(true);
 
         I15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4522,6 +4574,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V15.setMaximum(10);
 
         S15.setText("SOLO");
+        S15.setContentAreaFilled(false);
+        S15.setOpaque(true);
 
         I16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4532,6 +4586,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V16.setMaximum(10);
 
         S16.setText("SOLO");
+        S16.setContentAreaFilled(false);
+        S16.setOpaque(true);
 
         I23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4542,6 +4598,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V23.setMaximum(10);
 
         S23.setText("SOLO");
+        S23.setContentAreaFilled(false);
+        S23.setOpaque(true);
 
         I24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4552,6 +4610,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V24.setMaximum(10);
 
         S24.setText("SOLO");
+        S24.setContentAreaFilled(false);
+        S24.setOpaque(true);
 
         I31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4562,6 +4622,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         V31.setMaximum(10);
 
         S31.setText("SOLO");
+        S31.setContentAreaFilled(false);
+        S31.setOpaque(true);
 
         I32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4572,102 +4634,224 @@ public class newPanelMixer extends javax.swing.JPanel {
         V32.setMaximum(10);
 
         S32.setText("SOLO");
+        S32.setContentAreaFilled(false);
+        S32.setOpaque(true);
 
         I33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C33.setBackground(new java.awt.Color(102, 102, 102));
         C33.setForeground(new java.awt.Color(255, 255, 255));
         C33.setText("jButton1");
+        C33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C33ActionPerformed(evt);
+            }
+        });
 
         V33.setMaximum(10);
 
         S33.setText("SOLO");
+        S33.setContentAreaFilled(false);
+        S33.setOpaque(true);
+        S33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S33ActionPerformed(evt);
+            }
+        });
 
         V34.setMaximum(10);
 
         C34.setBackground(new java.awt.Color(102, 102, 102));
         C34.setForeground(new java.awt.Color(255, 255, 255));
         C34.setText("jButton1");
+        C34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C34ActionPerformed(evt);
+            }
+        });
 
         I34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S34.setText("SOLO");
+        S34.setContentAreaFilled(false);
+        S34.setOpaque(true);
+        S34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S34ActionPerformed(evt);
+            }
+        });
 
         V35.setMaximum(10);
 
         C35.setBackground(new java.awt.Color(102, 102, 102));
         C35.setForeground(new java.awt.Color(255, 255, 255));
         C35.setText("jButton1");
+        C35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C35ActionPerformed(evt);
+            }
+        });
 
         I35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S35.setText("SOLO");
+        S35.setContentAreaFilled(false);
+        S35.setOpaque(true);
+        S35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S35ActionPerformed(evt);
+            }
+        });
 
         V36.setMaximum(10);
 
         C36.setBackground(new java.awt.Color(102, 102, 102));
         C36.setForeground(new java.awt.Color(255, 255, 255));
         C36.setText("jButton1");
+        C36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C36ActionPerformed(evt);
+            }
+        });
 
         I36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S36.setText("SOLO");
+        S36.setContentAreaFilled(false);
+        S36.setOpaque(true);
+        S36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S36ActionPerformed(evt);
+            }
+        });
 
         V37.setMaximum(10);
 
         C37.setBackground(new java.awt.Color(102, 102, 102));
         C37.setForeground(new java.awt.Color(255, 255, 255));
         C37.setText("jButton1");
+        C37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C37ActionPerformed(evt);
+            }
+        });
 
         I37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S37.setText("SOLO");
+        S37.setContentAreaFilled(false);
+        S37.setOpaque(true);
+        S37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S37ActionPerformed(evt);
+            }
+        });
 
         I38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C38.setBackground(new java.awt.Color(102, 102, 102));
         C38.setForeground(new java.awt.Color(255, 255, 255));
         C38.setText("jButton1");
+        C38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C38ActionPerformed(evt);
+            }
+        });
 
         V38.setMaximum(10);
 
         S38.setText("SOLO");
+        S38.setContentAreaFilled(false);
+        S38.setOpaque(true);
+        S38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S38ActionPerformed(evt);
+            }
+        });
 
         I39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C39.setBackground(new java.awt.Color(102, 102, 102));
         C39.setForeground(new java.awt.Color(255, 255, 255));
         C39.setText("jButton1");
+        C39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C39ActionPerformed(evt);
+            }
+        });
 
         V39.setMaximum(10);
 
         S39.setText("SOLO");
+        S39.setContentAreaFilled(false);
+        S39.setOpaque(true);
+        S39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S39ActionPerformed(evt);
+            }
+        });
 
         I40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C40.setBackground(new java.awt.Color(102, 102, 102));
         C40.setForeground(new java.awt.Color(255, 255, 255));
         C40.setText("jButton1");
+        C40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C40ActionPerformed(evt);
+            }
+        });
 
         V40.setMaximum(10);
 
         S40.setText("SOLO");
+        S40.setContentAreaFilled(false);
+        S40.setOpaque(true);
+        S40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S40ActionPerformed(evt);
+            }
+        });
 
         I41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C41.setBackground(new java.awt.Color(102, 102, 102));
         C41.setForeground(new java.awt.Color(255, 255, 255));
         C41.setText("jButton1");
+        C41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C41ActionPerformed(evt);
+            }
+        });
 
         V41.setMaximum(10);
 
         S41.setText("SOLO");
+        S41.setContentAreaFilled(false);
+        S41.setOpaque(true);
+        S41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S41ActionPerformed(evt);
+            }
+        });
 
         C42.setBackground(new java.awt.Color(102, 102, 102));
         C42.setForeground(new java.awt.Color(255, 255, 255));
         C42.setText("jButton1");
+        C42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C42ActionPerformed(evt);
+            }
+        });
 
         S42.setText("SOLO");
+        S42.setContentAreaFilled(false);
+        S42.setOpaque(true);
+        S42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S42ActionPerformed(evt);
+            }
+        });
 
         I42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4676,8 +4860,20 @@ public class newPanelMixer extends javax.swing.JPanel {
         C43.setBackground(new java.awt.Color(102, 102, 102));
         C43.setForeground(new java.awt.Color(255, 255, 255));
         C43.setText("jButton1");
+        C43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C43ActionPerformed(evt);
+            }
+        });
 
         S43.setText("SOLO");
+        S43.setContentAreaFilled(false);
+        S43.setOpaque(true);
+        S43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S43ActionPerformed(evt);
+            }
+        });
 
         I43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4686,8 +4882,20 @@ public class newPanelMixer extends javax.swing.JPanel {
         C44.setBackground(new java.awt.Color(102, 102, 102));
         C44.setForeground(new java.awt.Color(255, 255, 255));
         C44.setText("jButton1");
+        C44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C44ActionPerformed(evt);
+            }
+        });
 
         S44.setText("SOLO");
+        S44.setContentAreaFilled(false);
+        S44.setOpaque(true);
+        S44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S44ActionPerformed(evt);
+            }
+        });
 
         I44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4698,118 +4906,262 @@ public class newPanelMixer extends javax.swing.JPanel {
         C45.setBackground(new java.awt.Color(102, 102, 102));
         C45.setForeground(new java.awt.Color(255, 255, 255));
         C45.setText("jButton1");
+        C45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C45ActionPerformed(evt);
+            }
+        });
 
         V45.setMaximum(10);
 
         S45.setText("SOLO");
+        S45.setContentAreaFilled(false);
+        S45.setOpaque(true);
+        S45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S45ActionPerformed(evt);
+            }
+        });
 
         I46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C46.setBackground(new java.awt.Color(102, 102, 102));
         C46.setForeground(new java.awt.Color(255, 255, 255));
         C46.setText("jButton1");
+        C46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C46ActionPerformed(evt);
+            }
+        });
 
         V46.setMaximum(10);
 
         S46.setText("SOLO");
+        S46.setContentAreaFilled(false);
+        S46.setOpaque(true);
+        S46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S46ActionPerformed(evt);
+            }
+        });
 
         I47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C47.setBackground(new java.awt.Color(102, 102, 102));
         C47.setForeground(new java.awt.Color(255, 255, 255));
         C47.setText("jButton1");
+        C47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C47ActionPerformed(evt);
+            }
+        });
 
         V47.setMaximum(10);
 
         S47.setText("SOLO");
+        S47.setContentAreaFilled(false);
+        S47.setOpaque(true);
+        S47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S47ActionPerformed(evt);
+            }
+        });
 
         I48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C48.setBackground(new java.awt.Color(102, 102, 102));
         C48.setForeground(new java.awt.Color(255, 255, 255));
         C48.setText("jButton1");
+        C48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C48ActionPerformed(evt);
+            }
+        });
 
         V48.setMaximum(10);
 
         S48.setText("SOLO");
+        S48.setContentAreaFilled(false);
+        S48.setOpaque(true);
+        S48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S48ActionPerformed(evt);
+            }
+        });
 
         I49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C49.setBackground(new java.awt.Color(102, 102, 102));
         C49.setForeground(new java.awt.Color(255, 255, 255));
         C49.setText("jButton1");
+        C49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C49ActionPerformed(evt);
+            }
+        });
 
         V49.setMaximum(10);
 
         S49.setText("SOLO");
+        S49.setContentAreaFilled(false);
+        S49.setOpaque(true);
+        S49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S49ActionPerformed(evt);
+            }
+        });
 
         I50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C50.setBackground(new java.awt.Color(102, 102, 102));
         C50.setForeground(new java.awt.Color(255, 255, 255));
         C50.setText("jButton1");
+        C50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C50ActionPerformed(evt);
+            }
+        });
 
         V50.setMaximum(10);
 
         S50.setText("SOLO");
+        S50.setContentAreaFilled(false);
+        S50.setOpaque(true);
+        S50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S50ActionPerformed(evt);
+            }
+        });
 
         I51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C51.setBackground(new java.awt.Color(102, 102, 102));
         C51.setForeground(new java.awt.Color(255, 255, 255));
         C51.setText("jButton1");
+        C51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C51ActionPerformed(evt);
+            }
+        });
 
         V51.setMaximum(10);
 
         S51.setText("SOLO");
+        S51.setContentAreaFilled(false);
+        S51.setOpaque(true);
+        S51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S51ActionPerformed(evt);
+            }
+        });
 
         I52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C52.setBackground(new java.awt.Color(102, 102, 102));
         C52.setForeground(new java.awt.Color(255, 255, 255));
         C52.setText("jButton1");
+        C52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C52ActionPerformed(evt);
+            }
+        });
 
         V52.setMaximum(10);
 
         S52.setText("SOLO");
+        S52.setContentAreaFilled(false);
+        S52.setOpaque(true);
+        S52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S52ActionPerformed(evt);
+            }
+        });
 
         I53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C53.setBackground(new java.awt.Color(102, 102, 102));
         C53.setForeground(new java.awt.Color(255, 255, 255));
         C53.setText("jButton1");
+        C53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C53ActionPerformed(evt);
+            }
+        });
 
         V53.setMaximum(10);
 
         S53.setText("SOLO");
+        S53.setContentAreaFilled(false);
+        S53.setOpaque(true);
+        S53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S53ActionPerformed(evt);
+            }
+        });
 
         S54.setText("SOLO");
+        S54.setContentAreaFilled(false);
+        S54.setOpaque(true);
+        S54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S54ActionPerformed(evt);
+            }
+        });
 
         V54.setMaximum(10);
 
         C54.setBackground(new java.awt.Color(102, 102, 102));
         C54.setForeground(new java.awt.Color(255, 255, 255));
         C54.setText("jButton1");
+        C54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C54ActionPerformed(evt);
+            }
+        });
 
         I54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S55.setText("SOLO");
+        S55.setContentAreaFilled(false);
+        S55.setOpaque(true);
+        S55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S55ActionPerformed(evt);
+            }
+        });
 
         V55.setMaximum(10);
 
         C55.setBackground(new java.awt.Color(102, 102, 102));
         C55.setForeground(new java.awt.Color(255, 255, 255));
         C55.setText("jButton1");
+        C55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C55ActionPerformed(evt);
+            }
+        });
 
         I55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         S56.setText("SOLO");
+        S56.setContentAreaFilled(false);
+        S56.setOpaque(true);
+        S56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S56ActionPerformed(evt);
+            }
+        });
 
         V56.setMaximum(10);
 
         C56.setBackground(new java.awt.Color(102, 102, 102));
         C56.setForeground(new java.awt.Color(255, 255, 255));
         C56.setText("jButton1");
+        C56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C56ActionPerformed(evt);
+            }
+        });
 
         I56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4818,80 +5170,176 @@ public class newPanelMixer extends javax.swing.JPanel {
         C57.setBackground(new java.awt.Color(102, 102, 102));
         C57.setForeground(new java.awt.Color(255, 255, 255));
         C57.setText("jButton1");
+        C57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C57ActionPerformed(evt);
+            }
+        });
 
         V57.setMaximum(10);
 
         S57.setText("SOLO");
+        S57.setContentAreaFilled(false);
+        S57.setOpaque(true);
+        S57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S57ActionPerformed(evt);
+            }
+        });
 
         I58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C58.setBackground(new java.awt.Color(102, 102, 102));
         C58.setForeground(new java.awt.Color(255, 255, 255));
         C58.setText("jButton1");
+        C58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C58ActionPerformed(evt);
+            }
+        });
 
         V58.setMaximum(10);
 
         S58.setText("SOLO");
+        S58.setContentAreaFilled(false);
+        S58.setOpaque(true);
+        S58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S58ActionPerformed(evt);
+            }
+        });
 
         I59.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C59.setBackground(new java.awt.Color(102, 102, 102));
         C59.setForeground(new java.awt.Color(255, 255, 255));
         C59.setText("jButton1");
+        C59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C59ActionPerformed(evt);
+            }
+        });
 
         V59.setMaximum(10);
 
         S59.setText("SOLO");
+        S59.setContentAreaFilled(false);
+        S59.setOpaque(true);
+        S59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S59ActionPerformed(evt);
+            }
+        });
 
         I60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C60.setBackground(new java.awt.Color(102, 102, 102));
         C60.setForeground(new java.awt.Color(255, 255, 255));
         C60.setText("jButton1");
+        C60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C60ActionPerformed(evt);
+            }
+        });
 
         V60.setMaximum(10);
 
         S60.setText("SOLO");
+        S60.setContentAreaFilled(false);
+        S60.setOpaque(true);
+        S60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S60ActionPerformed(evt);
+            }
+        });
 
         I61.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C61.setBackground(new java.awt.Color(102, 102, 102));
         C61.setForeground(new java.awt.Color(255, 255, 255));
         C61.setText("jButton1");
+        C61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C61ActionPerformed(evt);
+            }
+        });
 
         V61.setMaximum(10);
 
         S61.setText("SOLO");
+        S61.setContentAreaFilled(false);
+        S61.setOpaque(true);
+        S61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S61ActionPerformed(evt);
+            }
+        });
 
         I62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C62.setBackground(new java.awt.Color(102, 102, 102));
         C62.setForeground(new java.awt.Color(255, 255, 255));
         C62.setText("jButton1");
+        C62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C62ActionPerformed(evt);
+            }
+        });
 
         V62.setMaximum(10);
 
         S62.setText("SOLO");
+        S62.setContentAreaFilled(false);
+        S62.setOpaque(true);
+        S62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S62ActionPerformed(evt);
+            }
+        });
 
         I63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C63.setBackground(new java.awt.Color(102, 102, 102));
         C63.setForeground(new java.awt.Color(255, 255, 255));
         C63.setText("jButton1");
+        C63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C63ActionPerformed(evt);
+            }
+        });
 
         V63.setMaximum(10);
 
         S63.setText("SOLO");
+        S63.setContentAreaFilled(false);
+        S63.setOpaque(true);
+        S63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S63ActionPerformed(evt);
+            }
+        });
 
         I64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C64.setBackground(new java.awt.Color(102, 102, 102));
         C64.setForeground(new java.awt.Color(255, 255, 255));
         C64.setText("jButton1");
+        C64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C64ActionPerformed(evt);
+            }
+        });
 
         V64.setMaximum(10);
 
         S64.setText("SOLO");
+        S64.setContentAreaFilled(false);
+        S64.setOpaque(true);
+        S64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S64ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -6260,6 +6708,262 @@ public class newPanelMixer extends javax.swing.JPanel {
             audio[8].stop();
         }
     }//GEN-LAST:event_S9ActionPerformed
+
+    private void C33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C33ActionPerformed
+
+    private void C34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C34ActionPerformed
+
+    private void C35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C35ActionPerformed
+
+    private void C36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C36ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C36ActionPerformed
+
+    private void C37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C37ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C37ActionPerformed
+
+    private void C38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C38ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C38ActionPerformed
+
+    private void C39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C39ActionPerformed
+
+    private void C40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C40ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C40ActionPerformed
+
+    private void C41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C41ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C41ActionPerformed
+
+    private void C42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C42ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C42ActionPerformed
+
+    private void C43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C43ActionPerformed
+
+    private void C44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C44ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C44ActionPerformed
+
+    private void C45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C45ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C45ActionPerformed
+
+    private void C46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C46ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C46ActionPerformed
+
+    private void C47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C47ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C47ActionPerformed
+
+    private void C48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C48ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C48ActionPerformed
+
+    private void C49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C49ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C49ActionPerformed
+
+    private void C50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C50ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C50ActionPerformed
+
+    private void C51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C51ActionPerformed
+
+    private void C52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C52ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C52ActionPerformed
+
+    private void C53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C53ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C53ActionPerformed
+
+    private void C54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C54ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C54ActionPerformed
+
+    private void C55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C55ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C55ActionPerformed
+
+    private void C56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C56ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C56ActionPerformed
+
+    private void C57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C57ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C57ActionPerformed
+
+    private void C58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C58ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C58ActionPerformed
+
+    private void C59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C59ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C59ActionPerformed
+
+    private void C60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C60ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C60ActionPerformed
+
+    private void C61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C61ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C61ActionPerformed
+
+    private void C62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C62ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C62ActionPerformed
+
+    private void C63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C63ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C63ActionPerformed
+
+    private void C64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C64ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C64ActionPerformed
+
+    private void S33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S33ActionPerformed
+
+    private void S34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S34ActionPerformed
+
+    private void S35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S35ActionPerformed
+
+    private void S36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S36ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S36ActionPerformed
+
+    private void S37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S37ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S37ActionPerformed
+
+    private void S38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S38ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S38ActionPerformed
+
+    private void S39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S39ActionPerformed
+
+    private void S40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S40ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S40ActionPerformed
+
+    private void S41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S41ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S41ActionPerformed
+
+    private void S42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S42ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S42ActionPerformed
+
+    private void S43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S43ActionPerformed
+
+    private void S44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S44ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S44ActionPerformed
+
+    private void S45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S45ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S45ActionPerformed
+
+    private void S46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S46ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S46ActionPerformed
+
+    private void S47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S47ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S47ActionPerformed
+
+    private void S48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S48ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S48ActionPerformed
+
+    private void S49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S49ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S49ActionPerformed
+
+    private void S50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S50ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S50ActionPerformed
+
+    private void S51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S51ActionPerformed
+
+    private void S52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S52ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S52ActionPerformed
+
+    private void S53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S53ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S53ActionPerformed
+
+    private void S54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S54ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S54ActionPerformed
+
+    private void S55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S55ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S55ActionPerformed
+
+    private void S56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S56ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S56ActionPerformed
+
+    private void S57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S57ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S57ActionPerformed
+
+    private void S58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S58ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S58ActionPerformed
+
+    private void S59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S59ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S59ActionPerformed
+
+    private void S60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S60ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S60ActionPerformed
+
+    private void S61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S61ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S61ActionPerformed
+
+    private void S62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S62ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S62ActionPerformed
+
+    private void S63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S63ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S63ActionPerformed
+
+    private void S64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S64ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_S64ActionPerformed
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
