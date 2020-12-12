@@ -260,6 +260,9 @@ public class Panel extends javax.swing.JFrame {
 
         scrollPane1 = new java.awt.ScrollPane();
         Bsettings = new javax.swing.JButton();
+        primero = new javax.swing.JButton();
+        segundo = new javax.swing.JButton();
+        cuarto = new javax.swing.JButton();
         Bmixer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         EtiquetaStatus = new javax.swing.JLabel();
@@ -270,9 +273,10 @@ public class Panel extends javax.swing.JFrame {
         MSG = new javax.swing.JTextField();
         alarma = new javax.swing.JLabel();
         networks = new javax.swing.JComboBox<>();
+        tercero = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        vPrincipal = new javax.swing.JSlider();
         jLabel4 = new javax.swing.JLabel();
+        vPrincipal = new javax.swing.JSlider();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 51, 102));
@@ -282,7 +286,7 @@ public class Panel extends javax.swing.JFrame {
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(50, 100, 1250, 580);
+        scrollPane1.setBounds(60, 130, 1240, 530);
 
         Bsettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Bsettings.setText("SETTINGS");
@@ -293,6 +297,18 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(Bsettings);
         Bsettings.setBounds(390, 690, 172, 40);
+
+        primero.setText("1-16");
+        getContentPane().add(primero);
+        primero.setBounds(60, 110, 80, 23);
+
+        segundo.setText("17-32");
+        getContentPane().add(segundo);
+        segundo.setBounds(140, 110, 80, 23);
+
+        cuarto.setText("49-64");
+        getContentPane().add(cuarto);
+        cuarto.setBounds(300, 110, 90, 23);
 
         Bmixer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Bmixer.setText("MIXER");
@@ -348,9 +364,6 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(MSG);
         MSG.setBounds(580, 60, 290, 33);
-
-        alarma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gray.png"))); // NOI18N
-        alarma.setText("jLabel2");
         getContentPane().add(alarma);
         alarma.setBounds(310, 20, 52, 54);
 
@@ -362,11 +375,16 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(networks);
         networks.setBounds(880, 690, 130, 20);
 
+        tercero.setText("33-48");
+        getContentPane().add(tercero);
+        tercero.setBounds(220, 110, 80, 23);
+
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("SELECT NETWORK");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(1030, 690, 127, 20);
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 0, 1890, 740);
 
         vPrincipal.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -375,8 +393,6 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(vPrincipal);
         vPrincipal.setBounds(1110, 60, 210, 30);
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 1890, 740);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -443,13 +459,17 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel Etiquetacanales;
     private javax.swing.JTextField MSG;
     private javax.swing.JLabel alarma;
+    private javax.swing.JButton cuarto;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JComboBox<String> networks;
+    private javax.swing.JButton primero;
     private java.awt.ScrollPane scrollPane1;
+    private javax.swing.JButton segundo;
+    private javax.swing.JButton tercero;
     private javax.swing.JSlider vPrincipal;
     // End of variables declaration//GEN-END:variables
 }
