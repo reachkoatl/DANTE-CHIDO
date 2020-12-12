@@ -95,7 +95,7 @@ public class Panel extends javax.swing.JFrame {
     });   
       vol = new volumen(vPrincipal); 
       
-      jLabel4.setIcon(new javax.swing.ImageIcon("Fondo1366.png"));
+      jLabel4.setIcon(new javax.swing.ImageIcon("fondobueno.png"));
          
       EtiquetaConect.setVisible(false);
       EtiquetaStatus.setVisible(false);
@@ -282,7 +282,7 @@ public class Panel extends javax.swing.JFrame {
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(40, 100, 1270, 580);
+        scrollPane1.setBounds(50, 100, 1250, 580);
 
         Bsettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Bsettings.setText("SETTINGS");
@@ -374,7 +374,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(vPrincipal);
-        vPrincipal.setBounds(1110, 40, 210, 30);
+        vPrincipal.setBounds(1110, 60, 210, 30);
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1890, 740);
 
