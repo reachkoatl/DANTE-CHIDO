@@ -260,6 +260,7 @@ public class Panel extends javax.swing.JFrame {
 
         scrollPane1 = new java.awt.ScrollPane();
         Bsettings = new javax.swing.JButton();
+        cLEAR = new javax.swing.JButton();
         primero = new javax.swing.JButton();
         segundo = new javax.swing.JButton();
         cuarto = new javax.swing.JButton();
@@ -296,7 +297,17 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bsettings);
-        Bsettings.setBounds(390, 690, 172, 40);
+        Bsettings.setBounds(360, 690, 172, 40);
+
+        cLEAR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        cLEAR.setText("CLEAR");
+        cLEAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cLEARActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cLEAR);
+        cLEAR.setBounds(1120, 690, 172, 40);
 
         primero.setText("1-16");
         primero.addActionListener(new java.awt.event.ActionListener() {
@@ -484,6 +495,10 @@ public class Panel extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_cuartoActionPerformed
 
+    private void cLEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cLEARActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cLEARActionPerformed
+
     
     /**
      * @param args the command line arguments
@@ -516,6 +531,7 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel Etiquetacanales;
     private javax.swing.JTextField MSG;
     private javax.swing.JLabel alarma;
+    private javax.swing.JButton cLEAR;
     private javax.swing.JButton cuarto;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
