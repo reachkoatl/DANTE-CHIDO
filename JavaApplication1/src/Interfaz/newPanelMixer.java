@@ -66,6 +66,40 @@ public class newPanelMixer extends javax.swing.JPanel {
     private  int alternar31=0;
     private  int alternar32=0;
     
+    private  int alternar33=0;
+    private  int alternar34=0;
+    private  int alternar35=0;
+    private  int alternar36=0;
+    private  int alternar37=0;
+    private  int alternar38=0;
+    private  int alternar39=0;
+    private  int alternar40=0;
+    private  int alternar41=0;
+    private  int alternar42=0;
+    private  int alternar43=0;
+    private  int alternar44=0;
+    private  int alternar45=0;
+    private  int alternar46=0;
+    private  int alternar47=0;
+    private  int alternar48=0;
+    private  int alternar49=0;
+    private  int alternar50=0;
+    private  int alternar51=0;
+    private  int alternar52=0;
+    private  int alternar53=0;
+    private  int alternar54=0;
+    private  int alternar55=0;
+    private  int alternar56=0;
+    private  int alternar57=0;
+    private  int alternar58=0;
+    private  int alternar59=0;
+    private  int alternar60=0;
+    private  int alternar61=0;
+    private  int alternar62=0;
+    private  int alternar63=0;
+    private  int alternar64=0;
+    
+    
     
     private ThreadAudio audio0;
     private ThreadAudio audio1;
@@ -101,7 +135,41 @@ public class newPanelMixer extends javax.swing.JPanel {
     private ThreadAudio audio31;
     private ThreadAudio audio32;
     
-    private ThreadAudio[] audio = new ThreadAudio[32];
+    private ThreadAudio audio33;
+    private ThreadAudio audio34;
+    private ThreadAudio audio35;       
+    private ThreadAudio audio36;
+    private ThreadAudio audio37;
+    private ThreadAudio audio38;
+    private ThreadAudio audio39;
+    private ThreadAudio audio40;
+    private ThreadAudio audio41;
+    private ThreadAudio audio42;
+    private ThreadAudio audio43;
+    private ThreadAudio audio44;
+    private ThreadAudio audio45;
+    private ThreadAudio audio46;
+    private ThreadAudio audio47;
+    private ThreadAudio audio48;
+    private ThreadAudio audio49;
+    private ThreadAudio audio50;
+    private ThreadAudio audio51;
+    private ThreadAudio audio52;
+    private ThreadAudio audio53;
+    private ThreadAudio audio54;
+    private ThreadAudio audio55;
+    private ThreadAudio audio56;
+    private ThreadAudio audio57;
+    private ThreadAudio audio58;
+    private ThreadAudio audio59;
+    private ThreadAudio audio60;
+    private ThreadAudio audio61;
+    private ThreadAudio audio62;
+    private ThreadAudio audio63;
+    private ThreadAudio audio64;
+   
+    
+    private ThreadAudio[] audio = new ThreadAudio[64];
     
     private boolean LastAtivate0=false;
     private boolean LastAtivate1=false;
@@ -136,6 +204,39 @@ public class newPanelMixer extends javax.swing.JPanel {
     private boolean LastAtivate30=false;
     private boolean LastAtivate31=false;
     
+    private boolean LastAtivate32=false;
+    private boolean LastAtivate33=false;
+    private boolean LastAtivate34=false;
+    private boolean LastAtivate35=false;
+    private boolean LastAtivate36=false;
+    private boolean LastAtivate37=false;
+    private boolean LastAtivate38=false;
+    private boolean LastAtivate39=false;
+    private boolean LastAtivate40=false;
+    private boolean LastAtivate41=false;
+    private boolean LastAtivate42=false;
+    private boolean LastAtivate43=false;
+    private boolean LastAtivate44=false;
+    private boolean LastAtivate45=false;
+    private boolean LastAtivate46=false;
+    private boolean LastAtivate47=false;
+    private boolean LastAtivate48=false;
+    private boolean LastAtivate49=false;
+    private boolean LastAtivate50=false;
+    private boolean LastAtivate51=false;
+    private boolean LastAtivate52=false;
+    private boolean LastAtivate53=false;
+    private boolean LastAtivate54=false;
+    private boolean LastAtivate55=false;
+    private boolean LastAtivate56=false;
+    private boolean LastAtivate57=false;
+    private boolean LastAtivate58=false;
+    private boolean LastAtivate59=false;
+    private boolean LastAtivate60=false;
+    private boolean LastAtivate61=false;
+    private boolean LastAtivate62=false;
+    private boolean LastAtivate63=false;
+    
     private boolean audioforceddown0 = false;
     private boolean audioforceddown1 = false;
     private boolean audioforceddown2 = false;
@@ -169,8 +270,40 @@ public class newPanelMixer extends javax.swing.JPanel {
     private boolean audioforceddown30 = false;
     private boolean audioforceddown31 = false;
     
+    private boolean audioforceddown32 = false;
+    private boolean audioforceddown33 = false;
+    private boolean audioforceddown34 = false;
+    private boolean audioforceddown35 = false;
+    private boolean audioforceddown36 = false;
+    private boolean audioforceddown37 = false;
+    private boolean audioforceddown38 = false;
+    private boolean audioforceddown39 = false;
+    private boolean audioforceddown40 = false;
+    private boolean audioforceddown41 = false;
+    private boolean audioforceddown42 = false;
+    private boolean audioforceddown43 = false;
+    private boolean audioforceddown44 = false;
+    private boolean audioforceddown45 = false;
+    private boolean audioforceddown46 = false;
+    private boolean audioforceddown47 = false;
+    private boolean audioforceddown48 = false;
+    private boolean audioforceddown49 = false;
+    private boolean audioforceddown50 = false;
+    private boolean audioforceddown51 = false;
+    private boolean audioforceddown52 = false;
+    private boolean audioforceddown53 = false;
+    private boolean audioforceddown54 = false;
+    private boolean audioforceddown55 = false;
+    private boolean audioforceddown56 = false;
+    private boolean audioforceddown57 = false;
+    private boolean audioforceddown58 = false;
+    private boolean audioforceddown59 = false;
+    private boolean audioforceddown60 = false;
+    private boolean audioforceddown61 = false;
+    private boolean audioforceddown62 = false;
+    private boolean audioforceddown63 = false;
     
-    public Boolean[] var = new Boolean[65];
+    public Boolean[] var = new Boolean[130];
    
     
    
@@ -191,10 +324,10 @@ public class newPanelMixer extends javax.swing.JPanel {
         Conf= X.Read("config.xml");
         canales=new ArrayList<String>();
         ganancias=new ArrayList<Integer>();
-        for(int x=0;x<65;x++)
+        for(int x=0;x<130;x++)
             var[x]=false;
         
-        for(int i=0;i<32;i++){
+        for(int i=0;i<64;i++){
             canales.add("OFF");
             ganancias.add(1);
             
@@ -234,7 +367,38 @@ public class newPanelMixer extends javax.swing.JPanel {
         V31.setValue(10);
         V32.setValue(10);
         
-        
+        V33.setValue(10);
+        V34.setValue(10);
+        V35.setValue(10);
+        V36.setValue(10);
+        V37.setValue(10);
+        V38.setValue(10);
+        V39.setValue(10);
+        V40.setValue(10);
+        V41.setValue(10);
+        V42.setValue(10);
+        V43.setValue(10);
+        V44.setValue(10);
+        V45.setValue(10);
+        V46.setValue(10);
+        V47.setValue(10);
+        V48.setValue(10);
+        V49.setValue(10);
+        V50.setValue(10);
+        V51.setValue(10);
+        V52.setValue(10);
+        V53.setValue(10);
+        V54.setValue(10);
+        V55.setValue(10);
+        V56.setValue(10);
+        V57.setValue(10);
+        V58.setValue(10);
+        V59.setValue(10);
+        V60.setValue(10);
+        V61.setValue(10);
+        V62.setValue(10);
+        V63.setValue(10);
+        V64.setValue(10);
         
         
         LoadImages(Conf);
