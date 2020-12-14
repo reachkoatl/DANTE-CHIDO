@@ -52,6 +52,9 @@ public class Panel extends javax.swing.JFrame {
    private ArrayList<String> listaInterfaces;
    private String Red=null;
    public volumen vol;
+   private boolean isMixer=false;
+   private boolean isSetting = false;
+   
     public Panel() {
        initComponents();
        this.setResizable(false);
@@ -433,7 +436,8 @@ public class Panel extends javax.swing.JFrame {
         this.setpanelAdj(set);
       //  this.Bconnect.setEnabled(false);
       //  this.Bstop.setEnabled(false);
- 
+      isMixer = false;
+      isSetting = true;
     }//GEN-LAST:event_BsettingsActionPerformed
 
     private void BmixerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BmixerActionPerformed
@@ -441,7 +445,8 @@ public class Panel extends javax.swing.JFrame {
         this.setpanel(mixer);
         //this.Bconnect.setEnabled(rootPaneCheckingEnabled);
         //this.Bstop.setEnabled(true);
-        
+        isMixer = true;
+        isSetting=false;
     }//GEN-LAST:event_BmixerActionPerformed
 
     private void networksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networksActionPerformed
@@ -461,7 +466,10 @@ public class Panel extends javax.swing.JFrame {
     private void primeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_primeroActionPerformed
         // TODO add your handling code here:
         try{
-            this.scrollPane1.setScrollPosition(0, 0);
+            if(isMixer){
+                this.scrollPane1.setScrollPosition(0, 0);
+            }
+            
         }
         catch(Exception ex){
         }
@@ -471,7 +479,10 @@ public class Panel extends javax.swing.JFrame {
     private void segundoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundoActionPerformed
         // TODO add your handling code here:
         try{
-            this.scrollPane1.setScrollPosition(0, 525);
+            if(isMixer){
+                this.scrollPane1.setScrollPosition(0, 525);
+            }
+            
         }
         catch(Exception ex){
         }
@@ -480,7 +491,10 @@ public class Panel extends javax.swing.JFrame {
     private void terceroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_terceroActionPerformed
         // TODO add your handling code here:
         try{
-            this.scrollPane1.setScrollPosition(0, 1050);
+            if(isMixer){
+                this.scrollPane1.setScrollPosition(0, 1050);
+            }
+            
         }
         catch(Exception ex){
         }
@@ -489,7 +503,10 @@ public class Panel extends javax.swing.JFrame {
     private void cuartoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuartoActionPerformed
         // TODO add your handling code here:
         try{
-            this.scrollPane1.setScrollPosition(0, 1575);
+            if(isMixer){
+                this.scrollPane1.setScrollPosition(0, 1575);
+            }
+            
         }
         catch(Exception ex){
         }

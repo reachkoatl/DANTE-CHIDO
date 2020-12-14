@@ -975,9 +975,459 @@ public class newPanelMixer extends javax.swing.JPanel {
        }
         
         
+        //32 to 64
+        
+        changeImage(Images, 32);
+        changeImage(Images, 33);
+        changeImage(Images, 34);
+        changeImage(Images, 35);
+        changeImage(Images, 36);
+        changeImage(Images, 37);
+        changeImage(Images, 38);
+        changeImage(Images, 39);
+        changeImage(Images, 40);
+        changeImage(Images, 41);
+        changeImage(Images, 42);
+        changeImage(Images, 43);
+        changeImage(Images, 44);
+        changeImage(Images, 45);
+        changeImage(Images, 46);
+        changeImage(Images, 47);
+        changeImage(Images, 48);
+        changeImage(Images, 49);
+        changeImage(Images, 50);
+        changeImage(Images, 51);
+        changeImage(Images, 52);
+        changeImage(Images, 53);
+        changeImage(Images, 54);
+        changeImage(Images, 55);
+        changeImage(Images, 56);
+        changeImage(Images, 57);
+        changeImage(Images, 58);
+        changeImage(Images, 59);
+        changeImage(Images, 60);
+        changeImage(Images, 61);
+        changeImage(Images, 62);
+        changeImage(Images, 63);
         
        
+    }
+    
+    void changeImage(ArrayList<String> Images,int index){
+        if(!Images.get(index).equals("0")){
+            try{
+                
+                switch(index){
+                    case 0:
+                        I1.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 1:
+                        I2.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 2:
+                        I3.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 3:
+                        I4.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 4:
+                        I5.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 5:
+                        I6.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 6:
+                        I7.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 7:
+                        I8.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 8:
+                        I9.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 9:
+                        I10.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 10:
+                        I11.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 11:
+                        I12.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 12:
+                        I13.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 13:
+                        I14.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 14:
+                        I15.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 15:
+                        I16.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 16:
+                        I17.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 17:
+                        I18.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 18:
+                        I19.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 19:
+                        I20.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 20:
+                        I21.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 21:
+                        I22.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 22:
+                        I23.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 23:
+                        I24.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 24:
+                        I25.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 25:
+                        I26.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 26:
+                        I27.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 27:
+                        I28.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 28:
+                        I29.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 29:
+                        I30.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 30:
+                        I31.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 31:
+                        I32.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    
+                    case 32:
+                        I33.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 33:
+                        I34.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 34:
+                        I35.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 35:
+                        I36.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 36:
+                        I37.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 37:
+                        I38.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 38:
+                        I39.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 39:
+                        I40.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 40:
+                        I41.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 41:
+                        I42.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 42:
+                        I43.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 43:
+                        I44.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 44:
+                        I45.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 45:
+                        I46.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 46:
+                        I47.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 47:
+                        I48.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 48:
+                        I49.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 49:
+                        I50.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 50:
+                        I51.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 51:
+                        I52.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 52:
+                        I53.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 53:
+                        I54.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 54:
+                        I55.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 55:
+                        I56.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 56:
+                        I57.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 57:
+                        I58.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 58:
+                        I59.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 59:
+                        I60.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 60:
+                        I61.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 61:
+                        I62.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 62:
+                        I63.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                    case 63:
+                        I64.setIcon(new javax.swing.ImageIcon(Images.get(index)));
+                        break;
+                }
+                
+                
+                
+                this.repaint();
+            }
+            catch(Exception ex){
+                System.out.println("ERROR DE ESCRITURA");
+            }      
+        }
+        else{
+           try{
+               
+                switch(index){
+                    case 0:
+                        I1.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 1:
+                        I2.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 2:
+                        I3.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 3:
+                        I4.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 4:
+                        I5.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 5:
+                        I6.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 6:
+                        I7.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 7:
+                        I8.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 8:
+                        I9.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 9:
+                        I10.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 10:
+                        I11.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 11:
+                        I12.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 12:
+                        I13.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 13:
+                        I14.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 14:
+                        I15.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 15:
+                        I16.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 16:
+                        I17.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 17:
+                        I18.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 18:
+                        I19.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 19:
+                        I20.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 20:
+                        I21.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 21:
+                        I22.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 22:
+                        I23.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 23:
+                        I24.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 24:
+                        I25.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 25:
+                        I26.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 26:
+                        I27.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 27:
+                        I28.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 28:
+                        I29.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 29:
+                        I30.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 30:
+                        I31.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 31:
+                        I32.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    
+                    case 32:
+                        I33.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 33:
+                        I34.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 34:
+                        I35.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 35:
+                        I36.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 36:
+                        I37.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 37:
+                        I38.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 38:
+                        I39.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 39:
+                        I40.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 40:
+                        I41.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 41:
+                        I42.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 42:
+                        I43.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 43:
+                        I44.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 44:
+                        I45.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 45:
+                        I46.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 46:
+                        I47.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 47:
+                        I48.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 48:
+                        I49.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 49:
+                        I50.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 50:
+                        I51.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 51:
+                        I52.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 52:
+                        I53.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 53:
+                        I54.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 54:
+                        I55.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 55:
+                        I56.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 56:
+                        I57.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 57:
+                        I58.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 58:
+                        I59.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 59:
+                        I60.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 60:
+                        I61.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 61:
+                        I62.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 62:
+                        I63.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                    case 63:
+                        I64.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                        break;
+                }
+               
+      
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
        
+       }
     }
     
     public void LoadAlias(Configuracion C){
@@ -1013,6 +1463,40 @@ public class newPanelMixer extends javax.swing.JPanel {
        this.C30.setText(C.GetAlias().get(29));
        this.C31.setText(C.GetAlias().get(30));
        this.C32.setText(C.GetAlias().get(31));
+       
+       this.C33.setText(C.GetAlias().get(32));
+       this.C34.setText(C.GetAlias().get(33));
+       this.C35.setText(C.GetAlias().get(34));
+       this.C36.setText(C.GetAlias().get(35));
+       this.C37.setText(C.GetAlias().get(36));
+       this.C38.setText(C.GetAlias().get(37));
+       this.C39.setText(C.GetAlias().get(38));
+       this.C40.setText(C.GetAlias().get(39));
+       this.C41.setText(C.GetAlias().get(40));
+       this.C42.setText(C.GetAlias().get(41));
+       this.C43.setText(C.GetAlias().get(42));
+       this.C44.setText(C.GetAlias().get(43));
+       this.C45.setText(C.GetAlias().get(44));
+       this.C46.setText(C.GetAlias().get(45));
+       this.C47.setText(C.GetAlias().get(46));
+       this.C48.setText(C.GetAlias().get(47));
+       this.C49.setText(C.GetAlias().get(48));
+       this.C50.setText(C.GetAlias().get(49));
+       this.C51.setText(C.GetAlias().get(50));
+       this.C52.setText(C.GetAlias().get(51));
+       this.C53.setText(C.GetAlias().get(52));
+       this.C54.setText(C.GetAlias().get(53));
+       this.C55.setText(C.GetAlias().get(54));
+       this.C56.setText(C.GetAlias().get(55));
+       this.C57.setText(C.GetAlias().get(56));
+       this.C58.setText(C.GetAlias().get(57));
+       this.C59.setText(C.GetAlias().get(58));
+       this.C60.setText(C.GetAlias().get(59));
+       this.C61.setText(C.GetAlias().get(60));
+       this.C62.setText(C.GetAlias().get(61));
+       this.C63.setText(C.GetAlias().get(62));
+       this.C64.setText(C.GetAlias().get(63));
+       
        this.repaint();
     } 
  
@@ -1680,6 +2164,38 @@ public class newPanelMixer extends javax.swing.JPanel {
        }
       
        
+        changeImage(C.GetListaImages(), 32);
+        changeImage(C.GetListaImages(), 33);
+        changeImage(C.GetListaImages(), 34);
+        changeImage(C.GetListaImages(), 35);
+        changeImage(C.GetListaImages(), 36);
+        changeImage(C.GetListaImages(), 37);
+        changeImage(C.GetListaImages(), 38);
+        changeImage(C.GetListaImages(), 39);
+        changeImage(C.GetListaImages(), 40);
+        changeImage(C.GetListaImages(), 41);
+        changeImage(C.GetListaImages(), 42);
+        changeImage(C.GetListaImages(), 43);
+        changeImage(C.GetListaImages(), 44);
+        changeImage(C.GetListaImages(), 45);
+        changeImage(C.GetListaImages(), 46);
+        changeImage(C.GetListaImages(), 47);
+        changeImage(C.GetListaImages(), 48);
+        changeImage(C.GetListaImages(), 49);
+        changeImage(C.GetListaImages(), 50);
+        changeImage(C.GetListaImages(), 51);
+        changeImage(C.GetListaImages(), 52);
+        changeImage(C.GetListaImages(), 53);
+        changeImage(C.GetListaImages(), 54);
+        changeImage(C.GetListaImages(), 55);
+        changeImage(C.GetListaImages(), 56);
+        changeImage(C.GetListaImages(), 57);
+        changeImage(C.GetListaImages(), 58);
+        changeImage(C.GetListaImages(), 59);
+        changeImage(C.GetListaImages(), 60);
+        changeImage(C.GetListaImages(), 61);
+        changeImage(C.GetListaImages(), 62);
+        changeImage(C.GetListaImages(), 63);
        
     }
     /**

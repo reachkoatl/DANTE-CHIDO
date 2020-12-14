@@ -2600,130 +2600,162 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im33ActionPerformed
         // TODO add your handling code here:
+        SaveImage(32);
     }//GEN-LAST:event_Im33ActionPerformed
 
     private void Im34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im34ActionPerformed
         // TODO add your handling code here:
+        SaveImage(33);
     }//GEN-LAST:event_Im34ActionPerformed
 
     private void Im35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im35ActionPerformed
         // TODO add your handling code here:
+        SaveImage(34);
     }//GEN-LAST:event_Im35ActionPerformed
 
     private void Im36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im36ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code 
+        SaveImage(35);
     }//GEN-LAST:event_Im36ActionPerformed
 
     private void Im37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im37ActionPerformed
         // TODO add your handling code here:
+        SaveImage(36);
     }//GEN-LAST:event_Im37ActionPerformed
 
     private void Im38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im38ActionPerformed
         // TODO add your handling code here:
+        SaveImage(37);
     }//GEN-LAST:event_Im38ActionPerformed
 
     private void Im39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im39ActionPerformed
         // TODO add your handling code here:
+        SaveImage(38);
     }//GEN-LAST:event_Im39ActionPerformed
 
     private void Im40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im40ActionPerformed
         // TODO add your handling code here:
+        SaveImage(39);
     }//GEN-LAST:event_Im40ActionPerformed
 
     private void Im41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im41ActionPerformed
         // TODO add your handling code here:
+        SaveImage(40);
     }//GEN-LAST:event_Im41ActionPerformed
 
     private void Im42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im42ActionPerformed
         // TODO add your handling code here:
+        SaveImage(41);
     }//GEN-LAST:event_Im42ActionPerformed
 
     private void Im43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im43ActionPerformed
         // TODO add your handling code here:
+        SaveImage(42);
     }//GEN-LAST:event_Im43ActionPerformed
 
     private void Im44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im44ActionPerformed
         // TODO add your handling code here:
+        SaveImage(43);
     }//GEN-LAST:event_Im44ActionPerformed
 
     private void Im45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im45ActionPerformed
         // TODO add your handling code here:
+        SaveImage(44);
     }//GEN-LAST:event_Im45ActionPerformed
 
     private void Im46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im46ActionPerformed
         // TODO add your handling code here:
+        SaveImage(45);
     }//GEN-LAST:event_Im46ActionPerformed
 
     private void Im47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im47ActionPerformed
         // TODO add your handling code here:
+        SaveImage(46);
     }//GEN-LAST:event_Im47ActionPerformed
 
     private void Im48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im48ActionPerformed
         // TODO add your handling code here:
+        SaveImage(47);
     }//GEN-LAST:event_Im48ActionPerformed
 
     private void Im49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im49ActionPerformed
         // TODO add your handling code here:
+        SaveImage(48);
     }//GEN-LAST:event_Im49ActionPerformed
 
     private void Im50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im50ActionPerformed
         // TODO add your handling code here:
+        SaveImage(49);
     }//GEN-LAST:event_Im50ActionPerformed
 
     private void Im51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im51ActionPerformed
         // TODO add your handling code here:
+        SaveImage(50);
     }//GEN-LAST:event_Im51ActionPerformed
 
     private void Im52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im52ActionPerformed
         // TODO add your handling code here:
+        SaveImage(51);
     }//GEN-LAST:event_Im52ActionPerformed
 
     private void Im53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im53ActionPerformed
         // TODO add your handling code here:
+        SaveImage(52);
     }//GEN-LAST:event_Im53ActionPerformed
 
     private void Im54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im54ActionPerformed
         // TODO add your handling code here:
+        SaveImage(53);
     }//GEN-LAST:event_Im54ActionPerformed
 
     private void Im55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im55ActionPerformed
         // TODO add your handling code here:
+        SaveImage(54);
     }//GEN-LAST:event_Im55ActionPerformed
 
     private void Im56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im56ActionPerformed
         // TODO add your handling code here:
+        SaveImage(55);
     }//GEN-LAST:event_Im56ActionPerformed
 
     private void Im57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im57ActionPerformed
         // TODO add your handling code here:
+        SaveImage(56);
     }//GEN-LAST:event_Im57ActionPerformed
 
     private void Im58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im58ActionPerformed
         // TODO add your handling code here:
+        SaveImage(57);
     }//GEN-LAST:event_Im58ActionPerformed
 
     private void Im59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im59ActionPerformed
         // TODO add your handling code here:
+        SaveImage(58);
     }//GEN-LAST:event_Im59ActionPerformed
 
     private void Im60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im60ActionPerformed
         // TODO add your handling code here:
+        SaveImage(59);
     }//GEN-LAST:event_Im60ActionPerformed
 
     private void Im61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im61ActionPerformed
         // TODO add your handling code here:
+        SaveImage(60);
     }//GEN-LAST:event_Im61ActionPerformed
 
     private void Im62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im62ActionPerformed
         // TODO add your handling code here:
+        SaveImage(61);
     }//GEN-LAST:event_Im62ActionPerformed
 
     private void Im63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im63ActionPerformed
         // TODO add your handling code here:
+        SaveImage(62);
     }//GEN-LAST:event_Im63ActionPerformed
 
     private void Im64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im64ActionPerformed
         // TODO add your handling code here:
+        SaveImage(63);
     }//GEN-LAST:event_Im64ActionPerformed
 
     private void PaintSettings(Configuracion C){
@@ -2771,7 +2803,38 @@ public class Settings extends javax.swing.JPanel {
         id31.setText(nombres.get(30));
         id32.setText(nombres.get(31));
         
-        
+        id33.setText(nombres.get(32));
+        id34.setText(nombres.get(33));
+        id35.setText(nombres.get(34));
+        id36.setText(nombres.get(35));
+        id37.setText(nombres.get(36));
+        id38.setText(nombres.get(37));
+        id39.setText(nombres.get(38));
+        id40.setText(nombres.get(39));
+        id41.setText(nombres.get(40));
+        id42.setText(nombres.get(41));
+        id43.setText(nombres.get(42));
+        id44.setText(nombres.get(43));
+        id45.setText(nombres.get(44));
+        id46.setText(nombres.get(45));
+        id47.setText(nombres.get(46));
+        id48.setText(nombres.get(47));
+        id49.setText(nombres.get(48));
+        id50.setText(nombres.get(49));
+        id51.setText(nombres.get(50));
+        id52.setText(nombres.get(51));
+        id53.setText(nombres.get(52));
+        id54.setText(nombres.get(53));
+        id55.setText(nombres.get(54));
+        id56.setText(nombres.get(55));
+        id57.setText(nombres.get(56));
+        id58.setText(nombres.get(57));
+        id59.setText(nombres.get(58));
+        id60.setText(nombres.get(59));
+        id61.setText(nombres.get(60));
+        id62.setText(nombres.get(61));
+        id63.setText(nombres.get(62));
+        id64.setText(nombres.get(63));
         
         
     }
