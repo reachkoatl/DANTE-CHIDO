@@ -449,18 +449,39 @@ public class Panel extends javax.swing.JFrame {
 
     private void primeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_primeroActionPerformed
         // TODO add your handling code here:
+        try{
+            this.scrollPane1.setScrollPosition(0, 0);
+        }
+        catch(Exception ex){
+        }
+        
     }//GEN-LAST:event_primeroActionPerformed
 
     private void segundoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundoActionPerformed
         // TODO add your handling code here:
+        try{
+            this.scrollPane1.setScrollPosition(0, 525);
+        }
+        catch(Exception ex){
+        }
     }//GEN-LAST:event_segundoActionPerformed
 
     private void terceroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_terceroActionPerformed
         // TODO add your handling code here:
+        try{
+            this.scrollPane1.setScrollPosition(0, 1050);
+        }
+        catch(Exception ex){
+        }
     }//GEN-LAST:event_terceroActionPerformed
 
     private void cuartoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuartoActionPerformed
         // TODO add your handling code here:
+        try{
+            this.scrollPane1.setScrollPosition(0, 1575);
+        }
+        catch(Exception ex){
+        }
     }//GEN-LAST:event_cuartoActionPerformed
 
     
