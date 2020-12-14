@@ -50,7 +50,7 @@ public class Settings extends javax.swing.JPanel {
         this.P=P;
         this.Mixer=Mixer;
         X=new XmlRead();
-        for(int i=0;i<32;i++){
+        for(int i=0;i<64;i++){
             Images.add("0");
         }
         Confread=X.Read("config.xml");
@@ -2335,6 +2335,39 @@ public class Settings extends javax.swing.JPanel {
         this.id30.setText(Conf.GetAlias().get(29));
         this.id31.setText(Conf.GetAlias().get(30));
         this.id32.setText(Conf.GetAlias().get(31));
+        
+        this.id33.setText(Conf.GetAlias().get(32));
+        this.id34.setText(Conf.GetAlias().get(33));
+        this.id35.setText(Conf.GetAlias().get(34));
+        this.id36.setText(Conf.GetAlias().get(35));
+        this.id37.setText(Conf.GetAlias().get(36));
+        this.id38.setText(Conf.GetAlias().get(37));
+        this.id39.setText(Conf.GetAlias().get(38));
+        this.id40.setText(Conf.GetAlias().get(39));
+        this.id41.setText(Conf.GetAlias().get(40));
+        this.id42.setText(Conf.GetAlias().get(41));
+        this.id43.setText(Conf.GetAlias().get(42));
+        this.id44.setText(Conf.GetAlias().get(43));
+        this.id45.setText(Conf.GetAlias().get(44));
+        this.id46.setText(Conf.GetAlias().get(45));
+        this.id47.setText(Conf.GetAlias().get(46));
+        this.id48.setText(Conf.GetAlias().get(47));
+        this.id49.setText(Conf.GetAlias().get(48));
+        this.id50.setText(Conf.GetAlias().get(49));
+        this.id51.setText(Conf.GetAlias().get(50));
+        this.id52.setText(Conf.GetAlias().get(51));
+        this.id53.setText(Conf.GetAlias().get(52));
+        this.id54.setText(Conf.GetAlias().get(53));
+        this.id55.setText(Conf.GetAlias().get(54));
+        this.id56.setText(Conf.GetAlias().get(55));
+        this.id57.setText(Conf.GetAlias().get(56));
+        this.id58.setText(Conf.GetAlias().get(57));
+        this.id59.setText(Conf.GetAlias().get(58));
+        this.id60.setText(Conf.GetAlias().get(59));
+        this.id61.setText(Conf.GetAlias().get(60));
+        this.id62.setText(Conf.GetAlias().get(61));
+        this.id63.setText(Conf.GetAlias().get(62));
+        this.id64.setText(Conf.GetAlias().get(63));
 
         this.serv.setText(Conf.GetServidor());
         this.multicast.setText(Conf.GetMultiCast());
@@ -2468,6 +2501,39 @@ public class Settings extends javax.swing.JPanel {
         Alias.add(id31.getText());
         Alias.add(id32.getText());
 
+        Alias.add(id33.getText());
+        Alias.add(id34.getText());
+        Alias.add(id35.getText());
+        Alias.add(id36.getText());
+        Alias.add(id37.getText());
+        Alias.add(id38.getText());
+        Alias.add(id38.getText());
+        Alias.add(id40.getText());    
+        Alias.add(id41.getText());
+        Alias.add(id42.getText());
+        Alias.add(id43.getText());
+        Alias.add(id44.getText());
+        Alias.add(id45.getText());
+        Alias.add(id46.getText());
+        Alias.add(id47.getText());
+        Alias.add(id48.getText());
+        Alias.add(id49.getText());
+        Alias.add(id50.getText());
+        Alias.add(id51.getText());
+        Alias.add(id52.getText());
+        Alias.add(id53.getText());
+        Alias.add(id54.getText());
+        Alias.add(id55.getText());
+        Alias.add(id56.getText());
+        Alias.add(id57.getText());
+        Alias.add(id58.getText());
+        Alias.add(id59.getText());
+        Alias.add(id60.getText());
+        Alias.add(id61.getText());
+        Alias.add(id62.getText());
+        Alias.add(id63.getText());
+        Alias.add(id64.getText());
+        
         Conf.SetLista(puertos);
         Conf.SetAlias(Alias);
 

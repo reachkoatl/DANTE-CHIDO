@@ -135,7 +135,7 @@ public class ThreadAudio extends Thread{
             try{
             if(Network.equals("default")){
             socket=new MulticastSocket(Integer.parseInt(puerto));
-            grupo=InetAddress.getByName("224.0.0.3");
+            grupo=InetAddress.getByName(multicast);
             
             socket.joinGroup(grupo);
             socket.setSoTimeout(5000);

@@ -299,14 +299,29 @@ public class Panel extends javax.swing.JFrame {
         Bsettings.setBounds(390, 690, 172, 40);
 
         primero.setText("1-16");
+        primero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                primeroActionPerformed(evt);
+            }
+        });
         getContentPane().add(primero);
         primero.setBounds(60, 110, 80, 23);
 
         segundo.setText("17-32");
+        segundo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                segundoActionPerformed(evt);
+            }
+        });
         getContentPane().add(segundo);
         segundo.setBounds(140, 110, 80, 23);
 
         cuarto.setText("49-64");
+        cuarto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cuartoActionPerformed(evt);
+            }
+        });
         getContentPane().add(cuarto);
         cuarto.setBounds(300, 110, 90, 23);
 
@@ -376,6 +391,11 @@ public class Panel extends javax.swing.JFrame {
         networks.setBounds(880, 690, 130, 20);
 
         tercero.setText("33-48");
+        tercero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                terceroActionPerformed(evt);
+            }
+        });
         getContentPane().add(tercero);
         tercero.setBounds(220, 110, 80, 23);
 
@@ -426,6 +446,22 @@ public class Panel extends javax.swing.JFrame {
             vol.setSystemVolume(vPrincipal.getValue());
         // TODO add your handling code here:
     }//GEN-LAST:event_vPrincipalStateChanged
+
+    private void primeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_primeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_primeroActionPerformed
+
+    private void segundoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_segundoActionPerformed
+
+    private void terceroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_terceroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_terceroActionPerformed
+
+    private void cuartoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuartoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cuartoActionPerformed
 
     
     /**

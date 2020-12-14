@@ -58,7 +58,7 @@ public class XmlWrite {
             escape.addContenido(Conf.GetPuerto());
             PortUDP.addContenido(Conf.GetPortUDP());
             
-            for(int a=0;a<32;a++){
+            for(int a=0;a<64;a++){
                 canales.add(new Tag("CANAL"));
                 canales.get(a).addAtributo("id",Alias.get(a));
                            
@@ -75,7 +75,7 @@ public class XmlWrite {
             Asio.addTagHijo(Network);
             
             
-            for(int i=0;i<32;i++){
+            for(int i=0;i<64;i++){
                 Imagenes.add(new Tag("IMAGE"));
                 //Imagenes.get(i).addAtributo("id",Alias.get(i));
                                
