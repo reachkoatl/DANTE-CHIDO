@@ -2666,36 +2666,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         }
     }                                   
 
-    private void S19ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-         var[38]=true;
-        if(S19.isSelected()&&!var[37]){
-            DisableVolumeExcept(V19,S19,38,18);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[18]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(18),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),6,V19,C19,socket);
-             audio[18].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[38]=false;
-         }     
-        }
-        if(S19.isSelected()&&var[37])
-        {
-            DisableVolumeExcept(V19,S19,38,18);
-        }
-        if(!S19.isSelected()){
-            EnableVolume();
-            var[38]=false;
-            audio[18].detener();
-            audio[18].stop();
-        }
-    }                                   
+                                   
 
                                       
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -3098,6 +3069,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         S19.setText("SOLO");
         S19.setContentAreaFilled(false);
         S19.setOpaque(true);
+        S19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S19ActionPerformed(evt);
+            }
+        });
 
         I27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -7219,6 +7195,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         // TODO add your handling code here:
         mainfunctionAudioChannel(10, C10, V10, 9);
     }//GEN-LAST:event_C10ActionPerformed
+
+    private void S19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S19ActionPerformed
+        // TODO add your handling code here:
+        mainfunctionSOLO(19, C19, S19, V19, 6);
+    }//GEN-LAST:event_S19ActionPerformed
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
