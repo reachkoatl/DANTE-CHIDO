@@ -1608,6 +1608,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C10ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I10">
       <Properties>
@@ -1639,6 +1642,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C18ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I18">
       <Properties>
@@ -1670,6 +1676,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C26ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I26">
       <Properties>
@@ -1691,6 +1700,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C4ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V4">
       <Properties>
@@ -1722,6 +1734,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C12ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V12">
       <Properties>
@@ -1753,6 +1768,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C20ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V20">
       <Properties>
@@ -1784,6 +1802,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C28ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="V28">
       <Properties>
