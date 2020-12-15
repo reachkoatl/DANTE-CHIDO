@@ -7,6 +7,7 @@ package Interfaz;
 import Negocio.ThreadAudio;
 import Negocio.ThreadSocket;
 import Datos.Configuracion;
+import Datos.GlobalConfig;
 import Datos.XmlRead;
 import java.awt.Color;
 import java.awt.Component;
@@ -135,179 +136,16 @@ public class newPanelMixer extends javax.swing.JPanel {
     private ThreadAudio audio31;
     private ThreadAudio audio32;
     
-    private ThreadAudio audio33;
-    private ThreadAudio audio34;
-    private ThreadAudio audio35;       
-    private ThreadAudio audio36;
-    private ThreadAudio audio37;
-    private ThreadAudio audio38;
-    private ThreadAudio audio39;
-    private ThreadAudio audio40;
-    private ThreadAudio audio41;
-    private ThreadAudio audio42;
-    private ThreadAudio audio43;
-    private ThreadAudio audio44;
-    private ThreadAudio audio45;
-    private ThreadAudio audio46;
-    private ThreadAudio audio47;
-    private ThreadAudio audio48;
-    private ThreadAudio audio49;
-    private ThreadAudio audio50;
-    private ThreadAudio audio51;
-    private ThreadAudio audio52;
-    private ThreadAudio audio53;
-    private ThreadAudio audio54;
-    private ThreadAudio audio55;
-    private ThreadAudio audio56;
-    private ThreadAudio audio57;
-    private ThreadAudio audio58;
-    private ThreadAudio audio59;
-    private ThreadAudio audio60;
-    private ThreadAudio audio61;
-    private ThreadAudio audio62;
-    private ThreadAudio audio63;
-    private ThreadAudio audio64;
+    
    
     
     private ThreadAudio[] audio = new ThreadAudio[64];
+    private int[] alternar = new int[64];
     
-    private boolean LastAtivate0=false;
-    private boolean LastAtivate1=false;
-    private boolean LastAtivate2=false;
-    private boolean LastAtivate3=false;
-    private boolean LastAtivate4=false;
-    private boolean LastAtivate5=false;
-    private boolean LastAtivate6=false;
-    private boolean LastAtivate7=false;
-    private boolean LastAtivate8=false;
-    private boolean LastAtivate9=false;
-    private boolean LastAtivate10=false;
-    private boolean LastAtivate11=false;
-    private boolean LastAtivate12=false;
-    private boolean LastAtivate13=false;
-    private boolean LastAtivate14=false;
-    private boolean LastAtivate15=false;
-    private boolean LastAtivate16=false;
-    private boolean LastAtivate17=false;
-    private boolean LastAtivate18=false;
-    private boolean LastAtivate19=false;
-    private boolean LastAtivate20=false;
-    private boolean LastAtivate21=false;
-    private boolean LastAtivate22=false;
-    private boolean LastAtivate23=false;
-    private boolean LastAtivate24=false;
-    private boolean LastAtivate25=false;
-    private boolean LastAtivate26=false;
-    private boolean LastAtivate27=false;
-    private boolean LastAtivate28=false;
-    private boolean LastAtivate29=false;
-    private boolean LastAtivate30=false;
-    private boolean LastAtivate31=false;
-    
-    private boolean LastAtivate32=false;
-    private boolean LastAtivate33=false;
-    private boolean LastAtivate34=false;
-    private boolean LastAtivate35=false;
-    private boolean LastAtivate36=false;
-    private boolean LastAtivate37=false;
-    private boolean LastAtivate38=false;
-    private boolean LastAtivate39=false;
-    private boolean LastAtivate40=false;
-    private boolean LastAtivate41=false;
-    private boolean LastAtivate42=false;
-    private boolean LastAtivate43=false;
-    private boolean LastAtivate44=false;
-    private boolean LastAtivate45=false;
-    private boolean LastAtivate46=false;
-    private boolean LastAtivate47=false;
-    private boolean LastAtivate48=false;
-    private boolean LastAtivate49=false;
-    private boolean LastAtivate50=false;
-    private boolean LastAtivate51=false;
-    private boolean LastAtivate52=false;
-    private boolean LastAtivate53=false;
-    private boolean LastAtivate54=false;
-    private boolean LastAtivate55=false;
-    private boolean LastAtivate56=false;
-    private boolean LastAtivate57=false;
-    private boolean LastAtivate58=false;
-    private boolean LastAtivate59=false;
-    private boolean LastAtivate60=false;
-    private boolean LastAtivate61=false;
-    private boolean LastAtivate62=false;
-    private boolean LastAtivate63=false;
-    
-    private boolean audioforceddown0 = false;
-    private boolean audioforceddown1 = false;
-    private boolean audioforceddown2 = false;
-    private boolean audioforceddown3 = false;
-    private boolean audioforceddown4 = false;
-    private boolean audioforceddown5 = false;
-    private boolean audioforceddown6 = false;
-    private boolean audioforceddown7 = false;
-    private boolean audioforceddown8 = false;
-    private boolean audioforceddown9 = false;
-    private boolean audioforceddown10 = false;
-    private boolean audioforceddown11 = false;
-    private boolean audioforceddown12 = false;
-    private boolean audioforceddown13 = false;
-    private boolean audioforceddown14 = false;
-    private boolean audioforceddown15 = false;
-    private boolean audioforceddown16 = false;
-    private boolean audioforceddown17 = false;
-    private boolean audioforceddown18 = false;
-    private boolean audioforceddown19 = false;
-    private boolean audioforceddown20 = false;
-    private boolean audioforceddown21 = false;
-    private boolean audioforceddown22 = false;
-    private boolean audioforceddown23 = false;
-    private boolean audioforceddown24 = false;
-    private boolean audioforceddown25 = false;
-    private boolean audioforceddown26 = false;
-    private boolean audioforceddown27 = false;
-    private boolean audioforceddown28 = false;
-    private boolean audioforceddown29 = false;
-    private boolean audioforceddown30 = false;
-    private boolean audioforceddown31 = false;
-    
-    private boolean audioforceddown32 = false;
-    private boolean audioforceddown33 = false;
-    private boolean audioforceddown34 = false;
-    private boolean audioforceddown35 = false;
-    private boolean audioforceddown36 = false;
-    private boolean audioforceddown37 = false;
-    private boolean audioforceddown38 = false;
-    private boolean audioforceddown39 = false;
-    private boolean audioforceddown40 = false;
-    private boolean audioforceddown41 = false;
-    private boolean audioforceddown42 = false;
-    private boolean audioforceddown43 = false;
-    private boolean audioforceddown44 = false;
-    private boolean audioforceddown45 = false;
-    private boolean audioforceddown46 = false;
-    private boolean audioforceddown47 = false;
-    private boolean audioforceddown48 = false;
-    private boolean audioforceddown49 = false;
-    private boolean audioforceddown50 = false;
-    private boolean audioforceddown51 = false;
-    private boolean audioforceddown52 = false;
-    private boolean audioforceddown53 = false;
-    private boolean audioforceddown54 = false;
-    private boolean audioforceddown55 = false;
-    private boolean audioforceddown56 = false;
-    private boolean audioforceddown57 = false;
-    private boolean audioforceddown58 = false;
-    private boolean audioforceddown59 = false;
-    private boolean audioforceddown60 = false;
-    private boolean audioforceddown61 = false;
-    private boolean audioforceddown62 = false;
-    private boolean audioforceddown63 = false;
-    
+      
     public Boolean[] var = new Boolean[130];
    
-    
-   
-    
+           
     private Configuracion Conf;
     private XmlRead X;
     private Panel P;
@@ -322,6 +160,18 @@ public class newPanelMixer extends javax.swing.JPanel {
         X=new XmlRead();
        
         Conf= X.Read("config.xml");
+        GlobalConfig.servidor = Conf.GetServidor();       
+        GlobalConfig.ListaAlias = Conf.GetAlias();
+        GlobalConfig.Frecuencia = Conf.GetFrecuencia();
+        GlobalConfig.ListaPuertos = Conf.GetLista();
+        GlobalConfig.ListaImages = Conf.GetListaImages();
+        GlobalConfig.Muestra = Conf.GetMuestra();
+        GlobalConfig.multicast = Conf.GetMultiCast();
+        GlobalConfig.PortUDP = Conf.GetPortUDP();
+        GlobalConfig.puerto = Conf.GetPuerto();
+        GlobalConfig.Network = Conf.GetNet();
+      
+    
         canales=new ArrayList<String>();
         ganancias=new ArrayList<Integer>();
         for(int x=0;x<130;x++)
@@ -416,7 +266,76 @@ public class newPanelMixer extends javax.swing.JPanel {
      * regenerated by the Form Editor.
      */
     
+    public void ClearAll(){
     
+    }
+    
+    
+    void mainfunctionAudioChannel(int index,JButton button,JSlider slider,int canal){
+        var[(index*2)-1]=true;
+        if(!var[index*2])
+        {// TODO add your handling code here:     
+            alternar[index-1]++;   
+            if(alternar[index-1]==1){
+
+                 try{
+                                                    
+                    audio[index-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,canal,slider,button,socket);
+                    audio[index-1].start();
+                    C1.setBackground(Color.GREEN);
+                     
+                                     
+                 }
+                 catch(Exception e){
+                    System.out.println("Error de hilo ");
+                    button.setBackground(Color.RED);
+                    slider.setEnabled(false);
+                    var[index-1]=false;
+                 }
+
+
+            }   
+
+            if(alternar[index-1]==2){
+                 audio[index-1].detener();
+                 audio[index-1].stop();
+                 alternar[index-1]=0;
+                 button.setBackground(Color.BLUE);
+                 var[index-1]=false;
+
+
+            }
+        }
+    }
+    
+    void mainfunctionSOLO(int index,JButton button,JToggleButton togglebutton,JSlider slider,int canal){
+        var[index*2]=true;
+        if(togglebutton.isSelected()&&!var[(index*2)-1]){
+            DisableVolumeExcept(slider,togglebutton,index*2,index-1);
+            System.out.println("activado");
+                        
+         try{
+             audio[index-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,canal,slider,button,socket);
+             audio[index-1].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               var[index*2]=false;
+         }     
+        }
+        if(togglebutton.isSelected()&&var[(index*2)-1])
+        {
+            DisableVolumeExcept(slider,togglebutton,index*2,index-1);
+        }
+        if(!togglebutton.isSelected()){
+            EnableVolume();
+            var[index*2]=false;
+            audio[index-1].detener();
+            audio[index-1].stop();
+        }
+    }
     
     public void SetGanancias(ArrayList<Integer> ganancias){
        this.ganancias=ganancias;
@@ -2369,65 +2288,7 @@ public class newPanelMixer extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     
-                  
-
-    private void C2ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-        //leer configuracion
-          // AlternarAudio(alternar1, audio1, 2, Conf, C2,V2);
-    var[3]=true;
-    if(!var[4])
-    {
-       alternar1++;   
-    if(alternar1==1){
-         Conf=X.Read("config.xml");        
-         
-         try{
-             audio1=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(1),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),8,V2,C2,socket);
-             audio1.start();
-              C2.setBackground(Color.GREEN);
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               C2.setBackground(Color.RED);
-               S2.setEnabled(false);
-               S2.setSelected(false);
-               var[3]=false;
-         }
-                   
-      
-    }   
-
-    if(alternar1==2){
-         audio1.detener();
-         audio1.stop();
-         alternar1=0;
-         C2.setBackground(Color.BLUE);
-        var[3]=false;
-         
-    }    
-    }   
-        /*
-       alternar1++;
-        
-        if(alternar1==1){
-         canales.set(1,"ON");
-         ganancias.set(1,V2.getValue());
-         C2.setBackground(Color.BLUE.darker());
-        }
-        else if(alternar1==2){
-            alternar1=0;
-              canales.set(1,"OFF");
-         ganancias.set(1,V2.getValue());
-           C2.setBackground(Color.GRAY.darker());
-        
-        }*/
-    
-    
-    }                                  
-
-                              
+                                                                         
 
     private void C4ActionPerformed(java.awt.event.ActionEvent evt) {                                   
         // TODO add your handling code here:
@@ -2478,10 +2339,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         }*/
         
     }                                  
-
-                         
-
-                  
+                                         
 
     private void V9StateChanged(javax.swing.event.ChangeEvent evt) {                                
         // TODO add your handling code here:
@@ -2619,8 +2477,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         
         }*/
     }                                   
-
-              
+             
 
     private void C12ActionPerformed(java.awt.event.ActionEvent evt) {                                    
         // TODO add your handling code here:
@@ -2669,11 +2526,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         
         }*/
     }                                   
-
-                  
-
-                                
-
+                                               
     private void C18ActionPerformed(java.awt.event.ActionEvent evt) {                                    
         // TODO add your handling code here:
       //  AlternarAudio(alternar17,audio17,18,Conf,C18,V18); 
@@ -2723,7 +2576,6 @@ public class newPanelMixer extends javax.swing.JPanel {
     }                                   
 
                   
-
     private void C20ActionPerformed(java.awt.event.ActionEvent evt) {                                    
         // TODO add your handling code here:
           // AlternarAudio(alternar19,audio19,20,Conf,C20,V20); 
@@ -2771,10 +2623,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         
         }*/
     }                                   
-
-                
-                          
-
+                                         
     private void C26ActionPerformed(java.awt.event.ActionEvent evt) {                                    
         // TODO add your handling code here:
       //  AlternarAudio(alternar25,audio25,26,Conf,C26,V26);
@@ -2869,10 +2718,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         
         }*/
     }                                   
-
-                            
-
-                                
+                                                           
    
     private void V1StateChanged(javax.swing.event.ChangeEvent evt) {                                
         // TODO add your handling code here:
@@ -2979,14 +2825,14 @@ public class newPanelMixer extends javax.swing.JPanel {
                     ((JToggleButton)component).setSelected(false);
             }
           }
-        for (int x=0;x<65;x++)
+        for (int x=0;x<130;x++)
         {
             if(!(x==y))
             {
                 var[x]=false;
             }
         }
-        for (int x=0;x<32;x++)
+        for (int x=0;x<64;x++)
         {
             if(!(hilo==x))
             {
@@ -3021,75 +2867,7 @@ public class newPanelMixer extends javax.swing.JPanel {
     void test(){
     }
     
-    
-    
-                        
-
-                                   
-
-    private void S17ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-
-        // TODO add your handling code here:
-        var[34]=true;
-        if(S17.isSelected()&&!var[33]){
-            DisableVolumeExcept(V17,S17,34,16);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[16]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(16),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),2,V17,C17,socket);
-             audio[16].start();
-            
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[34]=false;
-         }
-        }
-        if(S17.isSelected()&&var[33])
-        {
-            DisableVolumeExcept(V17,S17,34,16);
-        }
-        if(!S17.isSelected()){
-            EnableVolume();
-            var[34]=false;
-            audio[16].detener();
-            audio[16].stop();
-        }
-    }                                   
-
-    private void S25ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-         var[50]=true;
-        if(S25.isSelected()&&!var[49]){
-            DisableVolumeExcept(V25,S25,50,24);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[24]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(24),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),3,V25,C25,socket);
-             audio[24].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[50]=false;
-         }     
-        }
-        if(S25.isSelected()&&var[49])
-        {
-            DisableVolumeExcept(V25,S25,50,24);
-        }
-        if(!S25.isSelected()){
-            EnableVolume();
-            var[50]=false;
-            audio[24].detener();
-            audio[24].stop();
-        }
-    }                                   
-
+                                                                                                                                          
     private void S3ActionPerformed(java.awt.event.ActionEvent evt) {                                   
         // TODO add your handling code here:
         var[6]=true;
@@ -3185,57 +2963,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         }
     }                                   
 
-    private void S27ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-        var[54]=true;
-        if(S27.isSelected()&&!var[53]){
-            DisableVolumeExcept(V27,S27,54,26);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[26]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(26),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),7,V27,C27,socket);
-             audio[26].start();
-              
-             
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-            var[54]=false;
-         }     
-        }
-        if(S27.isSelected()&&var[53])
-        {
-            DisableVolumeExcept(V27,S27,54,26);
-        }
-        if(!S27.isSelected()){
-            EnableVolume();
-            var[54]=false;
-            audio[26].detener();
-            audio[26].stop();
-        }
-    }                                   
-
-
-    private  void AlternarAudio(int alternar,ThreadAudio audio,int numerocanal,Configuracion C,JButton J,JSlider V){
-          
-          alternar++;   
-    if(alternar==1){
-         C=X.Read("config.xml");        
-         
-         audio=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),numerocanal,V,C1,socket);
-         audio.start();   
-         J.setBackground(Color.GREEN);
-    }   
-
-    if(alternar==2){
-         audio.detener();
-         audio.stop();
-         alternar=0;
-         J.setBackground(Color.white);
-        }
-    }
-    
+                                      
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -3549,6 +3277,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         S17.setText("SOLO");
         S17.setContentAreaFilled(false);
         S17.setOpaque(true);
+        S17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S17ActionPerformed(evt);
+            }
+        });
 
         I25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -3566,6 +3299,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         S25.setText("SOLO");
         S25.setContentAreaFilled(false);
         S25.setOpaque(true);
+        S25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S25ActionPerformed(evt);
+            }
+        });
 
         S9.setText("SOLO");
         S9.setContentAreaFilled(false);
@@ -3643,6 +3381,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         S27.setText("SOLO");
         S27.setContentAreaFilled(false);
         S27.setOpaque(true);
+        S27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S27ActionPerformed(evt);
+            }
+        });
 
         S2.setText("SOLO");
         S2.setContentAreaFilled(false);
@@ -3658,6 +3401,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         C2.setBackground(new java.awt.Color(102, 102, 102));
         C2.setForeground(new java.awt.Color(255, 255, 255));
         C2.setText("jButton1");
+        C2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C2ActionPerformed(evt);
+            }
+        });
 
         I2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -3814,6 +3562,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V7.setMaximum(10);
+        V7.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V7StateChanged(evt);
+            }
+        });
 
         S7.setText("SOLO");
         S7.setContentAreaFilled(false);
@@ -4144,6 +3897,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V33.setMaximum(10);
+        V33.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V33StateChanged(evt);
+            }
+        });
 
         S33.setText("SOLO");
         S33.setContentAreaFilled(false);
@@ -4155,6 +3913,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V34.setMaximum(10);
+        V34.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V34StateChanged(evt);
+            }
+        });
 
         C34.setBackground(new java.awt.Color(102, 102, 102));
         C34.setForeground(new java.awt.Color(255, 255, 255));
@@ -4177,6 +3940,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V35.setMaximum(10);
+        V35.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V35StateChanged(evt);
+            }
+        });
 
         C35.setBackground(new java.awt.Color(102, 102, 102));
         C35.setForeground(new java.awt.Color(255, 255, 255));
@@ -4199,6 +3967,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V36.setMaximum(10);
+        V36.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V36StateChanged(evt);
+            }
+        });
 
         C36.setBackground(new java.awt.Color(102, 102, 102));
         C36.setForeground(new java.awt.Color(255, 255, 255));
@@ -4221,6 +3994,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V37.setMaximum(10);
+        V37.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V37StateChanged(evt);
+            }
+        });
 
         C37.setBackground(new java.awt.Color(102, 102, 102));
         C37.setForeground(new java.awt.Color(255, 255, 255));
@@ -4254,6 +4032,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V38.setMaximum(10);
+        V38.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V38StateChanged(evt);
+            }
+        });
 
         S38.setText("SOLO");
         S38.setContentAreaFilled(false);
@@ -4276,6 +4059,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V39.setMaximum(10);
+        V39.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V39StateChanged(evt);
+            }
+        });
 
         S39.setText("SOLO");
         S39.setContentAreaFilled(false);
@@ -4298,6 +4086,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V40.setMaximum(10);
+        V40.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V40StateChanged(evt);
+            }
+        });
 
         S40.setText("SOLO");
         S40.setContentAreaFilled(false);
@@ -4320,6 +4113,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V41.setMaximum(10);
+        V41.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V41StateChanged(evt);
+            }
+        });
 
         S41.setText("SOLO");
         S41.setContentAreaFilled(false);
@@ -4351,6 +4149,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         I42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         V42.setMaximum(10);
+        V42.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V42StateChanged(evt);
+            }
+        });
 
         C43.setBackground(new java.awt.Color(102, 102, 102));
         C43.setForeground(new java.awt.Color(255, 255, 255));
@@ -4373,6 +4176,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         I43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         V43.setMaximum(10);
+        V43.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V43StateChanged(evt);
+            }
+        });
 
         C44.setBackground(new java.awt.Color(102, 102, 102));
         C44.setForeground(new java.awt.Color(255, 255, 255));
@@ -4395,6 +4203,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         I44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         V44.setMaximum(10);
+        V44.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V44StateChanged(evt);
+            }
+        });
 
         I45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -4408,6 +4221,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V45.setMaximum(10);
+        V45.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V45StateChanged(evt);
+            }
+        });
 
         S45.setText("SOLO");
         S45.setContentAreaFilled(false);
@@ -4430,6 +4248,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V46.setMaximum(10);
+        V46.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V46StateChanged(evt);
+            }
+        });
 
         S46.setText("SOLO");
         S46.setContentAreaFilled(false);
@@ -4452,6 +4275,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V47.setMaximum(10);
+        V47.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V47StateChanged(evt);
+            }
+        });
 
         S47.setText("SOLO");
         S47.setContentAreaFilled(false);
@@ -4474,6 +4302,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V48.setMaximum(10);
+        V48.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V48StateChanged(evt);
+            }
+        });
 
         S48.setText("SOLO");
         S48.setContentAreaFilled(false);
@@ -4496,6 +4329,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V49.setMaximum(10);
+        V49.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V49StateChanged(evt);
+            }
+        });
 
         S49.setText("SOLO");
         S49.setContentAreaFilled(false);
@@ -4518,6 +4356,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V50.setMaximum(10);
+        V50.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V50StateChanged(evt);
+            }
+        });
 
         S50.setText("SOLO");
         S50.setContentAreaFilled(false);
@@ -4540,6 +4383,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V51.setMaximum(10);
+        V51.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V51StateChanged(evt);
+            }
+        });
 
         S51.setText("SOLO");
         S51.setContentAreaFilled(false);
@@ -4562,6 +4410,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V52.setMaximum(10);
+        V52.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V52StateChanged(evt);
+            }
+        });
 
         S52.setText("SOLO");
         S52.setContentAreaFilled(false);
@@ -4584,6 +4437,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V53.setMaximum(10);
+        V53.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V53StateChanged(evt);
+            }
+        });
 
         S53.setText("SOLO");
         S53.setContentAreaFilled(false);
@@ -4604,6 +4462,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V54.setMaximum(10);
+        V54.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V54StateChanged(evt);
+            }
+        });
 
         C54.setBackground(new java.awt.Color(102, 102, 102));
         C54.setForeground(new java.awt.Color(255, 255, 255));
@@ -4626,6 +4489,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V55.setMaximum(10);
+        V55.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V55StateChanged(evt);
+            }
+        });
 
         C55.setBackground(new java.awt.Color(102, 102, 102));
         C55.setForeground(new java.awt.Color(255, 255, 255));
@@ -4648,6 +4516,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V56.setMaximum(10);
+        V56.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V56StateChanged(evt);
+            }
+        });
 
         C56.setBackground(new java.awt.Color(102, 102, 102));
         C56.setForeground(new java.awt.Color(255, 255, 255));
@@ -4672,6 +4545,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V57.setMaximum(10);
+        V57.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V57StateChanged(evt);
+            }
+        });
 
         S57.setText("SOLO");
         S57.setContentAreaFilled(false);
@@ -4694,6 +4572,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V58.setMaximum(10);
+        V58.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V58StateChanged(evt);
+            }
+        });
 
         S58.setText("SOLO");
         S58.setContentAreaFilled(false);
@@ -4716,6 +4599,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V59.setMaximum(10);
+        V59.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V59StateChanged(evt);
+            }
+        });
 
         S59.setText("SOLO");
         S59.setContentAreaFilled(false);
@@ -4738,6 +4626,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V60.setMaximum(10);
+        V60.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V60StateChanged(evt);
+            }
+        });
 
         S60.setText("SOLO");
         S60.setContentAreaFilled(false);
@@ -4760,6 +4653,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V61.setMaximum(10);
+        V61.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V61StateChanged(evt);
+            }
+        });
 
         S61.setText("SOLO");
         S61.setContentAreaFilled(false);
@@ -4782,6 +4680,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V62.setMaximum(10);
+        V62.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V62StateChanged(evt);
+            }
+        });
 
         S62.setText("SOLO");
         S62.setContentAreaFilled(false);
@@ -4804,6 +4707,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V63.setMaximum(10);
+        V63.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V63StateChanged(evt);
+            }
+        });
 
         S63.setText("SOLO");
         S63.setContentAreaFilled(false);
@@ -4826,6 +4734,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         V64.setMaximum(10);
+        V64.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                V64StateChanged(evt);
+            }
+        });
 
         S64.setText("SOLO");
         S64.setContentAreaFilled(false);
@@ -5920,16 +5833,18 @@ public class newPanelMixer extends javax.swing.JPanel {
 
     private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(1, C1, V1, 0);
+        /*
         var[1]=true;
       if(!var[2])
       {// TODO add your handling code here:     
-    alternar0++;   
-    if(alternar0==1){
+    alternar[0]++;   
+    if(alternar[0]==1){
                      
          try{
             Conf=X.Read("config.xml"); 
-            audio0=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),0,V1,C1,socket);
-            audio0.start();
+            audio[0]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),0,V1,C1,socket);
+            audio[0].start();
             C1.setBackground(Color.GREEN);
             
          }
@@ -5943,16 +5858,17 @@ public class newPanelMixer extends javax.swing.JPanel {
                      
     }   
 
-    if(alternar0==2){
-         audio0.detener();
-         audio0.stop();
-         alternar0=0;
+    if(alternar[0]==2){
+         audio[0].detener();
+         audio[0].stop();
+         alternar[0]=0;
          C1.setBackground(Color.BLUE);
          var[1]=false;
          
          
     }
       }
+        */
     }//GEN-LAST:event_C1ActionPerformed
 
     private void C9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C9ActionPerformed
@@ -5960,12 +5876,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         var[17]=true;
         if(!var[18])
         {
-       alternar8++;   
-    if(alternar8==1){
+       alternar[8]++;   
+    if(alternar[8]==1){
          Conf=X.Read("config.xml");                
          try{
-             audio8=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(8),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),1,V9,C9,socket);
-             audio8.start();
+             audio[8]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(8),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),1,V9,C9,socket);
+             audio[8].start();
               C9.setBackground(Color.GREEN);
               
          }
@@ -5975,10 +5891,10 @@ public class newPanelMixer extends javax.swing.JPanel {
                var[17]=false;
          }     
     }   
-    if(alternar8==2){
-         audio8.detener();
-         audio8.stop();
-         alternar8=0;
+    if(alternar[8]==2){
+         audio[8].detener();
+         audio[8].stop();
+         alternar[8]=0;
          C9.setBackground(Color.BLUE);
          var[17]=false;
          
@@ -5998,8 +5914,8 @@ public class newPanelMixer extends javax.swing.JPanel {
     if(alternar16==1){
          Conf=X.Read("config.xml");                
          try{
-             audio16=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(16),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),2,V17,C17,socket);
-             audio16.start();
+             audio[16]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(16),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),2,V17,C17,socket);
+             audio[16].start();
               C17.setBackground(Color.GREEN);
               
          }
@@ -6010,8 +5926,8 @@ public class newPanelMixer extends javax.swing.JPanel {
          }     
     }   
     if(alternar16==2){
-         audio16.detener();
-         audio16.stop();
+         audio[16].detener();
+         audio[16].stop();
          alternar16=0;
          C17.setBackground(Color.BLUE);
          var[33]=true;
@@ -6209,260 +6125,323 @@ public class newPanelMixer extends javax.swing.JPanel {
     }//GEN-LAST:event_S9ActionPerformed
 
     private void C33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C33ActionPerformed
-        // TODO add your handling code here:
+        mainfunctionAudioChannel(33, C33, V33, 32);
     }//GEN-LAST:event_C33ActionPerformed
 
     private void C34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C34ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(34, C34, V34, 33);
     }//GEN-LAST:event_C34ActionPerformed
 
     private void C35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C35ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(35, C35, V35, 34);
+        
     }//GEN-LAST:event_C35ActionPerformed
 
     private void C36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C36ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(36, C36, V36, 35);
     }//GEN-LAST:event_C36ActionPerformed
 
     private void C37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C37ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(37, C37, V37, 36);
     }//GEN-LAST:event_C37ActionPerformed
 
     private void C38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C38ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(38, C38, V38, 37);
     }//GEN-LAST:event_C38ActionPerformed
 
     private void C39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C39ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(39, C39, V39, 38);
     }//GEN-LAST:event_C39ActionPerformed
 
     private void C40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C40ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(40, C40, V40, 39);
     }//GEN-LAST:event_C40ActionPerformed
 
     private void C41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C41ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(41, C41, V41, 40);
     }//GEN-LAST:event_C41ActionPerformed
 
     private void C42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C42ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(42, C42, V42, 41);
     }//GEN-LAST:event_C42ActionPerformed
 
     private void C43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C43ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(43, C43, V43, 42);
     }//GEN-LAST:event_C43ActionPerformed
 
     private void C44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C44ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(44, C44, V44, 43);
     }//GEN-LAST:event_C44ActionPerformed
 
     private void C45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C45ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(45, C45, V45, 44);
     }//GEN-LAST:event_C45ActionPerformed
 
     private void C46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C46ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(46, C46, V46, 45);
     }//GEN-LAST:event_C46ActionPerformed
 
     private void C47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C47ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(47, C47, V47, 46);
     }//GEN-LAST:event_C47ActionPerformed
 
     private void C48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C48ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(48, C48, V48, 47);
     }//GEN-LAST:event_C48ActionPerformed
 
     private void C49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C49ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(49, C49, V49, 48);
     }//GEN-LAST:event_C49ActionPerformed
 
     private void C50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C50ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(50, C50, V50, 49);
     }//GEN-LAST:event_C50ActionPerformed
 
     private void C51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C51ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(51, C51, V51, 50);
     }//GEN-LAST:event_C51ActionPerformed
 
     private void C52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C52ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(52, C52, V52, 51);
     }//GEN-LAST:event_C52ActionPerformed
 
     private void C53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C53ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(53, C53, V53, 52);
     }//GEN-LAST:event_C53ActionPerformed
 
     private void C54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C54ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(54, C54, V54, 53);
     }//GEN-LAST:event_C54ActionPerformed
 
     private void C55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C55ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(55, C55, V55, 54);
     }//GEN-LAST:event_C55ActionPerformed
 
     private void C56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C56ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(56, C56, V56, 55);
     }//GEN-LAST:event_C56ActionPerformed
 
     private void C57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C57ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(57, C57, V57, 56);
     }//GEN-LAST:event_C57ActionPerformed
 
     private void C58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C58ActionPerformed
-
+         mainfunctionAudioChannel(58, C58, V58, 57);
         // TODO add your handling code here:
     }//GEN-LAST:event_C58ActionPerformed
 
     private void C59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C59ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(59, C59, V59, 58);
     }//GEN-LAST:event_C59ActionPerformed
 
     private void C60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C60ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(60, C60, V60, 59);
     }//GEN-LAST:event_C60ActionPerformed
 
     private void C61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C61ActionPerformed
         // TODO add your handling code here:
+         mainfunctionAudioChannel(61, C61, V61, 60);
     }//GEN-LAST:event_C61ActionPerformed
 
     private void C62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C62ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(62, C62, V62, 61);
     }//GEN-LAST:event_C62ActionPerformed
 
     private void C63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C63ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(63, C63, V63, 62);
     }//GEN-LAST:event_C63ActionPerformed
 
     private void C64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C64ActionPerformed
         // TODO add your handling code here:
+        mainfunctionAudioChannel(64, C64, V64, 63);
     }//GEN-LAST:event_C64ActionPerformed
 
     private void S33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S33ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(33, C33, S33, V33, 32);
     }//GEN-LAST:event_S33ActionPerformed
 
     private void S34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S34ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(34, C34, S34, V34, 33);
     }//GEN-LAST:event_S34ActionPerformed
 
     private void S35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S35ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(35, C35, S35, V35, 34);
     }//GEN-LAST:event_S35ActionPerformed
 
     private void S36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S36ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(36, C36, S36, V36, 35);
     }//GEN-LAST:event_S36ActionPerformed
 
     private void S37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S37ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(37, C37, S37, V37, 36);
     }//GEN-LAST:event_S37ActionPerformed
 
     private void S38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S38ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(38, C38, S38, V38, 37);
     }//GEN-LAST:event_S38ActionPerformed
 
     private void S39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S39ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(39, C39, S39, V39, 38);
     }//GEN-LAST:event_S39ActionPerformed
 
     private void S40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S40ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(40, C40, S40, V40, 39);
     }//GEN-LAST:event_S40ActionPerformed
 
     private void S41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S41ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(41, C41, S41, V41, 40);
     }//GEN-LAST:event_S41ActionPerformed
 
     private void S42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S42ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(42, C42, S42, V42, 41);
     }//GEN-LAST:event_S42ActionPerformed
 
     private void S43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S43ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(43, C43, S43, V43, 42);
     }//GEN-LAST:event_S43ActionPerformed
 
     private void S44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S44ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(44, C44, S44, V44, 43);
     }//GEN-LAST:event_S44ActionPerformed
 
     private void S45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S45ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(45, C45, S45, V45, 44);
     }//GEN-LAST:event_S45ActionPerformed
 
     private void S46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S46ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(46, C46, S46, V46, 45);
     }//GEN-LAST:event_S46ActionPerformed
 
     private void S47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S47ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(47, C47, S47, V47, 46);
     }//GEN-LAST:event_S47ActionPerformed
 
     private void S48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S48ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(48, C48, S48, V48, 47);
     }//GEN-LAST:event_S48ActionPerformed
 
     private void S49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S49ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(49, C49, S49, V49, 48);
     }//GEN-LAST:event_S49ActionPerformed
 
     private void S50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S50ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(50, C50, S50, V50, 49);
     }//GEN-LAST:event_S50ActionPerformed
 
     private void S51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S51ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(51, C51, S51, V51, 50);
     }//GEN-LAST:event_S51ActionPerformed
 
     private void S52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S52ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(52, C52, S52, V52, 51);
     }//GEN-LAST:event_S52ActionPerformed
 
     private void S53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S53ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(53, C53, S53, V53, 52);
     }//GEN-LAST:event_S53ActionPerformed
 
     private void S54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S54ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(54, C54, S54, V54, 53);
     }//GEN-LAST:event_S54ActionPerformed
 
     private void S55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S55ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(55, C55, S55, V55, 54);
     }//GEN-LAST:event_S55ActionPerformed
 
     private void S56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S56ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(56, C56, S56, V56, 55);
     }//GEN-LAST:event_S56ActionPerformed
 
     private void S57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S57ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(57, C57, S57, V57, 56);
     }//GEN-LAST:event_S57ActionPerformed
 
     private void S58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S58ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(58, C58, S58, V58, 57);
     }//GEN-LAST:event_S58ActionPerformed
 
     private void S59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S59ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(59, C59, S59, V59, 58);
     }//GEN-LAST:event_S59ActionPerformed
 
     private void S60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S60ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(60, C60, S60, V60, 59);
     }//GEN-LAST:event_S60ActionPerformed
 
     private void S61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S61ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(61, C61, S61, V61, 60);
     }//GEN-LAST:event_S61ActionPerformed
 
     private void S62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S62ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(62, C62, S62, V62, 61);
     }//GEN-LAST:event_S62ActionPerformed
 
     private void S63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S63ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(63, C63, S63, V63, 62);
     }//GEN-LAST:event_S63ActionPerformed
 
     private void S64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S64ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(64, C64, S64, V64, 63);
     }//GEN-LAST:event_S64ActionPerformed
 
     private void S2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S2ActionPerformed
@@ -7719,6 +7698,319 @@ public class newPanelMixer extends javax.swing.JPanel {
     }
         }
     }//GEN-LAST:event_C32ActionPerformed
+
+    private void S27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S27ActionPerformed
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+        var[54]=true;
+        if(S27.isSelected()&&!var[53]){
+            DisableVolumeExcept(V27,S27,54,26);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             audio[26]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(26),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),7,V27,C27,socket);
+             audio[26].start();
+              
+             
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               
+            var[54]=false;
+         }     
+        }
+        if(S27.isSelected()&&var[53])
+        {
+            DisableVolumeExcept(V27,S27,54,26);
+        }
+        if(!S27.isSelected()){
+            EnableVolume();
+            var[54]=false;
+            audio[26].detener();
+            audio[26].stop();
+        }
+    }//GEN-LAST:event_S27ActionPerformed
+
+    private void S17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S17ActionPerformed
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+        var[34]=true;
+        if(S17.isSelected()&&!var[33]){
+            DisableVolumeExcept(V17,S17,34,16);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             audio[16]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(16),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),2,V17,C17,socket);
+             audio[16].start();
+            
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               
+               var[34]=false;
+         }
+        }
+        if(S17.isSelected()&&var[33])
+        {
+            DisableVolumeExcept(V17,S17,34,16);
+        }
+        if(!S17.isSelected()){
+            EnableVolume();
+            var[34]=false;
+            audio[16].detener();
+            audio[16].stop();
+        }
+    }//GEN-LAST:event_S17ActionPerformed
+
+    private void S25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S25ActionPerformed
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+         var[50]=true;
+        if(S25.isSelected()&&!var[49]){
+            DisableVolumeExcept(V25,S25,50,24);
+            System.out.println("activado");
+            Conf=X.Read("config.xml");                
+         try{
+             audio[24]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(24),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),3,V25,C25,socket);
+             audio[24].start();
+              
+              
+         }
+         catch(Exception e){
+             System.out.println("Error de hilo ");
+               
+               var[50]=false;
+         }     
+        }
+        if(S25.isSelected()&&var[49])
+        {
+            DisableVolumeExcept(V25,S25,50,24);
+        }
+        if(!S25.isSelected()){
+            EnableVolume();
+            var[50]=false;
+            audio[24].detener();
+            audio[24].stop();
+        }
+    }//GEN-LAST:event_S25ActionPerformed
+
+    private void C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C2ActionPerformed
+        // TODO add your handling code here:
+                var[3]=true;
+            if(!var[4])
+            {
+               alternar1++;   
+            if(alternar1==1){
+                 Conf=X.Read("config.xml");        
+
+                 try{
+                     audio1=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(1),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),8,V2,C2,socket);
+                     audio1.start();
+                      C2.setBackground(Color.GREEN);
+
+                 }
+                 catch(Exception e){
+                     System.out.println("Error de hilo ");
+                       C2.setBackground(Color.RED);
+                       S2.setEnabled(false);
+                       S2.setSelected(false);
+                       var[3]=false;
+                 }
+
+
+            }   
+
+            if(alternar1==2){
+                 audio1.detener();
+                 audio1.stop();
+                 alternar1=0;
+                 C2.setBackground(Color.BLUE);
+                var[3]=false;
+
+            }    
+            }   
+        /*
+       alternar1++;
+        
+        if(alternar1==1){
+         canales.set(1,"ON");
+         ganancias.set(1,V2.getValue());
+         C2.setBackground(Color.BLUE.darker());
+        }
+        else if(alternar1==2){
+            alternar1=0;
+              canales.set(1,"OFF");
+         ganancias.set(1,V2.getValue());
+           C2.setBackground(Color.GRAY.darker());
+        
+        }*/
+    }//GEN-LAST:event_C2ActionPerformed
+
+    private void V7StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V7StateChanged
+        // TODO add your handling code here:
+        ganancias.set(6,V7.getValue());
+    }//GEN-LAST:event_V7StateChanged
+
+    private void V33StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V33StateChanged
+        // TODO add your handling code here:
+        ganancias.set(32,V33.getValue());
+    }//GEN-LAST:event_V33StateChanged
+
+    private void V34StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V34StateChanged
+        // TODO add your handling code here:
+        ganancias.set(33,V34.getValue());
+    }//GEN-LAST:event_V34StateChanged
+
+    private void V35StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V35StateChanged
+        // TODO add your handling code here:
+        ganancias.set(34,V35.getValue());
+    }//GEN-LAST:event_V35StateChanged
+
+    private void V36StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V36StateChanged
+        // TODO add your handling code here:
+        ganancias.set(35,V36.getValue());
+    }//GEN-LAST:event_V36StateChanged
+
+    private void V37StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V37StateChanged
+        // TODO add your handling code here:
+        ganancias.set(36,V37.getValue());
+    }//GEN-LAST:event_V37StateChanged
+
+    private void V38StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V38StateChanged
+        // TODO add your handling code here:
+        ganancias.set(37,V38.getValue());
+    }//GEN-LAST:event_V38StateChanged
+
+    private void V39StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V39StateChanged
+        // TODO add your handling code here:
+        ganancias.set(38,V39.getValue());
+    }//GEN-LAST:event_V39StateChanged
+
+    private void V40StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V40StateChanged
+        // TODO add your handling code here:
+        ganancias.set(39,V40.getValue());
+    }//GEN-LAST:event_V40StateChanged
+
+    private void V41StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V41StateChanged
+        // TODO add your handling code here:
+        ganancias.set(40,V41.getValue());
+    }//GEN-LAST:event_V41StateChanged
+
+    private void V42StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V42StateChanged
+        // TODO add your handling code here:
+        ganancias.set(41,V42.getValue());
+    }//GEN-LAST:event_V42StateChanged
+
+    private void V43StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V43StateChanged
+        // TODO add your handling code here:
+        ganancias.set(42,V43.getValue());
+    }//GEN-LAST:event_V43StateChanged
+
+    private void V44StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V44StateChanged
+        // TODO add your handling code here:
+        ganancias.set(43,V44.getValue());
+    }//GEN-LAST:event_V44StateChanged
+
+    private void V45StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V45StateChanged
+        // TODO add your handling code here:
+        ganancias.set(44,V45.getValue());
+    }//GEN-LAST:event_V45StateChanged
+
+    private void V46StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V46StateChanged
+        // TODO add your handling code here:
+        ganancias.set(45,V46.getValue());
+    }//GEN-LAST:event_V46StateChanged
+
+    private void V47StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V47StateChanged
+        // TODO add your handling code here:
+        ganancias.set(46,V47.getValue());
+    }//GEN-LAST:event_V47StateChanged
+
+    private void V48StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V48StateChanged
+        // TODO add your handling code here:
+        ganancias.set(47,V48.getValue());
+    }//GEN-LAST:event_V48StateChanged
+
+    private void V49StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V49StateChanged
+        // TODO add your handling code here:
+        ganancias.set(48,V49.getValue());
+    }//GEN-LAST:event_V49StateChanged
+
+    private void V50StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V50StateChanged
+        // TODO add your handling code here:
+        ganancias.set(49,V50.getValue());
+    }//GEN-LAST:event_V50StateChanged
+
+    private void V51StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V51StateChanged
+        // TODO add your handling code here:
+        ganancias.set(50,V51.getValue());
+    }//GEN-LAST:event_V51StateChanged
+
+    private void V52StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V52StateChanged
+        // TODO add your handling code here:
+        ganancias.set(51,V52.getValue());
+    }//GEN-LAST:event_V52StateChanged
+
+    private void V53StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V53StateChanged
+        // TODO add your handling code here:
+        ganancias.set(52,V53.getValue());
+    }//GEN-LAST:event_V53StateChanged
+
+    private void V54StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V54StateChanged
+        // TODO add your handling code here:
+        ganancias.set(53,V54.getValue());
+    }//GEN-LAST:event_V54StateChanged
+
+    private void V55StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V55StateChanged
+        // TODO add your handling code here:
+        ganancias.set(54,V55.getValue());
+    }//GEN-LAST:event_V55StateChanged
+
+    private void V56StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V56StateChanged
+        // TODO add your handling code here:
+        ganancias.set(55,V56.getValue());
+    }//GEN-LAST:event_V56StateChanged
+
+    private void V57StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V57StateChanged
+        // TODO add your handling code here:
+        ganancias.set(56,V57.getValue());
+    }//GEN-LAST:event_V57StateChanged
+
+    private void V58StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V58StateChanged
+        // TODO add your handling code here:
+        ganancias.set(57,V58.getValue());
+    }//GEN-LAST:event_V58StateChanged
+
+    private void V59StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V59StateChanged
+        // TODO add your handling code here:
+        ganancias.set(58,V59.getValue());
+    }//GEN-LAST:event_V59StateChanged
+
+    private void V60StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V60StateChanged
+        // TODO add your handling code here:
+        ganancias.set(59,V60.getValue());
+    }//GEN-LAST:event_V60StateChanged
+
+    private void V61StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V61StateChanged
+        // TODO add your handling code here:
+        ganancias.set(60,V61.getValue());
+    }//GEN-LAST:event_V61StateChanged
+
+    private void V62StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V62StateChanged
+        // TODO add your handling code here:
+        ganancias.set(61,V62.getValue());
+    }//GEN-LAST:event_V62StateChanged
+
+    private void V63StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V63StateChanged
+        // TODO add your handling code here:
+        ganancias.set(62,V63.getValue());
+    }//GEN-LAST:event_V63StateChanged
+
+    private void V64StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_V64StateChanged
+        // TODO add your handling code here:
+        ganancias.set(63,V64.getValue());
+    }//GEN-LAST:event_V64StateChanged
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

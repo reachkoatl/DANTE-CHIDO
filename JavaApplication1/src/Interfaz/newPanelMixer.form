@@ -1374,6 +1374,9 @@
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S17ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I25">
       <Properties>
@@ -1405,6 +1408,9 @@
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S25ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S9">
       <Properties>
@@ -1539,6 +1545,9 @@
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="S27ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S2">
       <Properties>
@@ -1565,6 +1574,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I2">
       <Properties>
@@ -1845,6 +1857,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V7StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S7">
       <Properties>
@@ -2355,6 +2370,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V33StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S33">
       <Properties>
@@ -2370,6 +2388,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V34StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C34">
       <Properties>
@@ -2404,6 +2425,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V35StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C35">
       <Properties>
@@ -2438,6 +2462,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V36StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C36">
       <Properties>
@@ -2472,6 +2499,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V37StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C37">
       <Properties>
@@ -2525,6 +2555,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V38StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S38">
       <Properties>
@@ -2559,6 +2592,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V39StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S39">
       <Properties>
@@ -2593,6 +2629,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V40StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S40">
       <Properties>
@@ -2627,6 +2666,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V41StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S41">
       <Properties>
@@ -2671,6 +2713,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V42StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C43">
       <Properties>
@@ -2705,6 +2750,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V43StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C44">
       <Properties>
@@ -2739,6 +2787,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V44StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="I45">
       <Properties>
@@ -2763,6 +2814,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V45StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S45">
       <Properties>
@@ -2797,6 +2851,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V46StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S46">
       <Properties>
@@ -2831,6 +2888,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V47StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S47">
       <Properties>
@@ -2865,6 +2925,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V48StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S48">
       <Properties>
@@ -2899,6 +2962,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V49StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S49">
       <Properties>
@@ -2933,6 +2999,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V50StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S50">
       <Properties>
@@ -2967,6 +3036,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V51StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S51">
       <Properties>
@@ -3001,6 +3073,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V52StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S52">
       <Properties>
@@ -3035,6 +3110,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V53StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S53">
       <Properties>
@@ -3060,6 +3138,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V54StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C54">
       <Properties>
@@ -3094,6 +3175,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V55StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C55">
       <Properties>
@@ -3128,6 +3212,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V56StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="C56">
       <Properties>
@@ -3171,6 +3258,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V57StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S57">
       <Properties>
@@ -3205,6 +3295,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V58StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S58">
       <Properties>
@@ -3239,6 +3332,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V59StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S59">
       <Properties>
@@ -3273,6 +3369,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V60StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S60">
       <Properties>
@@ -3307,6 +3406,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V61StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S61">
       <Properties>
@@ -3341,6 +3443,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V62StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S62">
       <Properties>
@@ -3375,6 +3480,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V63StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S63">
       <Properties>
@@ -3409,6 +3517,9 @@
       <Properties>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="V64StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S64">
       <Properties>

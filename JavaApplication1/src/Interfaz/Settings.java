@@ -6,6 +6,7 @@
 package Interfaz;
 
 import Datos.Configuracion;
+import Datos.GlobalConfig;
 import Datos.Logs;
 import Datos.XmlRead;
 import Negocio.Coordinador;
@@ -2508,7 +2509,17 @@ public class Settings extends javax.swing.JPanel {
 
         //lista de images (directorios)
         Conf.SetListaImages(Images);
-
+        
+        GlobalConfig.servidor = Conf.GetServidor();       
+        GlobalConfig.ListaAlias = Conf.GetAlias();
+        GlobalConfig.Frecuencia = Conf.GetFrecuencia();
+        GlobalConfig.ListaPuertos = Conf.GetLista();
+        GlobalConfig.ListaImages = Conf.GetListaImages();
+        GlobalConfig.Muestra = Conf.GetMuestra();
+        GlobalConfig.multicast = Conf.GetMultiCast();
+        GlobalConfig.PortUDP = Conf.GetPortUDP();
+        GlobalConfig.puerto = Conf.GetPuerto();
+        GlobalConfig.Network = Conf.GetNet();
         try{
             cor.WriteXml(Conf,"config.xml");
             //cor.WriteXml(Conf,"conf");

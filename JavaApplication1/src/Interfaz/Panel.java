@@ -46,7 +46,7 @@ public class Panel extends javax.swing.JFrame {
    private String ReportDay;
    private DateFormat df;
    private Date today;
-   private XmlRead X;
+   private XmlRead Xread;
    private Configuracion Conf;
    private NetworkInterfaces interfaces;
    private ArrayList<String> listaInterfaces;
@@ -74,7 +74,7 @@ public class Panel extends javax.swing.JFrame {
        today=Calendar.getInstance().getTime();
        
          
-       X=new XmlRead();
+       Xread=new XmlRead();
          
          //apagar temporalmente logs (boton)
        //this.Bping.setEnabled(false);
@@ -514,6 +514,7 @@ public class Panel extends javax.swing.JFrame {
 
     private void cLEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cLEARActionPerformed
         // TODO add your handling code here:
+        mixer.ClearAll();
     }//GEN-LAST:event_cLEARActionPerformed
 
     
