@@ -463,6 +463,45 @@ public class newPanelMixer extends javax.swing.JPanel {
        this.C31.setText(Nombres.get(30));
        this.C32.setText(Nombres.get(31));
        
+       
+       //32 to 64
+       
+       
+       this.C33.setText(Nombres.get(32));
+       this.C34.setText(Nombres.get(33));
+       this.C35.setText(Nombres.get(34));
+       this.C36.setText(Nombres.get(35));
+       this.C37.setText(Nombres.get(36));
+       this.C38.setText(Nombres.get(37));
+       this.C39.setText(Nombres.get(38));
+      
+       this.C40.setText(Nombres.get(39));
+       this.C41.setText(Nombres.get(40));
+       this.C42.setText(Nombres.get(41));
+       this.C43.setText(Nombres.get(42));
+       this.C44.setText(Nombres.get(43));
+       this.C45.setText(Nombres.get(44));
+       this.C46.setText(Nombres.get(45));
+       this.C47.setText(Nombres.get(46));
+       
+       this.C48.setText(Nombres.get(47));
+       this.C49.setText(Nombres.get(48));
+       this.C50.setText(Nombres.get(49));
+       this.C51.setText(Nombres.get(50));
+       this.C52.setText(Nombres.get(51));
+       this.C53.setText(Nombres.get(52));
+       this.C54.setText(Nombres.get(53));
+       this.C55.setText(Nombres.get(54));
+       
+       this.C56.setText(Nombres.get(55));
+       this.C57.setText(Nombres.get(56));
+       this.C58.setText(Nombres.get(57));
+       this.C59.setText(Nombres.get(58));
+       this.C60.setText(Nombres.get(59));
+       this.C61.setText(Nombres.get(60));
+       this.C62.setText(Nombres.get(61));
+       this.C63.setText(Nombres.get(62));
+       this.C64.setText(Nombres.get(63));
        this.repaint();
              
     }
@@ -2602,38 +2641,7 @@ public class newPanelMixer extends javax.swing.JPanel {
     }
     
                                                                                                                                           
-    private void S3ActionPerformed(java.awt.event.ActionEvent evt) {                                   
-        // TODO add your handling code here:
-        var[6]=true;
-        
-        if(S3.isSelected()&&!var[5]){
-            DisableVolumeExcept(V3,S3,6,2);
-            System.out.println("activado");
-             Conf=X.Read("config.xml");        
-         
-         try{
-             audio[2]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(2),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),4,V3,C3,socket);
-             audio[2].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[6]=false;
-         }
-        }
-        if(S3.isSelected()&&var[5]){
-            DisableVolumeExcept(V3,S3,6,2);
-            
-        }
-        if(!S3.isSelected()){
-            EnableVolume();
-            var[6]=false;
-            audio[2].detener();
-            audio[2].stop();
-        }
-    }                                  
+                                
 
     private void S11ActionPerformed(java.awt.event.ActionEvent evt) {                                    
         // TODO add your handling code here:
@@ -3035,6 +3043,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         S3.setText("SOLO");
         S3.setContentAreaFilled(false);
         S3.setOpaque(true);
+        S3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S3ActionPerformed(evt);
+            }
+        });
 
         I11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -7200,6 +7213,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         // TODO add your handling code here:
         mainfunctionSOLO(19, C19, S19, V19, 6);
     }//GEN-LAST:event_S19ActionPerformed
+
+    private void S3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S3ActionPerformed
+        // TODO add your handling code here:
+        mainfunctionSOLO(3, C3, S3, V3, 4);
+    }//GEN-LAST:event_S3ActionPerformed
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
