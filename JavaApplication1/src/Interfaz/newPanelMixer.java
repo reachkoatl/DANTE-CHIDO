@@ -33,108 +33,11 @@ public class newPanelMixer extends javax.swing.JPanel {
   
     private int alternarSOLO = 0;
     
-    private  int alternar0=0;
-    private  int alternar1=0;
-    private  int alternar2=0;
-    private  int alternar3=0;
-    private  int alternar4=0;
-    private  int alternar5=0;
-    private  int alternar6=0;
-    private  int alternar7=0;
-    private  int alternar8=0;
-    private  int alternar9=0;
-    private  int alternar10=0;
-    private  int alternar11=0;
-    private  int alternar12=0;
-    private  int alternar13=0;
-    private  int alternar14=0;
-    private  int alternar15=0;
-    private  int alternar16=0;
-    private  int alternar17=0;
-    private  int alternar18=0;
-    private  int alternar19=0;
-    private  int alternar20=0;
-    private  int alternar21=0;
-    private  int alternar22=0;
-    private  int alternar23=0;
-    private  int alternar24=0;
-    private  int alternar25=0;
-    private  int alternar26=0;
-    private  int alternar27=0;
-    private  int alternar28=0;
-    private  int alternar29=0;
-    private  int alternar30=0;
-    private  int alternar31=0;
-    private  int alternar32=0;
-    
-    private  int alternar33=0;
-    private  int alternar34=0;
-    private  int alternar35=0;
-    private  int alternar36=0;
-    private  int alternar37=0;
-    private  int alternar38=0;
-    private  int alternar39=0;
-    private  int alternar40=0;
-    private  int alternar41=0;
-    private  int alternar42=0;
-    private  int alternar43=0;
-    private  int alternar44=0;
-    private  int alternar45=0;
-    private  int alternar46=0;
-    private  int alternar47=0;
-    private  int alternar48=0;
-    private  int alternar49=0;
-    private  int alternar50=0;
-    private  int alternar51=0;
-    private  int alternar52=0;
-    private  int alternar53=0;
-    private  int alternar54=0;
-    private  int alternar55=0;
-    private  int alternar56=0;
-    private  int alternar57=0;
-    private  int alternar58=0;
-    private  int alternar59=0;
-    private  int alternar60=0;
-    private  int alternar61=0;
-    private  int alternar62=0;
-    private  int alternar63=0;
-    private  int alternar64=0;
+  
     
     
     
-    private ThreadAudio audio0;
-    private ThreadAudio audio1;
-    private ThreadAudio audio2;       
-    private ThreadAudio audio3;
-    private ThreadAudio audio4;
-    private ThreadAudio audio5;
-    private ThreadAudio audio6;
-    private ThreadAudio audio7;
-    private ThreadAudio audio8;
-    private ThreadAudio audio9;
-    private ThreadAudio audio10;
-    private ThreadAudio audio11;
-    private ThreadAudio audio12;
-    private ThreadAudio audio13;
-    private ThreadAudio audio14;
-    private ThreadAudio audio15;
-    private ThreadAudio audio16;
-    private ThreadAudio audio17;
-    private ThreadAudio audio18;
-    private ThreadAudio audio19;
-    private ThreadAudio audio20;
-    private ThreadAudio audio21;
-    private ThreadAudio audio22;
-    private ThreadAudio audio23;
-    private ThreadAudio audio24;
-    private ThreadAudio audio25;
-    private ThreadAudio audio26;
-    private ThreadAudio audio27;
-    private ThreadAudio audio28;
-    private ThreadAudio audio29;
-    private ThreadAudio audio30;
-    private ThreadAudio audio31;
-    private ThreadAudio audio32;
+   
     
     
    
@@ -263,7 +166,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             {
                                               
                 ((JSlider) component).setValue(0);
-                ((JSlider) component).disable();
+                
                 
             }
             if(component instanceof JToggleButton)
