@@ -33,16 +33,9 @@ public class newPanelMixer extends javax.swing.JPanel {
   
     private int alternarSOLO = 0;
     
-  
-    
-    
-    
-   
-    
-    
-   
-    
     private ThreadAudio[] audio = new ThreadAudio[64];
+    private ThreadAudio[] audioSolo = new ThreadAudio[64];
+    
     private int[] alternar = new int[64];
     
       
@@ -183,10 +176,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             
           }
         components = null;
-        
-        ////instanciar hilosocket
-         
-         //socket.start();
+     
     }
 
     /**
@@ -290,8 +280,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             System.out.println("activado");
                         
          try{
-             audio[index-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,canal,slider,button,socket);
-             audio[index-1].start();
+             audioSolo[index-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,canal,slider,button,socket);
+             audioSolo[index-1].start();
               
               
          }
@@ -307,8 +297,10 @@ public class newPanelMixer extends javax.swing.JPanel {
         if(!togglebutton.isSelected()){
             EnableVolume();
             var[index*2]=false;
-            audio[index-1].detener();
-            audio[index-1].stop();
+            if(!audioSolo[index-1].equals(null)){
+                audioSolo[index-1].detener();
+                audioSolo[index-1].stop();
+            }                     
         }
     }
     
@@ -2512,9 +2504,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             if(!(hilo==x))
             {
                 try{
-                if(!audio[x].equals(null))
-                    audio[x].detener();
-                    audio[x].stop();
+                if(!audioSolo[x].equals(null)){
+                    audioSolo[x].detener();
+                    audioSolo[x].stop();
+                }
+                    
                 }
                 catch(Exception e)
                 {
@@ -2543,43 +2537,7 @@ public class newPanelMixer extends javax.swing.JPanel {
     void test(){
     }
     
-                                                                                                                                          
-                                
-
-    private void S11ActionPerformed(java.awt.event.ActionEvent evt) {                                    
-        // TODO add your handling code here:
-        var[22]=true;
-        if(S11.isSelected()&&!var[21]){
-            DisableVolumeExcept(V11,S11,22,10);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[10]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(10),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),5,V11,C11,socket);
-             audio[10].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[22]=false;
-         }     
-        }
-        if(S11.isSelected()&&var[21])
-        {
-            DisableVolumeExcept(V11,S11,22,10);
-        }
-        if(!S11.isSelected()){
-            EnableVolume();
-            var[22]=false;
-            audio[10].detener();
-            audio[10].stop();
-        }
-    }                                   
-
-                                   
-
-                                      
+                                                                                                                                                                               
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -2968,6 +2926,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         S11.setText("SOLO");
         S11.setContentAreaFilled(false);
         S11.setOpaque(true);
+        S11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S11ActionPerformed(evt);
+            }
+        });
 
         I19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
@@ -5576,14 +5539,17 @@ public class newPanelMixer extends javax.swing.JPanel {
     private void S1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S1ActionPerformed
         // TODO add your handling code here:
         // TODO add your handling code here:
+        
+        mainfunctionSOLO(1, C1, S1, V1, 0);
+        /*
         var[2]=true;
         if(S1.isSelected()&&!var[1]){
             DisableVolumeExcept(V1,S1,2,0);
             System.out.println("activado");
             Conf=X.Read("config.xml");                
          try{
-             audio[0]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),0,V1,C1,socket);
-             audio[0].start();
+             audioSolo[0]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(0),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),0,V1,C1,socket);
+             audioSolo[0].start();
               
               
          }
@@ -5599,14 +5565,18 @@ public class newPanelMixer extends javax.swing.JPanel {
         if(!S1.isSelected()){
             EnableVolume();
             var[2]=false;
-            audio[0].detener();
-            audio[0].stop();
+            audioSolo[0].detener();
+            audioSolo[0].stop();
         }
+        */
     }//GEN-LAST:event_S1ActionPerformed
 
     private void S9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S9ActionPerformed
         // TODO add your handling code here:
         // TODO add your handling code here:
+        mainfunctionSOLO(9, C9, S9, V9, 1);
+        
+        /*
         var[18]=true;
         if(S9.isSelected()&&!var[17]){
             DisableVolumeExcept(V9,S9,18,8);
@@ -5633,6 +5603,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             audio[8].detener();
             audio[8].stop();
         }
+        */
     }//GEN-LAST:event_S9ActionPerformed
 
     private void C33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C33ActionPerformed
@@ -5957,635 +5928,137 @@ public class newPanelMixer extends javax.swing.JPanel {
 
     private void S2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S2ActionPerformed
         // TODO add your handling code here:
-        var[4]=true;
-        if(S2.isSelected()&&!var[3]){
-            DisableVolumeExcept(V2,S2,4,1);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");        
-         
-         try{
-             audio[1]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(1),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),8,V2,C2,socket);
-             audio[1].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[4]=false;
-         }
-        }
-        if(S2.isSelected()&&var[3]){
-            DisableVolumeExcept(V2,S2,4,1);
-        }
-        if(!S2.isSelected()){
-            EnableVolume();
-            var[4]=false;
-            audio[1].detener();
-            audio[1].stop();
-        }
+        
+        mainfunctionSOLO(2, C2, S2, V2, 8);
+        
     }//GEN-LAST:event_S2ActionPerformed
 
     private void S10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S10ActionPerformed
         // TODO add your handling code here:
-        var[20]=true;
-        if(S10.isSelected()&&!var[19]){
-            DisableVolumeExcept(V10,S10,20,9);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[9]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(9),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),9,V10,C10,socket);
-             audio[9].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-              var[20]=false;
-         }     
-        }
-        if(S10.isSelected()&&var[19])
-        {
-            DisableVolumeExcept(V10,S10,20,9);
-        }
-        if(!S10.isSelected()){
-            EnableVolume();
-            var[20]=false;
-            audio[9].detener();
-            audio[9].stop();
-            
-        }
+        mainfunctionSOLO(10, C10, S10, V10, 9);
+        
+        
     }//GEN-LAST:event_S10ActionPerformed
 
     private void S18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S18ActionPerformed
         // TODO add your handling code here:
-          var[36]=true;
-        if(S18.isSelected()&&!var[35]){
-            DisableVolumeExcept(V18,S18,36,17);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[17]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(17),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),10,V18,C18,socket);
-             audio[17].start();
-             
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-              
-               var[36]=false;
-         }     
-        }
-        if(S18.isSelected()&&var[35])
-        {
-            DisableVolumeExcept(V18,S18,36,17);
-        }
-        if(!S18.isSelected()){
-            EnableVolume();
-            var[36]=false;
-            audio[17].detener();
-            audio[17].stop();
-        }
+        
+        mainfunctionSOLO(18, C18, S18, V18, 10);
+        
     }//GEN-LAST:event_S18ActionPerformed
 
     private void S26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S26ActionPerformed
         // TODO add your handling code here:
-         var[52]=true;
-        if(S26.isSelected()&&!var[51]){
-            DisableVolumeExcept(V26,S26,52,25);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[25]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(25),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),11,V26,C26,socket);
-             audio[25].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[52]=false;
-         }     
-        }
-        if(S26.isSelected()&&var[51])
-        {
-            DisableVolumeExcept(V26,S26,52,25);
-        }
-        if(!S26.isSelected()){
-            EnableVolume();
-            var[52]=false;
-            audio[25].detener();
-            audio[25].stop();
-        }
+       mainfunctionSOLO(26, C26, S26, V26, 11);
     }//GEN-LAST:event_S26ActionPerformed
 
     private void S4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S4ActionPerformed
         // TODO add your handling code here:
-         var[8]=true;
-        if(S4.isSelected()&&!var[7]){
-            DisableVolumeExcept(V4,S4,8,3);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[3]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(3),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),12,V4,C4,socket);
-             audio[3].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[8]=false;
-         }     
-        }
-        if(S4.isSelected()&&var[7]){
-            DisableVolumeExcept(V4,S4,8,3);
-        }
-        if(!S4.isSelected()){
-            EnableVolume();
-            var[8]=false;
-            audio[3].detener();
-            audio[3].stop();
-        }
+        mainfunctionSOLO(4, C4, S4, V4, 12);
+        
+       
     }//GEN-LAST:event_S4ActionPerformed
 
     private void S12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S12ActionPerformed
         // TODO add your handling code here:
-         var[24]=true;
-        if(S12.isSelected()&&!var[23]){
-            DisableVolumeExcept(V12,S12,24,11);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[11]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(11),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),13,V12,C12,socket);
-             audio[11].start();
-              
-             
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-                var[24]=false;
-               
-         }     
-        }
-        if(S12.isSelected()&&var[23])
-        {
-            DisableVolumeExcept(V12,S12,24,11);
-        }
-        if(!S12.isSelected()){
-            EnableVolume();
-            var[24]=false;
-            audio[11].detener();
-            audio[11].stop();
-        }
+        mainfunctionSOLO(12, C12, S12, V12, 13);
+        
     }//GEN-LAST:event_S12ActionPerformed
 
     private void S20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S20ActionPerformed
         // TODO add your handling code here:
-          var[40]=true;
-        if(S20.isSelected()&&!var[39]){
-            DisableVolumeExcept(V20,S20,40,19);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[19]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(19),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),14,V20,C20,socket);
-             audio[19].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-              
-               var[40]=false;
-               
-         }     
-        }
-        if(S20.isSelected()&&var[39])
-        {
-            DisableVolumeExcept(V20,S20,40,19);
-        }
-        if(!S20.isSelected()){
-            EnableVolume();
-            var[40]=false;
-            audio[19].detener();
-            audio[19].stop();
-        }
+          mainfunctionSOLO(20, C20, S20, V20, 14);
     }//GEN-LAST:event_S20ActionPerformed
 
     private void S28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S28ActionPerformed
         // TODO add your handling code here:
-         var[56]=true;
-        if(S28.isSelected()&&!var[55]){
-            DisableVolumeExcept(V28,S28,56,27);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[27]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(27),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),15,V28,C28,socket);
-             audio[27].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[56]=false;
-         }     
-        }
-        if(S28.isSelected()&&var[55])
-        {
-            DisableVolumeExcept(V28,S28,56,27);
-        }
-        if(!S28.isSelected()){
-            EnableVolume();
-            var[56]=false;
-            audio[27].detener();
-            audio[27].stop();
-        }
+        mainfunctionSOLO(28, C28, S28, V28, 15);
+         
     }//GEN-LAST:event_S28ActionPerformed
 
     private void S5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S5ActionPerformed
         // TODO add your handling code here:
-         var[10]=true;
-        if(S5.isSelected()&&!var[9]){
-            DisableVolumeExcept(V5,S5,10,4);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             
-             audio[4]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(4),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),16,V5,C5,socket);
-             audio[4].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-              
-              var[10]=false;
-         }     
-        }
-        if(S5.isSelected()&&var[9])
-        {
-            DisableVolumeExcept(V5,S5,20,4);
-        }
-        if(!S5.isSelected()){
-            EnableVolume();
-            var[10]=false;
-             audio[4].detener();
-            audio[4].stop();
-        }
+        mainfunctionSOLO(5, C5, S5, V5, 16);
     }//GEN-LAST:event_S5ActionPerformed
 
     private void S13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S13ActionPerformed
         // TODO add your handling code here:
-         var[26]=true;
-        if(S13.isSelected()&&!var[25]){
-            DisableVolumeExcept(V13,S13,26,12);
-            System.out.println("activado");
-            Conf = X.Read("config.xml");
-            try{
-             audio[12]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(12),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),17,V13,C13,socket);
-             audio[12].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[26]=false;
-         }     
-        }
-        if(S13.isSelected()&&var[25])
-        {
-            DisableVolumeExcept(V13,S13,26,12);
-        }
-        if(!S13.isSelected()){
-            EnableVolume();
-            var[26]=false;
-            audio[12].detener();
-            audio[12].stop();
-        }
+        mainfunctionSOLO(13, C13, S13, V13, 17);
+        
+         
     }//GEN-LAST:event_S13ActionPerformed
 
     private void S21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S21ActionPerformed
         // TODO add your handling code here:
-         var[42]=true;
-        if(S21.isSelected()&&!var[41]){
-            DisableVolumeExcept(V21,S21,42,20);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[20]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(20),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),18,V21,C21,socket);
-             audio[20].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[42]=false;
-         }     
-        }
-        if(S21.isSelected()&&var[41])
-        {
-            DisableVolumeExcept(V21,S21,42,20);
-        }
-        if(!S21.isSelected()){
-            EnableVolume();
-            var[42]=false;
-             audio[20].detener();
-            audio[20].stop();
-        }
+        mainfunctionSOLO(21, C21, S21, V21, 18);
+        
+       
     }//GEN-LAST:event_S21ActionPerformed
 
     private void S6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S6ActionPerformed
         // TODO add your handling code here:
-        var[12]=true;
-        if(S6.isSelected()&&!var[11]){
-            DisableVolumeExcept(V6,S6,12,5);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[5]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(5),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),19,V6,C6,socket);
-             audio[5].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[12]=false;
-         }     
-        }
-        if(S6.isSelected()&&var[11])
-        {
-            DisableVolumeExcept(V6,S6,12,5);
-            
-        }
-        if(!S6.isSelected()){
-            EnableVolume();
-            var[12]=false;
-            audio[5].detener();
-            audio[5].stop();
-        }
+        mainfunctionSOLO(6, C6, S6, V6, 19);
+       
     }//GEN-LAST:event_S6ActionPerformed
 
     private void S29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S29ActionPerformed
         // TODO add your handling code here:
-         var[58]=true;
-        if(S29.isSelected()&&!var[57]){
-            DisableVolumeExcept(V29,S29,58,28);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[28]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(28),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),20,V29,C29,socket);
-             audio[28].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-                var[58]=false;
-         }     
-        }
-        if(S29.isSelected()&&var[57])
-        {
-            DisableVolumeExcept(V29,S29,58,28);
-        }
-        if(!S29.isSelected()){
-            EnableVolume();
-            var[58]=false;
-            audio[28].detener();
-            audio[28].stop();
-        }
+        mainfunctionSOLO(29, C29, S29, V29, 20);
+        
+         
     }//GEN-LAST:event_S29ActionPerformed
 
     private void S14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S14ActionPerformed
         // TODO add your handling code here:
-        var[28]=true;
+        mainfunctionSOLO(14, C14, S14, V14, 21);
         
-        if(S14.isSelected()&&!var[28]){
-            DisableVolumeExcept(V14,S14,28,13);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[13]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(13),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),21,V14,C14,socket);
-             audio[13].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[28]=false;
-         }     
-        }
-        if(S14.isSelected()&&var[28])
-        {
-            DisableVolumeExcept(V14,S14,28,13);
-        }
-        if(!S14.isSelected()){
-            EnableVolume();
-            var[28]=false;
-            audio[13].detener();
-            audio[13].stop();
-        }
     }//GEN-LAST:event_S14ActionPerformed
 
     private void S22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S22ActionPerformed
         // TODO add your handling code here:
-        var[44]=true;
-        if(S22.isSelected()&&!var[43]){
-            DisableVolumeExcept(V22,S22,44,21);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[21]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(21),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),22,V22,C22,socket);
-             audio[21].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[44]=false;
-         }     
-        }
-        if(S22.isSelected()&&var[43])
-        {
-            DisableVolumeExcept(V22,S22,44,21);
-        }
-        if(!S22.isSelected()){
-            EnableVolume();
-            var[44]=false;
-            audio[21].detener();
-            audio[21].stop();
-        }
+        mainfunctionSOLO(22, C22, S22, V22, 22);
+        
+        
     }//GEN-LAST:event_S22ActionPerformed
 
     private void S30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S30ActionPerformed
         // TODO add your handling code here:
-        var[60]=true;
-        if(S30.isSelected()&&!var[59]){
-            DisableVolumeExcept(V30,S30,60,29);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[29]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(29),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),23,V30,C30,socket);
-             audio[29].start();
-              
-             
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[60]=false;
-         }     
-        }
-        if(S30.isSelected()&&var[59])
-        {
-            DisableVolumeExcept(V30,S30,60,29);
-        }
-        if(!S30.isSelected()){
-            EnableVolume();
-            var[60]=false;
-            audio[29].detener();
-            audio[29].stop();
-        }
+        
+        mainfunctionSOLO(30, C30, S30, V30, 23);
+        
+       
     }//GEN-LAST:event_S30ActionPerformed
 
     private void S32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S32ActionPerformed
         // TODO add your handling code here:
-        var[64]=true;
-        if(S32.isSelected()&&!var[63]){
-            DisableVolumeExcept(V32,S32,64,31);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             
-             audio[31]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(31),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),31,V32,C32,socket);
-             audio[31].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[64]=false;
-         }     
-        }
-        if(S32.isSelected()&&var[63])
-        {
-            DisableVolumeExcept(V32,S32,64,31);
-        }
-        if(!S32.isSelected()){
-            EnableVolume();
-            var[64]=false;
-            audio[31].detener();
-            audio[31].stop();
-        }
+        mainfunctionSOLO(32, C32, S32, V32, 31);
+        
     }//GEN-LAST:event_S32ActionPerformed
 
     private void S31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S31ActionPerformed
         // TODO add your handling code here:
-        var[62]=true;
-        if(S31.isSelected()&&!var[61]){
-            DisableVolumeExcept(V31,S31,62,30);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             
-             audio[30]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(30),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),30,V31,C31,socket);
-             audio[30].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-              
-               var[62]=false;
-         }     
-        }
-        if(S31.isSelected()&&var[61])
-        {
-            DisableVolumeExcept(V31,S31,62,30);
-        }
-        if(!S31.isSelected()){
-            EnableVolume();
-            var[62]=false;
-             audio[23].detener();
-            audio[23].stop();
-        }
+        mainfunctionSOLO(31, C31, S31, V31, 30);
+        
+       
     }//GEN-LAST:event_S31ActionPerformed
 
     private void S24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S24ActionPerformed
         // TODO add your handling code here:
-        var[48]=true;
-        if(S24.isSelected()&&!var[47]){
-            DisableVolumeExcept(V24,S24,48,23);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             
-             audio[23]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(23),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),29,V24,C24,socket);
-             audio[23].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[48]=false;
-         }     
-        }
-        if(S24.isSelected()&&var[47])
-        {
-            DisableVolumeExcept(V24,S24,48,23);
-        }
-        if(!S24.isSelected()){
-            EnableVolume();
-            var[48]=false;
-            audio[23].detener();
-            audio[23].stop();
-        }
+        mainfunctionSOLO(24, C24, S24, V24, 29);
+        
+       
     }//GEN-LAST:event_S24ActionPerformed
 
     private void S23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S23ActionPerformed
         // TODO add your handling code here:
-         var[46]=true;
-        if(S23.isSelected()&&!var[45]){
-            DisableVolumeExcept(V23,S23,46,22);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             
-             audio[22]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(22),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),28,V23,C23,socket);
-             audio[22].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-              var[46]=false;
-         }     
-        }
-        if(S23.isSelected()&&var[45])
-        {
-            DisableVolumeExcept(V23,S23,46,22);
-        }
-        if(!S23.isSelected()){
-            EnableVolume();
-            var[46]=false;
-            audio[22].detener();
-            audio[22].stop();
-        }
+        mainfunctionSOLO(23, C23, S23, V23, 28);
+        
     }//GEN-LAST:event_S23ActionPerformed
 
     private void S16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S16ActionPerformed
         // TODO add your handling code here:
+        mainfunctionSOLO(16, C16, S16, V16, 27);
+        
         var[32]=true;
         if(S16.isSelected()&&!var[31]){
             DisableVolumeExcept(V16,S16,32,15);
@@ -6618,98 +6091,22 @@ public class newPanelMixer extends javax.swing.JPanel {
 
     private void S15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S15ActionPerformed
         // TODO add your handling code here:
-         var[30]=true;
-        if(S15.isSelected()&&!var[29]){
-            DisableVolumeExcept(V15,S15,30,14);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             
-             audio[14]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(14),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),26,V15,C15,socket);
-             audio[14].start();
-              
-          
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[30]=false;
-         }  
-        }
-        if(S15.isSelected()&&var[29])
-        {
-            DisableVolumeExcept(V15,S15,30,14);
-        }
-        if(!S15.isSelected()){
-            EnableVolume();
-            var[30]=false;
-            audio[7].detener();
-            audio[7].stop();
-        }
+        mainfunctionSOLO(15, C15, S15, V15, 26);
+        
     }//GEN-LAST:event_S15ActionPerformed
 
     private void S8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S8ActionPerformed
         // TODO add your handling code here:
-         var[16]=true;
-        if(S8.isSelected()&&!var[15]){
-            DisableVolumeExcept(V8,S8,16,7);
-            System.out.println("activado");
-             Conf=X.Read("config.xml");                
-         try{
-             
-             audio[7]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(7),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),25,V8,C8,socket);
-             audio[7].start();
-             
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-              
-               var[16]=false;
-         }    
-        }
-        if(S8.isSelected()&&var[15])
-        {
-            DisableVolumeExcept(V8,S8,16,7);
-        }
-        if(!S8.isSelected()){
-            EnableVolume();
-            var[16]=false;
-            audio[7].detener();
-            audio[7].stop();
-        }
+        mainfunctionSOLO(8, C8, S8, V8, 25);
+        
+        
     }//GEN-LAST:event_S8ActionPerformed
 
     private void S7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S7ActionPerformed
         // TODO add your handling code here:
-         var[14]=true;
-        if(S7.isSelected()&&!var[13]){
-            DisableVolumeExcept(V7,S7,14,6);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             
-             audio[6]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(6),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),24,V7,C7,socket);
-             audio[6].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-              var[14]=false;
-              
-         }     
-        }
-        if(S7.isSelected()&&var[13])
-        {
-            DisableVolumeExcept(V7,S7,14,6);
-        }
-        if(!S7.isSelected()){
-            EnableVolume();
-            var[14]=false;
-            audio[6].detener();
-            audio[6].stop();
-        }
+        mainfunctionSOLO(7, C7, S7, V7, 24);
+        
+         
     }//GEN-LAST:event_S7ActionPerformed
 
     private void C5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C5ActionPerformed
@@ -6844,65 +6241,16 @@ public class newPanelMixer extends javax.swing.JPanel {
     private void S17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S17ActionPerformed
         // TODO add your handling code here:
         // TODO add your handling code here:
-        var[34]=true;
-        if(S17.isSelected()&&!var[33]){
-            DisableVolumeExcept(V17,S17,34,16);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[16]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(16),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),2,V17,C17,socket);
-             audio[16].start();
-            
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[34]=false;
-         }
-        }
-        if(S17.isSelected()&&var[33])
-        {
-            DisableVolumeExcept(V17,S17,34,16);
-        }
-        if(!S17.isSelected()){
-            EnableVolume();
-            var[34]=false;
-            audio[16].detener();
-            audio[16].stop();
-        }
+        mainfunctionSOLO(17, C17, S17, V17, 2);
     }//GEN-LAST:event_S17ActionPerformed
 
     private void S25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S25ActionPerformed
         // TODO add your handling code here:
         // TODO add your handling code here:
-         var[50]=true;
-        if(S25.isSelected()&&!var[49]){
-            DisableVolumeExcept(V25,S25,50,24);
-            System.out.println("activado");
-            Conf=X.Read("config.xml");                
-         try{
-             audio[24]=new ThreadAudio(Conf.GetNet(),Conf.GetLista().get(24),Conf.GetMultiCast(),P,Conf.GetFrecuencia(),Conf.GetMuestra(),3,V25,C25,socket);
-             audio[24].start();
-              
-              
-         }
-         catch(Exception e){
-             System.out.println("Error de hilo ");
-               
-               var[50]=false;
-         }     
-        }
-        if(S25.isSelected()&&var[49])
-        {
-            DisableVolumeExcept(V25,S25,50,24);
-        }
-        if(!S25.isSelected()){
-            EnableVolume();
-            var[50]=false;
-            audio[24].detener();
-            audio[24].stop();
-        }
+        
+        mainfunctionSOLO(25, C25, S25, V25, 3);
+        
+        
     }//GEN-LAST:event_S25ActionPerformed
 
     private void C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C2ActionPerformed
@@ -7121,6 +6469,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         // TODO add your handling code here:
         mainfunctionSOLO(3, C3, S3, V3, 4);
     }//GEN-LAST:event_S3ActionPerformed
+
+    private void S11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S11ActionPerformed
+        // TODO add your handling code here:
+        mainfunctionSOLO(11, C11, S11, V11, 5);
+    }//GEN-LAST:event_S11ActionPerformed
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
