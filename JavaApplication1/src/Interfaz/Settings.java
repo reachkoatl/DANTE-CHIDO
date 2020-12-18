@@ -2224,6 +2224,9 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im1ActionPerformed
         // TODO add your handling code here:
+        
+        SaveImage(0);
+        /*
         try{
             final JFileChooser fc=new JFileChooser();
             if(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION){
@@ -2251,6 +2254,7 @@ public class Settings extends javax.swing.JPanel {
         catch(Exception ex){
             JOptionPane.showMessageDialog(null,"Error de archivo ");
         }
+        */
     }//GEN-LAST:event_Im1ActionPerformed
 
     private void DefaultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DefaultActionPerformed
@@ -2503,6 +2507,12 @@ public class Settings extends javax.swing.JPanel {
         Alias.add(id62.getText());
         Alias.add(id63.getText());
         Alias.add(id64.getText());
+        
+        puertos.clear();
+        for(int i=0;i<64;i++){
+            puertos.add(ch1.getText());
+            
+        }
         
         Conf.SetLista(puertos);
         Conf.SetAlias(Alias);
@@ -2856,6 +2866,7 @@ public class Settings extends javax.swing.JPanel {
             if(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION){
                String path=fc.getSelectedFile().getAbsolutePath();
                String nombre=fc.getSelectedFile().getName();
+               /*
                File inFile = new File(path);
                File outFile = new File(nombre);
                FileInputStream in = new FileInputStream(inFile);
@@ -2865,8 +2876,10 @@ public class Settings extends javax.swing.JPanel {
                     out.write(c);
                 in.close();
                 out.close();
+                */
+                System.out.println(path);
                 Images.remove(index);
-                Images.add(index,nombre);
+                Images.add(index,path);
                 
             }
             else
