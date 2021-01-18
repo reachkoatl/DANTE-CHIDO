@@ -300,7 +300,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             if(!audioSolo[index-1].equals(null)){
                 audioSolo[index-1].detener();
                 audioSolo[index-1].stop();
-            }                     
+            }
+            togglebutton.setBackground(Color.white);
         }
     }
     

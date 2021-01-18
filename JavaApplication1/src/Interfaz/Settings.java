@@ -2481,7 +2481,7 @@ public class Settings extends javax.swing.JPanel {
         Alias.add(id36.getText());
         Alias.add(id37.getText());
         Alias.add(id38.getText());
-        Alias.add(id38.getText());
+        Alias.add(id39.getText());
         Alias.add(id40.getText());    
         Alias.add(id41.getText());
         Alias.add(id42.getText());
