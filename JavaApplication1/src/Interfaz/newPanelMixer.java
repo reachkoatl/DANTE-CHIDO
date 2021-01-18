@@ -158,7 +158,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             if (component instanceof JSlider)
             {
                                               
-                ((JSlider) component).setValue(0);
+                ((JSlider) component).setValue(5);
                 
                 
             }
@@ -2485,11 +2485,16 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
             if(component instanceof JToggleButton)
             {
-                if(component.equals(r))
+                if(component.equals(r)){
                     r.setSelected(true);
+                    ((JToggleButton)component).setBackground(Color.blue);
+                }
                 
                 else
+                {
                     ((JToggleButton)component).setSelected(false);
+                    ((JToggleButton)component).setBackground(Color.white);
+                }
             }
           }
         for (int x=0;x<130;x++)
@@ -5435,7 +5440,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
     private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
         // TODO add your handling code here:
-        mainfunctionAudioChannel(1, C1, V1, 0);
+        mainfunctionAudioChannel(1, C1, V1, 0); 
         /*
         var[1]=true;
       if(!var[2])
