@@ -6073,7 +6073,7 @@ public class newPanelMixer extends javax.swing.JPanel {
     private void S16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S16ActionPerformed
         // TODO add your handling code here:
         mainfunctionSOLO(16, C16, S16, V16, 27);
-        
+        /*
         var[32]=true;
         if(S16.isSelected()&&!var[31]){
             DisableVolumeExcept(V16,S16,32,15);
@@ -6102,6 +6102,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             audio[15].detener();
             audio[15].stop();
         }
+        */
     }//GEN-LAST:event_S16ActionPerformed
 
     private void S15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S15ActionPerformed
@@ -6224,6 +6225,9 @@ public class newPanelMixer extends javax.swing.JPanel {
     private void S27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S27ActionPerformed
         // TODO add your handling code here:
         // TODO add your handling code here:
+        
+        mainfunctionSOLO(27, C27, S27, V27, 7);
+        /*
         var[54]=true;
         if(S27.isSelected()&&!var[53]){
             DisableVolumeExcept(V27,S27,54,26);
@@ -6251,6 +6255,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             audio[26].detener();
             audio[26].stop();
         }
+        */
     }//GEN-LAST:event_S27ActionPerformed
 
     private void S17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S17ActionPerformed
