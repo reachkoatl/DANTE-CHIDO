@@ -39,7 +39,7 @@ public class newPanelMixer extends javax.swing.JPanel {
     
     private int[] alternar = new int[64];
     
-    private Boolean[] varNoexcept = new Boolean[64];
+    private Boolean[] varNoexcept = new Boolean[65];
             
     public Boolean[] var = new Boolean[130];
    
