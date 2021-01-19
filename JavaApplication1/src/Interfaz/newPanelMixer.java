@@ -257,7 +257,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                     System.out.println("Error de hilo ");
                     button.setBackground(Color.RED);
                     slider.setEnabled(false);
-                    var[index-1]=false;
+                    //var[index-1]=false;
                  }
 
 
@@ -268,9 +268,9 @@ public class newPanelMixer extends javax.swing.JPanel {
                  audio[index-1].stop();
                  alternar[index-1]=0;
                  button.setBackground(Color.BLUE);
-                 var[index-1]=false;
-
-
+                 //var[index-1]=false;
+                    
+                 var[(index*2)-1]=false;
             }
         }
     }
