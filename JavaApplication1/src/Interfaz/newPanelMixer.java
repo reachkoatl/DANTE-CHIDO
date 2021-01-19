@@ -197,8 +197,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             if (component instanceof JSlider)
             {
                                               
-                ((JSlider) component).setValue(0);
-                ((JSlider) component).disable();
+                //((JSlider) component).setValue(0);
+                //((JSlider) component).disable();
                 
             }
             if(component instanceof JToggleButton)
