@@ -36,9 +36,11 @@ public class newPanelMixer extends javax.swing.JPanel {
     private ThreadAudio[] audio = new ThreadAudio[64];
     private ThreadAudio[] audioSolo = new ThreadAudio[64];
     
+    
     private int[] alternar = new int[64];
     
-      
+    private Boolean[] varNoexcept = new Boolean[64];
+            
     public Boolean[] var = new Boolean[130];
    
            
@@ -248,7 +250,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                     audio[index-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,canal,slider,button,socket);
                     audio[index-1].start();
                     button.setBackground(Color.GREEN);
-                     
+                    varNoexcept[index] = false; 
                                      
                  }
                  catch(Exception e){
@@ -282,7 +284,7 @@ public class newPanelMixer extends javax.swing.JPanel {
          try{
              audioSolo[index-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,canal,slider,button,socket);
              audioSolo[index-1].start();
-              
+             varNoexcept[index] = true; 
               
          }
          catch(Exception e){
@@ -297,10 +299,17 @@ public class newPanelMixer extends javax.swing.JPanel {
         if(!togglebutton.isSelected()){
             EnableVolume();
             var[index*2]=false;
-            if(!audioSolo[index-1].equals(null)){
-                audioSolo[index-1].detener();
-                audioSolo[index-1].stop();
+            try{
+                if(varNoexcept[index]){
+                    audioSolo[index-1].detener();
+                    audioSolo[index-1].stop();
+                }
+                
             }
+            catch(Exception ex)
+            {
+            }
+            
             togglebutton.setBackground(Color.white);
         }
     }
