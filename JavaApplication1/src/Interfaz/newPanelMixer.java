@@ -205,6 +205,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             {
               
                 ((JToggleButton)component).setSelected(false);
+                ((JToggleButton)component).setBackground(Color.white);
             }
             
             if(component instanceof JButton)
@@ -233,6 +234,22 @@ public class newPanelMixer extends javax.swing.JPanel {
                 System.out.println("error cerrando ");
             }
             
+            try{
+                
+                if(varNoexcept[x+1]){
+                    audioSolo[x].detener();
+                    audioSolo[x].stop();
+                }
+                
+            }                             
+            catch(Exception ex)
+            {
+            }
+            
+        }
+        
+        for(int x=0;x<varNoexcept.length;x++){
+            varNoexcept[x]=false;
         }
         components = null;
     }
@@ -246,7 +263,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             if(alternar[index-1]==1){
 
                  try{
-                                                    
+                                                   
                     audio[index-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,canal,slider,button,socket);
                     audio[index-1].start();
                     button.setBackground(Color.GREEN);
