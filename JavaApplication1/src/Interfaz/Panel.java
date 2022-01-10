@@ -98,11 +98,12 @@ public class Panel extends javax.swing.JFrame {
     });   
       vol = new volumen(vPrincipal); 
       
-      jLabel4.setIcon(new javax.swing.ImageIcon("fondobueno.png"));
+      jLabel4.setIcon(new javax.swing.ImageIcon("nuevoFondo.png"));
          
       EtiquetaConect.setVisible(false);
       EtiquetaStatus.setVisible(false);
       MSG.setVisible(false);
+      networks.setVisible(false);
       jLabel1.setVisible(false);
     }
     
@@ -290,8 +291,9 @@ public class Panel extends javax.swing.JFrame {
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(60, 130, 1240, 530);
+        scrollPane1.setBounds(90, 140, 1260, 600);
 
+        Bsettings.setBackground(new java.awt.Color(231, 25, 76));
         Bsettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Bsettings.setText("SETTINGS");
         Bsettings.addActionListener(new java.awt.event.ActionListener() {
@@ -300,17 +302,18 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bsettings);
-        Bsettings.setBounds(360, 690, 172, 40);
+        Bsettings.setBounds(890, 60, 120, 40);
 
+        cLEAR.setBackground(new java.awt.Color(69, 93, 220));
         cLEAR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        cLEAR.setText("CLEAR");
+        cLEAR.setIcon(new javax.swing.ImageIcon("C:\\Users\\ocamp\\Documents\\GitHub\\DANTE-CHIDO\\JavaApplication1\\trash-can.png")); // NOI18N
         cLEAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cLEARActionPerformed(evt);
             }
         });
         getContentPane().add(cLEAR);
-        cLEAR.setBounds(1120, 690, 172, 40);
+        cLEAR.setBounds(1170, 60, 120, 40);
 
         primero.setText("1-16");
         primero.addActionListener(new java.awt.event.ActionListener() {
@@ -319,7 +322,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(primero);
-        primero.setBounds(60, 110, 80, 23);
+        primero.setBounds(0, 140, 80, 70);
 
         segundo.setText("17-32");
         segundo.addActionListener(new java.awt.event.ActionListener() {
@@ -328,7 +331,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(segundo);
-        segundo.setBounds(140, 110, 80, 23);
+        segundo.setBounds(0, 240, 80, 70);
 
         cuarto.setText("49-64");
         cuarto.addActionListener(new java.awt.event.ActionListener() {
@@ -337,8 +340,9 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cuarto);
-        cuarto.setBounds(300, 110, 90, 23);
+        cuarto.setBounds(0, 440, 80, 70);
 
+        Bmixer.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Bmixer.setText("MIXER");
         Bmixer.addActionListener(new java.awt.event.ActionListener() {
@@ -347,7 +351,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bmixer);
-        Bmixer.setBounds(140, 690, 172, 40);
+        Bmixer.setBounds(1030, 60, 120, 40);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
@@ -411,7 +415,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tercero);
-        tercero.setBounds(220, 110, 80, 23);
+        tercero.setBounds(0, 340, 80, 70);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -426,7 +430,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(vPrincipal);
-        vPrincipal.setBounds(1110, 60, 210, 30);
+        vPrincipal.setBounds(900, 10, 210, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
