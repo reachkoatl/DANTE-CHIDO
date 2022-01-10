@@ -98,11 +98,12 @@ public class Panel extends javax.swing.JFrame {
     });   
       vol = new volumen(vPrincipal); 
       
-      jLabel4.setIcon(new javax.swing.ImageIcon("fondobueno.png"));
+      jLabel4.setIcon(new javax.swing.ImageIcon("nuevoFondo.png"));
          
       EtiquetaConect.setVisible(false);
       EtiquetaStatus.setVisible(false);
       MSG.setVisible(false);
+      networks.setVisible(false);
       jLabel1.setVisible(false);
     }
     
@@ -283,16 +284,18 @@ public class Panel extends javax.swing.JFrame {
         vPrincipal = new javax.swing.JSlider();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 51, 102));
+        setBackground(new java.awt.Color(0, 0, 0));
         setForeground(new java.awt.Color(0, 51, 102));
         getContentPane().setLayout(null);
 
-        scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
+        scrollPane1.setBackground(new java.awt.Color(4, 5, 8));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(60, 130, 1240, 530);
+        scrollPane1.setBounds(90, 140, 1260, 600);
 
+        Bsettings.setBackground(new java.awt.Color(231, 25, 76));
         Bsettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Bsettings.setForeground(new java.awt.Color(255, 255, 255));
         Bsettings.setText("SETTINGS");
         Bsettings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -300,18 +303,20 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bsettings);
-        Bsettings.setBounds(360, 690, 172, 40);
+        Bsettings.setBounds(890, 70, 120, 40);
 
+        cLEAR.setBackground(new java.awt.Color(69, 93, 220));
         cLEAR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        cLEAR.setText("CLEAR");
+        cLEAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/trash-can.png"))); // NOI18N
         cLEAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cLEARActionPerformed(evt);
             }
         });
         getContentPane().add(cLEAR);
-        cLEAR.setBounds(1120, 690, 172, 40);
+        cLEAR.setBounds(1190, 70, 120, 40);
 
+        primero.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         primero.setText("1-16");
         primero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -319,7 +324,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(primero);
-        primero.setBounds(60, 110, 80, 23);
+        primero.setBounds(0, 170, 80, 70);
 
         segundo.setText("17-32");
         segundo.addActionListener(new java.awt.event.ActionListener() {
@@ -328,7 +333,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(segundo);
-        segundo.setBounds(140, 110, 80, 23);
+        segundo.setBounds(0, 260, 80, 70);
 
         cuarto.setText("49-64");
         cuarto.addActionListener(new java.awt.event.ActionListener() {
@@ -337,9 +342,11 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cuarto);
-        cuarto.setBounds(300, 110, 90, 23);
+        cuarto.setBounds(0, 440, 80, 70);
 
+        Bmixer.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Bmixer.setForeground(new java.awt.Color(255, 255, 255));
         Bmixer.setText("MIXER");
         Bmixer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -347,7 +354,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bmixer);
-        Bmixer.setBounds(140, 690, 172, 40);
+        Bmixer.setBounds(1040, 70, 120, 40);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
@@ -360,7 +367,7 @@ public class Panel extends javax.swing.JFrame {
         EtiquetaStatus.setForeground(new java.awt.Color(255, 255, 255));
         EtiquetaStatus.setText("CHECKING SERVICE");
         getContentPane().add(EtiquetaStatus);
-        EtiquetaStatus.setBounds(900, 80, 125, 36);
+        EtiquetaStatus.setBounds(910, 70, 125, 36);
 
         EtiquetaConect.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         EtiquetaConect.setForeground(new java.awt.Color(255, 255, 255));
@@ -411,7 +418,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tercero);
-        tercero.setBounds(220, 110, 80, 23);
+        tercero.setBounds(0, 350, 80, 70);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -426,7 +433,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(vPrincipal);
-        vPrincipal.setBounds(1110, 60, 210, 30);
+        vPrincipal.setBounds(900, 10, 210, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

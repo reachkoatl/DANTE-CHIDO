@@ -1815,7 +1815,7 @@ public class PanelMixer extends javax.swing.JPanel {
         S31 = new javax.swing.JToggleButton();
         S32 = new javax.swing.JToggleButton();
 
-        setBackground(new java.awt.Color(51, 51, 51));
+        setBackground(new java.awt.Color(4, 5, 8));
 
         C1.setBackground(new java.awt.Color(102, 102, 102));
         C1.setFont(new java.awt.Font("Montserrat", 0, 21)); // NOI18N
