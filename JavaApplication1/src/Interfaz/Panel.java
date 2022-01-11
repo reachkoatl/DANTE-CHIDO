@@ -454,6 +454,7 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1890, 740);
 
+        vPrincipal.setBackground(new java.awt.Color(0, 0, 0));
         vPrincipal.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 vPrincipalStateChanged(evt);
