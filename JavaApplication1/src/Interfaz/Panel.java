@@ -602,6 +602,7 @@ public class Panel extends javax.swing.JFrame {
         cuarto.setForeground(Color.white);
         jPanel4.setBackground(Color.red);
         
+        
          primero.setBackground(new Color(35, 38, 49));
         primero.setForeground(new Color(65, 71, 90));
         jPanel1.setBackground(new Color(35, 38, 49));
